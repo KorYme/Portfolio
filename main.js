@@ -1,7 +1,3 @@
-/* ============================================================
-   MAXIME CORBY — Shared JS
-   ============================================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Active nav link ---- */
