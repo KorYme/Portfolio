@@ -1,25 +1,441 @@
-[
-  {
-    "id": "kintsugi",
-    "title": "Kintsugi",
-    "cover": "images/project1.jpg",
-    "hero": "images/project1.jpg",
-    "description": "Description du projet",
-    "images": [
-      "images/img1.jpg",
-      "images/img2.jpg",
-      "images/img3.jpg"
-    ]
-  },
-  {
-    "id": "project2",
-    "title": "Projet 2",
-    "cover": "images/project2.jpg",
-    "hero": "images/project2.jpg",
-    "description": "Autre projet",
-    "images": [
-      "images/img4.jpg",
-      "images/img5.jpg"
-    ]
-  }
-]
+{
+  "projects": [
+    {
+      "id": "kintsugi",
+      "title": "Kintsugi",
+      "tagline": "Embrace your curse in this sumptuous adventure.",
+      "year": "2025",
+      "status": "Coming Soon",
+      "engine": "Unity 2D",
+      "genre": "Contemplative Game",
+      "duration": "10 Weeks (WIP)",
+      "teamSize": "13 Persons",
+      "category": "main",
+      "thumbnail": "assets/kintsugi/thumb.png",
+      "thumbnailGif": "assets/kintsugi/thumb.gif",
+      "role": "Level and Rendering Tools, Sequencer & CI",
+      "team": "3 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Producer, 1 Sound Designer",
+      "context": "Final Year Project at IIM Digital School.",
+      "technologies": ["Unity", "C#", "Wwise", "GitHub Actions"],
+      "sections": [
+        {
+          "title": "Level Tools",
+          "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate git conflicts between artists and game designers, so I developed a scene composition system. We split the level in sub sections and the sub sections were also split with the game artists scenes (containing mostly sprites but also sequencers), the level designers scenes (with colliders), and the sound designers scenes (with gameobject triggering Wwise events).",
+          "images": [
+            "assets/kintsugi/level-tools-1.png",
+            "assets/kintsugi/level-tools-2.png"
+          ]
+        },
+        {
+          "title": "Rendering Tools",
+          "body": "I developed the main tool used to ease the implementation of complex level art. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a good rendering order, I developed the first version of this tool which automatically changed the sorting layer value of all renderers in the scene based on their Z position and sorted them in the hierarchy to keep the scenes clean. Then, we used it to change the materials on objects based on their layer to create a depth feeling without changing the asset itself.",
+          "images": [
+            "assets/kintsugi/rendering-tools.png"
+          ]
+        },
+        {
+          "title": "Sequencer",
+          "body": "At one point during production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create, from small to intense emotional moments. I made this system as simple as possible to easily implement effects such as enabling certain abilities for the player, changing controller profile, playing animations, camera shakes, and so on.",
+          "images": [
+            "assets/kintsugi/sequencer.png"
+          ]
+        },
+        {
+          "title": "Continuous Integration",
+          "body": "Simultaneously, we used a CI system based on GitHub Actions which gave us monitoring on the build state, so we regularly debugged the project. It helped us to version and QA the project. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel with the project.",
+          "images": []
+        }
+      ],
+      "related": ["champions-tactics", "demons-and-disco", "the-last-night-to-hunt"]
+    },
+    {
+      "id": "champions-tactics",
+      "title": "Champions Tactics\nGrimoria Chronicles",
+      "tagline": "A competitive multiplayer tactical RPG — Ubisoft internship.",
+      "year": "2024",
+      "status": null,
+      "engine": "Unity 3D",
+      "genre": "Multiplayer Turn-Based RPG",
+      "duration": "6 Months",
+      "teamSize": "Internship",
+      "category": "main",
+      "thumbnail": "assets/champions-tactics/thumb.png",
+      "thumbnailGif": null,
+      "role": "Gameplay & UI, Network & Database, Production's Process",
+      "team": "Ubisoft Paris Mobile",
+      "context": "6-month internship at Ubisoft Paris Mobile working on a live multiplayer tactical game.",
+      "technologies": ["Unity", "C#", "Photon", "PlayFab"],
+      "sections": [
+        {
+          "title": "Gameplay & UI",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "images": ["assets/champions-tactics/gameplay.png"]
+        },
+        {
+          "title": "Network & Database",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "images": ["assets/champions-tactics/network-1.png", "assets/champions-tactics/network-2.png"]
+        },
+        {
+          "title": "Production's Process",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": []
+        }
+      ],
+      "related": ["kintsugi", "iridescence", "demons-and-disco"]
+    },
+    {
+      "id": "demons-and-disco",
+      "title": "Demons and Disco",
+      "tagline": "Survive hell, feel the rhythm.",
+      "year": "2023",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Rhythm Couch Game",
+      "duration": "7 Weeks",
+      "teamSize": "13 Persons",
+      "category": "main",
+      "thumbnail": "assets/demons-and-disco/thumb.png",
+      "thumbnailGif": "assets/demons-and-disco/thumb.gif",
+      "role": "Wwise Implementation, Game Feel and Lead GP",
+      "team": "4 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Sound Designer",
+      "context": "School project — vertical slice of a couch co-op rhythm game.",
+      "technologies": ["Unity", "C#", "Wwise"],
+      "sections": [
+        {
+          "title": "Wwise Implementation",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/demons-and-disco/wwise.png", "assets/demons-and-disco/wwise-2.png"]
+        },
+        {
+          "title": "Game Feel & Lead GP",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+          "images": ["assets/demons-and-disco/gamefeel.png"]
+        }
+      ],
+      "related": ["kintsugi", "iridescence", "the-last-night-to-hunt"]
+    },
+    {
+      "id": "dont-look-down",
+      "title": "Don't Look Down",
+      "tagline": "A visceral VR horror experience in the dark.",
+      "year": "2024",
+      "status": null,
+      "engine": "Unreal Engine 5",
+      "genre": "VR Horror Game",
+      "duration": "2 Weeks",
+      "teamSize": "11 Persons",
+      "category": "main",
+      "thumbnail": "assets/dont-look-down/thumb.png",
+      "thumbnailGif": "assets/dont-look-down/thumb.gif",
+      "role": "Gameplay, VR Initiation & Support",
+      "team": "Mixed team — school jam",
+      "context": "2-week game jam, first experience with VR on Unreal Engine 5.",
+      "technologies": ["Unreal Engine 5", "Blueprint", "C++", "OpenXR"],
+      "sections": [
+        {
+          "title": "VR Gameplay",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          "images": ["assets/dont-look-down/vr.png", "assets/dont-look-down/gameplay.png"]
+        }
+      ],
+      "related": ["kintsugi", "champions-tactics", "iridescence"]
+    },
+    {
+      "id": "iridescence",
+      "title": "Iridescence",
+      "tagline": "A puzzle game that plays with light and perception.",
+      "year": "2023",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Puzzle Game",
+      "duration": "4 Weeks",
+      "teamSize": "10 Persons",
+      "category": "main",
+      "thumbnail": "assets/iridescence/thumb.png",
+      "thumbnailGif": "assets/iridescence/thumb.gif",
+      "role": "Level Design Tools, Shipping & Lead GP, Accessibility",
+      "team": "3 Artists, 3 Game Designers, 3 Programmers, 1 Sound Designer",
+      "context": "School project — puzzle game with a strong focus on accessibility.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Level Design Tools",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/iridescence/tools.png"]
+        },
+        {
+          "title": "Accessibility",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+          "images": ["assets/iridescence/accessibility-1.png", "assets/iridescence/accessibility-2.png"]
+        }
+      ],
+      "related": ["kintsugi", "demons-and-disco", "dont-look-down"]
+    },
+    {
+      "id": "the-last-night-to-hunt",
+      "title": "The Last Night to Hunt",
+      "tagline": "A narrative adventure at the edge of darkness.",
+      "year": "2023",
+      "status": null,
+      "engine": "Unreal Engine 5",
+      "genre": "Adventure / Narrative",
+      "duration": "4 Weeks",
+      "teamSize": "7 Persons",
+      "category": "main",
+      "thumbnail": "assets/the-last-night-to-hunt/thumb.png",
+      "thumbnailGif": null,
+      "role": "Quests/Dialogs, AI and Shaders",
+      "team": "2 Artists, 2 Game Designers, 2 Programmers, 1 Sound Designer",
+      "context": "School project — narrative-focused adventure game.",
+      "technologies": ["Unreal Engine 5", "Blueprint", "HLSL"],
+      "sections": [
+        {
+          "title": "Quests & Dialogs",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/the-last-night-to-hunt/quests.png", "assets/the-last-night-to-hunt/dialogs.png"]
+        },
+        {
+          "title": "AI & Shaders",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/the-last-night-to-hunt/shaders.png"]
+        }
+      ],
+      "related": ["kintsugi", "dont-look-down", "demons-and-disco"]
+    },
+    {
+      "id": "cyber-exchange",
+      "title": "Cyber Exchange",
+      "tagline": "A 3-day survival jam in a cyberpunk world.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 3D",
+      "genre": "Survival",
+      "duration": "3 Days",
+      "teamSize": "8 Persons",
+      "category": "side",
+      "thumbnail": "assets/cyber-exchange/thumb.png",
+      "thumbnailGif": "assets/cyber-exchange/thumb.gif",
+      "role": "Gameplay and Assets Implementation",
+      "team": "Mixed team — game jam",
+      "context": "3-day game jam at IIM.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Gameplay",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/cyber-exchange/gameplay.png"]
+        }
+      ],
+      "related": ["the-duty-of-the-knight", "beboum-fighters", "slay-the-lig"]
+    },
+    {
+      "id": "the-duty-of-the-knight",
+      "title": "The Duty of the Knight",
+      "tagline": "A solo roguelike forged over three months.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Roguelike",
+      "duration": "3 Months",
+      "teamSize": "Solo",
+      "category": "side",
+      "thumbnail": "assets/the-duty-of-the-knight/thumb.png",
+      "thumbnailGif": "assets/the-duty-of-the-knight/thumb.gif",
+      "role": "Programming and Design",
+      "team": "Solo project",
+      "context": "Solo personal project — first complete game from scratch.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Design & Programming",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/the-duty-of-the-knight/gameplay.png", "assets/the-duty-of-the-knight/design.png"]
+        }
+      ],
+      "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
+    },
+    {
+      "id": "my-package-project",
+      "title": "My Package Project",
+      "tagline": "A growing personal Unity toolbox.",
+      "year": "2023",
+      "status": "WIP",
+      "engine": "Unity",
+      "genre": "Package",
+      "duration": "WIP",
+      "teamSize": "Solo",
+      "category": "side",
+      "thumbnail": "assets/my-package-project/thumb.png",
+      "thumbnailGif": "assets/my-package-project/thumb.gif",
+      "role": "Tools and More",
+      "team": "Solo project",
+      "context": "Ongoing personal project — a Unity package collecting reusable tools.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Overview",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/my-package-project/overview.png"]
+        }
+      ],
+      "related": ["kintsugi", "iridescence", "the-duty-of-the-knight"]
+    },
+    {
+      "id": "slay-the-lig",
+      "title": "Slay the LIG",
+      "tagline": "Cards, chaos, and college life.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Card Game",
+      "duration": "1 Week",
+      "teamSize": "3 Persons",
+      "category": "side",
+      "thumbnail": "assets/slay-the-lig/thumb.png",
+      "thumbnailGif": "assets/slay-the-lig/thumb.gif",
+      "role": "Programming and Balancing Tools",
+      "team": "3 Persons",
+      "context": "1-week school jam — card game inspired by Slay the Spire.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Card System",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/slay-the-lig/cards.png", "assets/slay-the-lig/ui.png"]
+        }
+      ],
+      "related": ["cyber-exchange", "beboum-fighters", "the-duty-of-the-knight"]
+    },
+    {
+      "id": "geimerophobia",
+      "title": "Geimerophobia",
+      "tagline": "C++, SFML and raw survival instinct.",
+      "year": "2022",
+      "status": null,
+      "engine": "C++ SFML",
+      "genre": "Survival",
+      "duration": "10 Days",
+      "teamSize": "3 Persons",
+      "category": "side",
+      "thumbnail": "assets/geimerophobia/thumb.png",
+      "thumbnailGif": "assets/geimerophobia/thumb.gif",
+      "role": "Game Engine Initiation, UI and Particles",
+      "team": "3 Persons",
+      "context": "Low-level engine initiation project built with SFML from scratch.",
+      "technologies": ["C++", "SFML"],
+      "sections": [
+        {
+          "title": "Engine & UI",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/geimerophobia/engine.png"]
+        }
+      ],
+      "related": ["cyber-exchange", "tough-sadness", "beboum-fighters"]
+    },
+    {
+      "id": "a-contre-courant",
+      "title": "A Contre-Courant",
+      "tagline": "Swimming upstream in a world against you.",
+      "year": "2023",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Platformer",
+      "duration": "1 Week",
+      "teamSize": "7 Persons",
+      "category": "side",
+      "thumbnail": "assets/a-contre-courant/thumb.png",
+      "thumbnailGif": "assets/a-contre-courant/thumb.gif",
+      "role": "Physics and Assets Implementation",
+      "team": "7 Persons",
+      "context": "1-week game jam focused on physics-driven platformer mechanics.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Physics",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/a-contre-courant/physics.png", "assets/a-contre-courant/level.png"]
+        }
+      ],
+      "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
+    },
+    {
+      "id": "lueur-remake",
+      "title": "Lueur Remake",
+      "tagline": "Rebuilding a beloved game from the ground up.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Platformer",
+      "duration": "1 Month",
+      "teamSize": "Solo",
+      "category": "side",
+      "thumbnail": "assets/lueur-remake/thumb.png",
+      "thumbnailGif": "assets/lueur-remake/thumb.gif",
+      "role": "Remake and Tools Programming",
+      "team": "Solo project",
+      "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Remake & Tools",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/lueur-remake/remake.png", "assets/lueur-remake/tools.png"]
+        }
+      ],
+      "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
+    },
+    {
+      "id": "tough-sadness",
+      "title": "Tough Sadness",
+      "tagline": "Survive the weight of it all.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Survival",
+      "duration": "1 Week",
+      "teamSize": "3 Persons",
+      "category": "side",
+      "thumbnail": "assets/tough-sadness/thumb.png",
+      "thumbnailGif": "assets/tough-sadness/thumb.gif",
+      "role": "GitHub, Gameplay and UI",
+      "team": "3 Persons",
+      "context": "1-week game jam — emotional survival game.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Gameplay & UI",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/tough-sadness/gameplay.png"]
+        }
+      ],
+      "related": ["cyber-exchange", "geimerophobia", "lueur-remake"]
+    },
+    {
+      "id": "beboum-fighters",
+      "title": "Beboum Fighters",
+      "tagline": "Local multiplayer chaos for 9 devs in 3 days.",
+      "year": "2022",
+      "status": null,
+      "engine": "Unity 2D",
+      "genre": "Fight Game",
+      "duration": "3 Days",
+      "teamSize": "9 Persons",
+      "category": "side",
+      "thumbnail": "assets/beboum-fighters/thumb.png",
+      "thumbnailGif": "assets/beboum-fighters/thumb.gif",
+      "role": "Lead Programmer, GitHub and Local Multiplayer",
+      "team": "9 Persons",
+      "context": "3-day game jam — local multiplayer fighting game.",
+      "technologies": ["Unity", "C#"],
+      "sections": [
+        {
+          "title": "Local Multiplayer",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]
+        }
+      ],
+      "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]
+    }
+  ]
+}

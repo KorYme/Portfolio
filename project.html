@@ -1,27 +1,193 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxime CORBY — Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="header">
-  <a href="index.html" class="logo">Portfolio</a>
-</header>
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Maxime Corby</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Main Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
 
-<section class="project-hero">
-  <img id="hero" src="" alt="">
-</section>
+  <main class="page" id="proj-page">
+    <div style="padding-top:80px;color:var(--muted);font-size:.75rem">Loading…</div>
+  </main>
 
-<section class="project-content container">
-  <h1 id="title"></h1>
-  <p id="description"></p>
-  <div class="gallery" id="projectGallery"></div>
-</section>
+  <footer>
+    <span>© 2025 Maxime Corby</span>
+    <nav class="footer-links">
+      <a href="index.html">Main Projects</a>
+      <a href="side-projects.html">Side Projects</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </footer>
+  <a class="back-top" title="Back to top">↑</a>
 
-<script src="script.js"></script>
+  <script src="main.js"></script>
+  <script>
+  /* ============================================================
+     Project page — reads ?id= from URL, fetches projects.json,
+     renders the full page dynamically.
+     To add a project : edit projects.json only.
+     ============================================================ */
+
+  const params  = new URLSearchParams(location.search);
+  const projId  = params.get('id');
+
+  /* ---- Image layout helper ---- */
+  /* Accepts an array of 0–3 image paths. Returns HTML string. */
+  function renderImages(images) {
+    const valid = (images || []).filter(Boolean);
+    if (valid.length === 0) return '';
+
+    const n = Math.min(valid.length, 3);          // cap at 3
+    const cls = ['', 'imgs-1', 'imgs-2', 'imgs-3'][n];
+
+    const imgs = valid.slice(0, n).map(src =>
+      `<img class="proj-img" src="${src}" alt="" loading="lazy">`
+    ).join('');
+
+    return `<div class="proj-imgs ${cls}">${imgs}</div>`;
+  }
+
+  /* ---- Render related card ---- */
+  function relatedCard(p, idx) {
+    let thumbHTML = `<div class="thumb-ph">[ ${p.title} ]</div>`;
+    if (p.thumbnail) {
+      if (p.thumbnailGif) {
+        thumbHTML = `
+          <img class="img-still" src="${p.thumbnail}"   alt="${p.title}" loading="lazy">
+          <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`;
+      } else {
+        thumbHTML = `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">`;
+      }
+    }
+    return `
+      <a href="project.html?id=${p.id}" class="card reveal rd${idx+1}">
+        <div class="card-thumb">
+          ${thumbHTML}
+          <span class="card-arrow">View →</span>
+        </div>
+        <div class="card-body">
+          <div class="card-index">${String(idx+1).padStart(2,'0')}</div>
+          <div class="card-title">${p.title}</div>
+          <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
+          <div class="card-role">My job : ${p.role}</div>
+        </div>
+      </a>`;
+  }
+
+  /* ---- Main render ---- */
+  async function render() {
+    const res   = await fetch('projects.json');
+    const data  = await res.json();
+    const all   = data.projects;
+    const proj  = all.find(p => p.id === projId);
+    const page  = document.getElementById('proj-page');
+
+    if (!proj) {
+      page.innerHTML = `
+        <div style="padding-top:100px;text-align:center;color:var(--muted)">
+          <p>Project not found.</p>
+          <a href="index.html" style="color:var(--white);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin-top:16px;display:inline-block">← Back to projects</a>
+        </div>`;
+      return;
+    }
+
+    /* Update page title */
+    document.title = `Maxime CORBY — ${proj.title}`;
+
+    /* Update nav active link */
+    const backHref = proj.category === 'side' ? 'side-projects.html' : 'index.html';
+
+    /* ---- Sections HTML ---- */
+    const sectionsHTML = (proj.sections || []).map((s, i) => `
+      <div class="proj-section reveal">
+        <div class="proj-section-inner">
+          <div class="proj-section-label">
+            <span class="s-num">${String(i+1).padStart(2,'0')}</span>
+            <h2>${s.title}</h2>
+          </div>
+          <div class="proj-section-content">
+            <p>${s.body}</p>
+            ${renderImages(s.images)}
+          </div>
+        </div>
+      </div>`).join('');
+
+    /* ---- Related projects ---- */
+    const relatedProjects = (proj.related || [])
+      .map(id => all.find(p => p.id === id))
+      .filter(Boolean)
+      .slice(0, 3);
+
+    const relatedHTML = relatedProjects.length ? `
+      <div class="related reveal">
+        <div class="section-label"><span>You may also like</span></div>
+        <div class="project-grid" style="grid-template-columns:repeat(${relatedProjects.length},1fr)">
+          ${relatedProjects.map((p,i) => relatedCard(p,i)).join('')}
+        </div>
+      </div>` : '';
+
+    /* ---- Full page ---- */
+    page.innerHTML = `
+
+      <!-- Header -->
+      <header class="proj-header reveal">
+        <a href="${backHref}" class="proj-back">← Back to projects</a>
+        <div class="proj-meta-top">
+          <span class="proj-year">${proj.year}</span>
+          ${proj.status ? `<span class="proj-badge">${proj.status}</span>` : ''}
+        </div>
+        <h1>${proj.title.replace(/\n/g,'<br>')}</h1>
+        <p class="proj-tagline">${proj.tagline}</p>
+        <div class="proj-specs">
+          <span><strong>${proj.engine}</strong></span>
+          <span>${proj.genre}</span>
+          <span>${proj.duration}</span>
+          <span>${proj.teamSize}</span>
+        </div>
+      </header>
+
+      <!-- Context -->
+      <div class="proj-context reveal">
+        <div>
+          <h3>Context</h3>
+          <p>${proj.context}<br><br>
+            <strong style="color:var(--white);font-weight:500">Team :</strong> ${proj.team}<br>
+            <strong style="color:var(--white);font-weight:500">My role :</strong> ${proj.role}
+          </p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <div class="tech-tags">
+            ${(proj.technologies || []).map(t => `<span class="tech-tag">${t}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+
+      <!-- Sections -->
+      ${sectionsHTML}
+
+      <!-- Related -->
+      ${relatedHTML}
+    `;
+
+    /* Re-trigger scroll reveal on injected nodes */
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.06 });
+    page.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }
+
+  render();
+  </script>
 </body>
 </html>

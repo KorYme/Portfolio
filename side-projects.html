@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maxime CORBY — Gameplay &amp; Tools Programmer</title>
+  <title>Maxime CORBY — Side Projects</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,24 +17,8 @@
   </nav>
 
   <main class="page">
-
-    <section class="hero reveal">
-      <div class="hero-eyebrow"><span>Portfolio — Game Dev</span></div>
-      <h1>Maxime <em>"KorYme"</em><br>CORBY</h1>
-      <p class="hero-sub">Gameplay &amp; Tools Programmer</p>
-      <div class="hero-actions">
-        <a href="side-projects.html" class="btn">Side Projects</a>
-        <a href="about.html" class="btn btn-primary">About Me</a>
-      </div>
-    </section>
-
-    <div id="grid-container">
-      <div class="section-label reveal"><span>Main Projects</span></div>
-      <div class="project-grid" id="main-grid">
-        <!-- injected by JS -->
-      </div>
-    </div>
-
+    <div class="section-label reveal"><span>Side Projects</span></div>
+    <div class="project-grid three-col" id="side-grid"></div>
   </main>
 
   <footer>
@@ -45,30 +29,26 @@
       <a href="about.html">About Me</a>
     </nav>
   </footer>
-
   <a class="back-top" title="Back to top">↑</a>
 
   <script src="main.js"></script>
   <script>
-    /* ---- Build grid from JSON ---- */
     async function buildGrid() {
       const res  = await fetch('projects.json');
       const data = await res.json();
-      const main = data.projects.filter(p => p.category === 'main');
-      const grid = document.getElementById('main-grid');
+      const side = data.projects.filter(p => p.category === 'side');
+      const grid = document.getElementById('side-grid');
 
-      main.forEach((p, i) => {
+      side.forEach((p, i) => {
         const a = document.createElement('a');
         a.href = `project.html?id=${p.id}`;
         a.className = 'card reveal';
-        if (i % 2 !== 0) a.classList.add(`rd${Math.min(i,3)}`);
 
-        /* thumb */
         let thumbHTML = `<div class="thumb-ph">[ ${p.title} ]</div>`;
         if (p.thumbnail) {
           if (p.thumbnailGif) {
             thumbHTML = `
-              <img class="img-still" src="${p.thumbnail}"  alt="${p.title}" loading="lazy">
+              <img class="img-still" src="${p.thumbnail}"   alt="${p.title}" loading="lazy">
               <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`;
           } else {
             thumbHTML = `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">`;
@@ -89,7 +69,6 @@
         grid.appendChild(a);
       });
 
-      /* re-trigger reveal observer on new nodes */
       const io = new IntersectionObserver(entries => {
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
       }, { threshold: 0.06 });
