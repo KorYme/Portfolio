@@ -1,0 +1,25 @@
+[
+  {
+    "id": "kintsugi",
+    "title": "Kintsugi",
+    "cover": "images/project1.jpg",
+    "hero": "images/project1.jpg",
+    "description": "Description du projet",
+    "images": [
+      "images/img1.jpg",
+      "images/img2.jpg",
+      "images/img3.jpg"
+    ]
+  },
+  {
+    "id": "project2",
+    "title": "Projet 2",
+    "cover": "images/project2.jpg",
+    "hero": "images/project2.jpg",
+    "description": "Autre projet",
+    "images": [
+      "images/img4.jpg",
+      "images/img5.jpg"
+    ]
+  }
+]
