@@ -1,4 +1,21 @@
 {
+  "about": {
+    "name": "Maxime \"KorYme\" CORBY",
+    "role": "Gameplay & Tools Programmer",
+    "photo": "assets/photo.jpg",
+    "phone": "+33 7 81 86 80 87",
+    "cvUrl": "https://drive.google.com/drive/folders/1CFxoI2vYg9N9ISzoM_C2Lmq7rdtgTY9v?usp=sharing",
+    "canvaEmbedUrl": "",
+    "bio": [
+      "Hi, I'm Maxime, a student in Game Programming at IIM Digital School. My goal is to make the eyes of people sparkle while playing my games. I'm really interested in developing tools for myself or others to ease the production and make it more pleasant.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    ],
+    "associations": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of Treasurer for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also gave classes to students who wanted to learn Unity.",
+    "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Wwise", "GitHub Actions", "CI/CD", "HLSL / Shaders"],
+    "education": [
+      { "school": "IIM Digital School", "degree": "Game Programming", "period": "2021 → 2025" }
+    ]
+  },
   "projects": [
     {
       "id": "kintsugi",
@@ -13,6 +30,7 @@
       "category": "main",
       "thumbnail": "assets/kintsugi/thumb.png",
       "thumbnailGif": "assets/kintsugi/thumb.gif",
+      "youtubeId": "",
       "role": "Level and Rendering Tools, Sequencer & CI",
       "team": "3 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Producer, 1 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",
@@ -21,24 +39,17 @@
         {
           "title": "Level Tools",
           "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate git conflicts between artists and game designers, so I developed a scene composition system. We split the level in sub sections and the sub sections were also split with the game artists scenes (containing mostly sprites but also sequencers), the level designers scenes (with colliders), and the sound designers scenes (with gameobject triggering Wwise events).",
-          "images": [
-            "assets/kintsugi/level-tools-1.png",
-            "assets/kintsugi/level-tools-2.png"
-          ]
+          "images": ["assets/kintsugi/level-tools-1.png", "assets/kintsugi/level-tools-2.png"]
         },
         {
           "title": "Rendering Tools",
           "body": "I developed the main tool used to ease the implementation of complex level art. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a good rendering order, I developed the first version of this tool which automatically changed the sorting layer value of all renderers in the scene based on their Z position and sorted them in the hierarchy to keep the scenes clean. Then, we used it to change the materials on objects based on their layer to create a depth feeling without changing the asset itself.",
-          "images": [
-            "assets/kintsugi/rendering-tools.png"
-          ]
+          "images": ["assets/kintsugi/rendering-tools.png"]
         },
         {
           "title": "Sequencer",
-          "body": "At one point during production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create, from small to intense emotional moments. I made this system as simple as possible to easily implement effects such as enabling certain abilities for the player, changing controller profile, playing animations, camera shakes, and so on.",
-          "images": [
-            "assets/kintsugi/sequencer.png"
-          ]
+          "body": "At one point during production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create emotional moments. I made this system as simple as possible to easily implement effects such as enabling abilities for the player, changing controller profile, playing animations, camera shakes, and so on.",
+          "images": ["assets/kintsugi/sequencer.png"]
         },
         {
           "title": "Continuous Integration",
@@ -50,7 +61,7 @@
     },
     {
       "id": "champions-tactics",
-      "title": "Champions Tactics\nGrimoria Chronicles",
+      "title": "Champions Tactics Grimoria Chronicles",
       "tagline": "A competitive multiplayer tactical RPG — Ubisoft internship.",
       "year": "2024",
       "status": null,
@@ -61,6 +72,7 @@
       "category": "main",
       "thumbnail": "assets/champions-tactics/thumb.png",
       "thumbnailGif": null,
+      "youtubeId": "",
       "role": "Gameplay & UI, Network & Database, Production's Process",
       "team": "Ubisoft Paris Mobile",
       "context": "6-month internship at Ubisoft Paris Mobile working on a live multiplayer tactical game.",
@@ -73,7 +85,7 @@
         },
         {
           "title": "Network & Database",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           "images": ["assets/champions-tactics/network-1.png", "assets/champions-tactics/network-2.png"]
         },
         {
@@ -97,6 +109,7 @@
       "category": "main",
       "thumbnail": "assets/demons-and-disco/thumb.png",
       "thumbnailGif": "assets/demons-and-disco/thumb.gif",
+      "youtubeId": "",
       "role": "Wwise Implementation, Game Feel and Lead GP",
       "team": "4 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Sound Designer",
       "context": "School project — vertical slice of a couch co-op rhythm game.",
@@ -128,6 +141,7 @@
       "category": "main",
       "thumbnail": "assets/dont-look-down/thumb.png",
       "thumbnailGif": "assets/dont-look-down/thumb.gif",
+      "youtubeId": "",
       "role": "Gameplay, VR Initiation & Support",
       "team": "Mixed team — school jam",
       "context": "2-week game jam, first experience with VR on Unreal Engine 5.",
@@ -135,7 +149,7 @@
       "sections": [
         {
           "title": "VR Gameplay",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           "images": ["assets/dont-look-down/vr.png", "assets/dont-look-down/gameplay.png"]
         }
       ],
@@ -154,6 +168,7 @@
       "category": "main",
       "thumbnail": "assets/iridescence/thumb.png",
       "thumbnailGif": "assets/iridescence/thumb.gif",
+      "youtubeId": "",
       "role": "Level Design Tools, Shipping & Lead GP, Accessibility",
       "team": "3 Artists, 3 Game Designers, 3 Programmers, 1 Sound Designer",
       "context": "School project — puzzle game with a strong focus on accessibility.",
@@ -166,7 +181,7 @@
         },
         {
           "title": "Accessibility",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           "images": ["assets/iridescence/accessibility-1.png", "assets/iridescence/accessibility-2.png"]
         }
       ],
@@ -185,6 +200,7 @@
       "category": "main",
       "thumbnail": "assets/the-last-night-to-hunt/thumb.png",
       "thumbnailGif": null,
+      "youtubeId": "",
       "role": "Quests/Dialogs, AI and Shaders",
       "team": "2 Artists, 2 Game Designers, 2 Programmers, 1 Sound Designer",
       "context": "School project — narrative-focused adventure game.",
@@ -216,17 +232,12 @@
       "category": "side",
       "thumbnail": "assets/cyber-exchange/thumb.png",
       "thumbnailGif": "assets/cyber-exchange/thumb.gif",
+      "youtubeId": "",
       "role": "Gameplay and Assets Implementation",
       "team": "Mixed team — game jam",
       "context": "3-day game jam at IIM.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Gameplay",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/cyber-exchange/gameplay.png"]
-        }
-      ],
+      "sections": [{"title": "Gameplay", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "images": ["assets/cyber-exchange/gameplay.png"]}],
       "related": ["the-duty-of-the-knight", "beboum-fighters", "slay-the-lig"]
     },
     {
@@ -242,17 +253,12 @@
       "category": "side",
       "thumbnail": "assets/the-duty-of-the-knight/thumb.png",
       "thumbnailGif": "assets/the-duty-of-the-knight/thumb.gif",
+      "youtubeId": "",
       "role": "Programming and Design",
       "team": "Solo project",
       "context": "Solo personal project — first complete game from scratch.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Design & Programming",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/the-duty-of-the-knight/gameplay.png", "assets/the-duty-of-the-knight/design.png"]
-        }
-      ],
+      "sections": [{"title": "Design & Programming", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/the-duty-of-the-knight/gameplay.png", "assets/the-duty-of-the-knight/design.png"]}],
       "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
     },
     {
@@ -268,17 +274,12 @@
       "category": "side",
       "thumbnail": "assets/my-package-project/thumb.png",
       "thumbnailGif": "assets/my-package-project/thumb.gif",
+      "youtubeId": "",
       "role": "Tools and More",
       "team": "Solo project",
       "context": "Ongoing personal project — a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Overview",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/my-package-project/overview.png"]
-        }
-      ],
+      "sections": [{"title": "Overview", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/my-package-project/overview.png"]}],
       "related": ["kintsugi", "iridescence", "the-duty-of-the-knight"]
     },
     {
@@ -294,17 +295,12 @@
       "category": "side",
       "thumbnail": "assets/slay-the-lig/thumb.png",
       "thumbnailGif": "assets/slay-the-lig/thumb.gif",
+      "youtubeId": "",
       "role": "Programming and Balancing Tools",
       "team": "3 Persons",
       "context": "1-week school jam — card game inspired by Slay the Spire.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Card System",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/slay-the-lig/cards.png", "assets/slay-the-lig/ui.png"]
-        }
-      ],
+      "sections": [{"title": "Card System", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/slay-the-lig/cards.png", "assets/slay-the-lig/ui.png"]}],
       "related": ["cyber-exchange", "beboum-fighters", "the-duty-of-the-knight"]
     },
     {
@@ -320,17 +316,12 @@
       "category": "side",
       "thumbnail": "assets/geimerophobia/thumb.png",
       "thumbnailGif": "assets/geimerophobia/thumb.gif",
+      "youtubeId": "",
       "role": "Game Engine Initiation, UI and Particles",
       "team": "3 Persons",
       "context": "Low-level engine initiation project built with SFML from scratch.",
       "technologies": ["C++", "SFML"],
-      "sections": [
-        {
-          "title": "Engine & UI",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/geimerophobia/engine.png"]
-        }
-      ],
+      "sections": [{"title": "Engine & UI", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/geimerophobia/engine.png"]}],
       "related": ["cyber-exchange", "tough-sadness", "beboum-fighters"]
     },
     {
@@ -346,17 +337,12 @@
       "category": "side",
       "thumbnail": "assets/a-contre-courant/thumb.png",
       "thumbnailGif": "assets/a-contre-courant/thumb.gif",
+      "youtubeId": "",
       "role": "Physics and Assets Implementation",
       "team": "7 Persons",
       "context": "1-week game jam focused on physics-driven platformer mechanics.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Physics",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/a-contre-courant/physics.png", "assets/a-contre-courant/level.png"]
-        }
-      ],
+      "sections": [{"title": "Physics", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/a-contre-courant/physics.png", "assets/a-contre-courant/level.png"]}],
       "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
     },
     {
@@ -372,17 +358,12 @@
       "category": "side",
       "thumbnail": "assets/lueur-remake/thumb.png",
       "thumbnailGif": "assets/lueur-remake/thumb.gif",
+      "youtubeId": "",
       "role": "Remake and Tools Programming",
       "team": "Solo project",
       "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Remake & Tools",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/lueur-remake/remake.png", "assets/lueur-remake/tools.png"]
-        }
-      ],
+      "sections": [{"title": "Remake & Tools", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/lueur-remake/remake.png", "assets/lueur-remake/tools.png"]}],
       "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
     },
     {
@@ -398,17 +379,12 @@
       "category": "side",
       "thumbnail": "assets/tough-sadness/thumb.png",
       "thumbnailGif": "assets/tough-sadness/thumb.gif",
+      "youtubeId": "",
       "role": "GitHub, Gameplay and UI",
       "team": "3 Persons",
       "context": "1-week game jam — emotional survival game.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Gameplay & UI",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/tough-sadness/gameplay.png"]
-        }
-      ],
+      "sections": [{"title": "Gameplay & UI", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/tough-sadness/gameplay.png"]}],
       "related": ["cyber-exchange", "geimerophobia", "lueur-remake"]
     },
     {
@@ -424,17 +400,12 @@
       "category": "side",
       "thumbnail": "assets/beboum-fighters/thumb.png",
       "thumbnailGif": "assets/beboum-fighters/thumb.gif",
+      "youtubeId": "",
       "role": "Lead Programmer, GitHub and Local Multiplayer",
       "team": "9 Persons",
       "context": "3-day game jam — local multiplayer fighting game.",
       "technologies": ["Unity", "C#"],
-      "sections": [
-        {
-          "title": "Local Multiplayer",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]
-        }
-      ],
+      "sections": [{"title": "Local Multiplayer", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]}],
       "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]
     }
   ]

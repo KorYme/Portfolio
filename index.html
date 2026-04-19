@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maxime CORBY — Gameplay &amp; Tools Programmer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">Maxime Corby</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Main Projects</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
-  </nav>
+<nav>
+  <a href="index.html" class="nav-logo">Maxime Corby</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Main Projects</a></li>
+    <li><a href="side-projects.html">Side Projects</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul>
+</nav>
 
-  <main class="page">
-
-    <section class="hero reveal">
-      <div class="hero-eyebrow"><span>Portfolio — Game Dev</span></div>
-      <h1>Maxime <em>"KorYme"</em><br>CORBY</h1>
-      <p class="hero-sub">Gameplay &amp; Tools Programmer</p>
-      <div class="hero-actions">
-        <a href="side-projects.html" class="btn">Side Projects</a>
-        <a href="about.html" class="btn btn-primary">About Me</a>
-      </div>
-    </section>
-
-    <div id="grid-container">
-      <div class="section-label reveal"><span>Main Projects</span></div>
-      <div class="project-grid" id="main-grid">
-        <!-- injected by JS -->
-      </div>
+<main class="page">
+  <section class="hero reveal">
+    <p class="hero-label">Portfolio — Game Dev</p>
+    <h1>Maxime "KorYme" CORBY</h1>
+    <p class="hero-sub">Gameplay &amp; Tools Programmer</p>
+    <div class="hero-cta">
+      <a href="side-projects.html" class="btn">Side Projects</a>
+      <a href="about.html" class="btn primary">About Me</a>
     </div>
+  </section>
 
-  </main>
+  <div class="section-title reveal">Main Projects</div>
+  <div class="project-grid two-col" id="main-grid"></div>
+</main>
 
-  <footer>
-    <span>© 2025 Maxime Corby</span>
-    <nav class="footer-links">
-      <a href="index.html">Main Projects</a>
-      <a href="side-projects.html">Side Projects</a>
-      <a href="about.html">About Me</a>
-    </nav>
-  </footer>
+<footer>
+  <span>© 2025 Maxime Corby</span>
+  <nav class="footer-links">
+    <a href="index.html">Main Projects</a>
+    <a href="side-projects.html">Side Projects</a>
+    <a href="about.html">About Me</a>
+  </nav>
+</footer>
+<div class="back-top">↑</div>
 
-  <a class="back-top" title="Back to top">↑</a>
-
-  <script src="main.js"></script>
-  <script>
-    /* ---- Build grid from JSON ---- */
-    async function buildGrid() {
-      const res  = await fetch('projects.json');
-      const data = await res.json();
-      const main = data.projects.filter(p => p.category === 'main');
-      const grid = document.getElementById('main-grid');
-
-      main.forEach((p, i) => {
-        const a = document.createElement('a');
-        a.href = `project.html?id=${p.id}`;
-        a.className = 'card reveal';
-        if (i % 2 !== 0) a.classList.add(`rd${Math.min(i,3)}`);
-
-        /* thumb */
-        let thumbHTML = `<div class="thumb-ph">[ ${p.title} ]</div>`;
-        if (p.thumbnail) {
-          if (p.thumbnailGif) {
-            thumbHTML = `
-              <img class="img-still" src="${p.thumbnail}"  alt="${p.title}" loading="lazy">
-              <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`;
-          } else {
-            thumbHTML = `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">`;
-          }
-        }
-
-        a.innerHTML = `
-          <div class="card-thumb">
-            ${thumbHTML}
-            <span class="card-arrow">View →</span>
-          </div>
-          <div class="card-body">
-            <div class="card-index">${String(i+1).padStart(2,'0')}</div>
-            <div class="card-title">${p.title}</div>
-            <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
-            <div class="card-role">My job : ${p.role}</div>
-          </div>`;
-        grid.appendChild(a);
-      });
-
-      /* re-trigger reveal observer on new nodes */
-      const io = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-      }, { threshold: 0.06 });
-      grid.querySelectorAll('.reveal').forEach(el => io.observe(el));
+<script src="main.js"></script>
+<script>
+async function buildGrid() {
+  const data = await fetch('projects.json').then(r => r.json());
+  const grid = document.getElementById('main-grid');
+  data.projects.filter(p => p.category === 'main').forEach((p, i) => {
+    let thumb = `<div class="thumb-ph">[ ${p.title} ]</div>`;
+    if (p.thumbnail) {
+      thumb = p.thumbnailGif
+        ? `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">
+           <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`
+        : `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">`;
     }
-    buildGrid();
-  </script>
+    const techChips = (p.technologies||[]).map(t =>
+      `<span class="chip">${getTechIcon(t)}<span>${t}</span></span>`).join('');
+    const techBadges = techBadgeHTML(p.technologies, 'tech-badge');
+
+    const a = document.createElement('a');
+    a.href = `project.html?id=${p.id}`;
+    a.className = 'card reveal' + (i>0 ? ` rd${Math.min(i,3)}` : '');
+    a.innerHTML = `
+      <div class="card-thumb">
+        ${thumb}
+        <div class="card-overlay">
+          <div class="card-overlay-title">${p.title}</div>
+          <div class="card-overlay-meta">${p.engine} · ${p.genre} · ${p.duration}</div>
+          <div class="card-overlay-role">My job : ${p.role}</div>
+          <div class="card-overlay-techs">${techChips}</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
+        <div class="card-title">${p.title}</div>
+        <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
+        <div class="card-role">My job : ${p.role}</div>
+        <div class="card-tech-row">${techBadges}</div>
+      </div>`;
+    grid.appendChild(a);
+  });
+  revealAll(grid);
+}
+buildGrid();
+</script>
 </body>
 </html>

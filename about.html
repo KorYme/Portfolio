@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maxime CORBY — About Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">Maxime Corby</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Main Projects</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
+<nav>
+  <a href="index.html" class="nav-logo">Maxime Corby</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Main Projects</a></li>
+    <li><a href="side-projects.html">Side Projects</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <div class="about-layout" id="about-layout"></div>
+</main>
+
+<footer>
+  <span>© 2025 Maxime Corby</span>
+  <nav class="footer-links">
+    <a href="index.html">Main Projects</a>
+    <a href="side-projects.html">Side Projects</a>
+    <a href="about.html">About Me</a>
   </nav>
+</footer>
+<div class="back-top">↑</div>
 
-  <main class="page">
-    <div class="about-layout">
+<script src="main.js"></script>
+<script>
+async function buildAbout() {
+  const data = await fetch('projects.json').then(r => r.json());
+  const a    = data.about;
+  const layout = document.getElementById('about-layout');
 
-      <!-- Left : portrait sticky -->
-      <aside class="about-left reveal">
-        <div class="portrait-wrap">
-          <img src="assets/about/photo.png" alt="Maxime Corby">
+  /* Portrait — toujours carré (aspect-ratio 1/1 dans CSS) */
+  const portraitHTML = a.photo
+    ? `<div class="portrait-wrap"><img src="${a.photo}" alt="${a.name}"></div>`
+    : `<div class="portrait-ph">[ Photo ]</div>`;
+
+  /* Canva embed — optionnel */
+  let canvaHTML = '';
+  if (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') {
+    canvaHTML = `
+      <div class="canva-wrap reveal">
+        <h3>Curriculum Vitae</h3>
+        <div class="canva-frame">
+          <iframe src="${a.canvaEmbedUrl}" allowfullscreen allow="fullscreen *;"></iframe>
         </div>
-        <p class="about-name">Maxime Corby</p>
-        <p class="about-role">Gameplay &amp; Tools Programmer</p>
-        <div class="about-contact">
-          <a href="tel:+33781868087">+33 7 81 86 80 87</a>
-          <a href="https://drive.google.com/drive/folders/1CFxoI2vYg9N9ISzoM_C2Lmq7rdtgTY9v" target="_blank" rel="noopener">Download CV ↗</a>
-        </div>
-      </aside>
+      </div>`;
+  } else {
+    /* Fallback : lien download CV si pas d'embed */
+    canvaHTML = '';
+  }
 
-      <!-- Right : content -->
-      <div class="about-right reveal rd1">
+  /* Bio paragraphs */
+  const bioHTML = (a.bio || []).map(p => `<p>${p}</p>`).join('');
 
-        <h3>Hello</h3>
-        <p>Hi, I'm Maxime, a student in Game Programming at IIM Digital School. My goal is to make the eyes of people sparkle while playing my games. I'm really interested in developing tools for myself or others to ease the production and make it more pleasant.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  /* Skills */
+  const skillsHTML = techBadgeHTML(a.skills, 'tech-tag');
 
-        <h3>LeoIndieGames</h3>
-        <p>I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of Treasurer for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also gave classes to students who wanted to learn Unity.</p>
+  /* Education */
+  const eduHTML = (a.education || []).map(e =>
+    `<p><strong style="color:var(--text)">${e.school}</strong><br>${e.degree} — ${e.period}</p>`
+  ).join('');
 
-        <h3>Skills</h3>
-        <div class="tech-tags" style="margin-bottom:0">
-          <span class="tech-tag">C#</span>
-          <span class="tech-tag">Unity</span>
-          <span class="tech-tag">Unreal Engine 5</span>
-          <span class="tech-tag">C++</span>
-          <span class="tech-tag">Wwise</span>
-          <span class="tech-tag">GitHub Actions</span>
-          <span class="tech-tag">CI/CD</span>
-          <span class="tech-tag">HLSL / Shaders</span>
-        </div>
-
-        <h3>Education</h3>
-        <p><strong style="color:var(--white);font-weight:500">IIM Digital School</strong><br>Game Programming — 2021 → 2025</p>
-
+  layout.innerHTML = `
+    <!-- Left : portrait sticky -->
+    <aside class="about-left reveal">
+      ${portraitHTML}
+      <p class="about-name">${a.name}</p>
+      <p class="about-role">${a.role}</p>
+      <div class="about-contacts">
+        ${a.phone ? `<a href="tel:${a.phone.replace(/\s/g,'')}">${a.phone}</a>` : ''}
+        ${a.cvUrl ? `<a href="${a.cvUrl}" target="_blank" rel="noopener">Download CV ↗</a>` : ''}
       </div>
-    </div>
-  </main>
+    </aside>
 
-  <footer>
-    <span>© 2025 Maxime Corby</span>
-    <nav class="footer-links">
-      <a href="index.html">Main Projects</a>
-      <a href="side-projects.html">Side Projects</a>
-      <a href="about.html">About Me</a>
-    </nav>
-  </footer>
-  <a class="back-top" title="Back to top">↑</a>
-  <script src="main.js"></script>
+    <!-- Right -->
+    <div class="about-right reveal rd1">
+      <h3>Hello</h3>
+      ${bioHTML}
+
+      <h3>LeoIndieGames</h3>
+      <p>${a.associations}</p>
+
+      <h3>Skills</h3>
+      <div class="tech-tags">${skillsHTML}</div>
+
+      <h3>Education</h3>
+      ${eduHTML}
+
+      ${canvaHTML}
+    </div>`;
+
+  revealAll(layout);
+}
+buildAbout();
+</script>
 </body>
 </html>
