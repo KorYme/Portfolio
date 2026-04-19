@@ -31,8 +31,17 @@ function techBadgeHTML(techs, cls = 'tech-tag') {
 function renderImgs(images) {
   const v = (images || []).filter(Boolean).slice(0, 3);
   if (!v.length) return '';
+
   const cls = ['', 'imgs-1', 'imgs-2', 'imgs-3'][v.length];
-  return `<div class="proj-imgs ${cls}">${v.map(s => `<img class="proj-img" src="${s}" alt="" loading="lazy">`).join('')}</div>`;
+
+  const items = v.map(src => {
+    if (src.match(/\.mp4$/i)) {
+      return `<video class="proj-img" src="${src}" autoplay muted loop playsinline></video>`;
+    }
+    return `<img class="proj-img" src="${src}" alt="" loading="lazy">`;
+  }).join('');
+
+  return `<div class="proj-imgs ${cls}">${items}</div>`;
 }
 
 /* ── Shared init ─────────────────────────────────── */

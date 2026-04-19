@@ -301,6 +301,9 @@ nav {
   font-size: .6rem; letter-spacing: .1em; color: var(--border);
 }
 
+/* Video layouts */
+video.proj-img { object-fit: cover; }
+
 /* YouTube embed */
 .yt-wrap {
   margin-bottom: 72px;

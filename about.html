@@ -44,7 +44,7 @@ async function buildAbout() {
     : `<div class="portrait-ph">[ Photo ]</div>`;
 
   /* Canva embed — optionnel */
-  let canvaHTML = '';
+  let canvaHTML;
   if (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') {
     canvaHTML = `
       <div class="canva-wrap reveal">
