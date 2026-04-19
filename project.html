@@ -84,6 +84,20 @@ async function render() {
   document.title = `Maxime CORBY — ${p.title}`;
   const backHref = p.category === 'side' ? 'side-projects.html' : 'index.html';
 
+  /* YouTube — optional */
+  const ytHTML = p.youtubeId ? `
+    <div class="yt-wrap reveal">
+      <h3>Trailer</h3>
+      <div class="yt-frame">
+        <iframe
+          src="https://www.youtube.com/embed/${p.youtubeId}"
+          title="${p.title} — Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>` : '';
+
   /* sections */
   const sectionsHTML = (p.sections||[]).map((s, i) => `
     <div class="proj-section reveal">
@@ -98,20 +112,6 @@ async function render() {
         </div>
       </div>
     </div>`).join('');
-
-  /* YouTube — optional */
-  const ytHTML = p.youtubeId ? `
-    <div class="yt-wrap reveal">
-      <h3>Trailer</h3>
-      <div class="yt-frame">
-        <iframe
-          src="https://www.youtube.com/embed/${p.youtubeId}"
-          title="${p.title} — Trailer"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>` : '';
 
   /* related */
   const rels = (p.related||[]).map(rid => all.find(x => x.id === rid)).filter(Boolean).slice(0,3);
@@ -159,11 +159,11 @@ async function render() {
       </div>
     </div>
 
-    <!-- Sections -->
-    ${sectionsHTML}
-
     <!-- YouTube trailer (optionnel) -->
     ${ytHTML}
+
+    <!-- Sections -->
+    ${sectionsHTML}
 
     <!-- Related -->
     ${relatedHTML}

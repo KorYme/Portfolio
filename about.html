@@ -64,11 +64,6 @@ async function buildAbout() {
   /* Skills */
   const skillsHTML = techBadgeHTML(a.skills, 'tech-tag');
 
-  /* Education */
-  const eduHTML = (a.education || []).map(e =>
-    `<p><strong style="color:var(--text)">${e.school}</strong><br>${e.degree} — ${e.period}</p>`
-  ).join('');
-
   layout.innerHTML = `
     <!-- Left : portrait sticky -->
     <aside class="about-left reveal">
@@ -91,9 +86,6 @@ async function buildAbout() {
 
       <h3>Skills</h3>
       <div class="tech-tags">${skillsHTML}</div>
-
-      <h3>Education</h3>
-      ${eduHTML}
 
       ${canvaHTML}
     </div>`;

@@ -2,19 +2,16 @@
   "about": {
     "name": "Maxime \"KorYme\" CORBY",
     "role": "Gameplay & Tools Programmer",
-    "photo": "assets/photo.jpg",
+    "photo": "assets/about/photo.png",
     "phone": "+33 7 81 86 80 87",
     "cvUrl": "https://drive.google.com/drive/folders/1CFxoI2vYg9N9ISzoM_C2Lmq7rdtgTY9v?usp=sharing",
-    "canvaEmbedUrl": "",
+    "canvaEmbedUrl": "https://www.canva.com/design/DAFu1Zp-S0g/O4ZT-o31Ig471lFwRlBmOQ/view?embed",
     "bio": [
       "Hi, I'm Maxime, a student in Game Programming at IIM Digital School. My goal is to make the eyes of people sparkle while playing my games. I'm really interested in developing tools for myself or others to ease the production and make it more pleasant.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     ],
     "associations": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of Treasurer for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also gave classes to students who wanted to learn Unity.",
-    "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Wwise", "GitHub Actions", "CI/CD", "HLSL / Shaders"],
-    "education": [
-      { "school": "IIM Digital School", "degree": "Game Programming", "period": "2021 → 2025" }
-    ]
+    "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Wwise", "GitHub Actions", "CI/CD", "HLSL / Shaders"]
   },
   "projects": [
     {
@@ -30,7 +27,7 @@
       "category": "main",
       "thumbnail": "assets/kintsugi/thumb.png",
       "thumbnailGif": "assets/kintsugi/thumb.gif",
-      "youtubeId": "",
+      "youtubeId": "TkcP0TLfAFA",
       "role": "Level and Rendering Tools, Sequencer & CI",
       "team": "3 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Producer, 1 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",

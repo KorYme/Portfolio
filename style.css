@@ -303,7 +303,9 @@ nav {
 
 /* YouTube embed */
 .yt-wrap {
-  margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border);
+  margin-bottom: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--border);
 }
 .yt-wrap h3 {
   font-family: var(--fs); font-size: .62rem; font-weight: 700;
