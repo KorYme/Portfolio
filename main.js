@@ -4,15 +4,15 @@
 
 /* ── Tech icon map (inline SVG paths, no CDN dependency) ─── */
 const TECH_ICONS = {
-  'Unity':            'assets/icons/unity.png',
-  'C#':               'assets/icons/csharp.png',
-  'Unreal Engine 5':  'assets/icons/unreal.png',
-  'C++':              'assets/icons/cpp.png',
-  'Wwise':            'assets/icons/wwise.png',
-  'GitHub Actions':   'assets/icons/github-actions.png',
-  'Blueprint':        'assets/icons/blueprint.png',
-  'HLSL':             'assets/icons/hlsl.png',
-  'default':          'assets/icons/default.png'
+  'Unity':            'assets/_Logos/unity_white.png',
+  'C#':               'assets/_Logos/csharp_black.png',
+  'Unreal Engine 5':  'assets/_Logos/unreal_engine.png',
+  'C++':              'assets/_Logos/cpp_white.png',
+  'Wwise':            'assets/_Logos/wwise.png',
+  'GitHub Actions':   'assets/_Logos/github_white.png',
+  'Blueprint':        'assets/_Logos/default.png',
+  'HLSL':             'assets/_Logos/hlsl.png',
+  'default':          'assets/_Logos/default.png'
 };
 
 function getTechIcon(name) {
