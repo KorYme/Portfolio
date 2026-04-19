@@ -11,7 +11,7 @@
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     ],
     "associations": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of Treasurer for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also gave classes to students who wanted to learn Unity.",
-    "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Wwise", "GitHub Actions", "CI/CD", "HLSL / Shaders"]
+    "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Wwise", "GitHub Actions", "CI/CD"]
   },
   "projects": [
     {
@@ -31,7 +31,7 @@
       "role": "Level and Rendering Tools, Sequencer & CI",
       "team": "3 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Producer, 1 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",
-      "technologies": ["Unity", "C#", "Wwise", "GitHub Actions"],
+      "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions"],
       "sections": [
         {
           "title": "Level Tools",
@@ -59,36 +59,36 @@
     {
       "id": "champions-tactics",
       "title": "Champions Tactics Grimoria Chronicles",
-      "tagline": "A competitive multiplayer tactical RPG — Ubisoft internship.",
+      "tagline": "Discover the legends of Grimoria and leave your name in the chronicles.",
       "year": "2024",
-      "status": null,
+      "status": "Available",
       "engine": "Unity 3D",
       "genre": "Multiplayer Turn-Based RPG",
       "duration": "6 Months",
       "teamSize": "Internship",
       "category": "main",
-      "thumbnail": "assets/champions-tactics/thumb.png",
+      "thumbnail": "assets/championstactics/thumb.png",
       "thumbnailGif": null,
-      "youtubeId": "",
+      "youtubeId": "1g0S4QY6b_U",
       "role": "Gameplay & UI, Network & Database, Production's Process",
-      "team": "Ubisoft Paris Mobile",
-      "context": "6-month internship at Ubisoft Paris Mobile working on a live multiplayer tactical game.",
-      "technologies": ["Unity", "C#", "Photon", "PlayFab"],
+      "team": "40+ persons",
+      "context": "3rd Year internship at Ubisoft Paris Mobile.",
+      "technologies": ["Unity", "C#", "Steam"],
       "sections": [
         {
           "title": "Gameplay & UI",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "images": ["assets/champions-tactics/gameplay.png"]
+          "body": "My main job on this project was to polish the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also implemented secondary UI features to it, such as emotes or a news carousel, giving me the opportunity to improve my understanding of UIs in Unity.",
+          "images": ["assets/championstactics/Gameplay_Champions_Tactics.gif"]
         },
         {
           "title": "Network & Database",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-          "images": ["assets/champions-tactics/network-1.png", "assets/champions-tactics/network-2.png"]
+          "body": "Champions Tactics Grimoria Chronicles being a multiplayer game, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered database management with MongoDB, which I used for features such as a stat history for all the figurines in-game.",
+          "images": ["assets/championstactics/mongodb.png"]
         },
         {
           "title": "Production's Process",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": []
+          "body": "This internship was my first experience in the gamedev industry. I learned all the production's processes, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been onboarded and followed up during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
+          "images": ["assets/championstactics/team.jpg"]
         }
       ],
       "related": ["kintsugi", "iridescence", "demons-and-disco"]
@@ -169,7 +169,7 @@
       "role": "Level Design Tools, Shipping & Lead GP, Accessibility",
       "team": "3 Artists, 3 Game Designers, 3 Programmers, 1 Sound Designer",
       "context": "School project — puzzle game with a strong focus on accessibility.",
-      "technologies": ["Unity", "C#"],
+      "technologies": ["Unity", "C#", "PlayStore"],
       "sections": [
         {
           "title": "Level Design Tools",
