@@ -78,7 +78,7 @@
         {
           "title": "Gameplay & UI",
           "body": "My main job on this project was to polish the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also implemented secondary UI features to it, such as emotes or a news carousel, giving me the opportunity to improve my understanding of UIs in Unity.",
-          "images": ["assets/championstactics/Gameplay_Champions_Tactics.gif"]
+          "images": ["assets/championstactics/gameplay_champions_tactics.gif"]
         },
         {
           "title": "Network & Database",

@@ -4,17 +4,17 @@
 
 /* ── Tech icon map (inline SVG paths, no CDN dependency) ─── */
 const TECH_ICONS = {
-  'Unity':            'assets/_Logos/unity_white.png',
-  'C#':               'assets/_Logos/csharp_black.png',
-  'Unreal Engine 5':  'assets/_Logos/unreal_engine.png',
-  'C++':              'assets/_Logos/cpp_white.png',
-  'Wwise':            'assets/_Logos/wwise.png',
-  'GitHub Actions':   'assets/_Logos/github_white.png',
-  'Blueprint':        'assets/_Logos/default.png',
-  'HLSL':             'assets/_Logos/hlsl.png',
-  'Steam':            'assets/_Logos/steam_white.png',
-  'PlayStore':        'assets/_Logos/google_play.png',
-  'default':          'assets/_Logos/default.png'
+  'Unity':            'assets/_logos/unity_white.png',
+  'C#':               'assets/_logos/csharp_black.png',
+  'Unreal Engine 5':  'assets/_logos/unreal_engine.png',
+  'C++':              'assets/_logos/cpp_white.png',
+  'Wwise':            'assets/_logos/wwise.png',
+  'GitHub Actions':   'assets/_logos/github_white.png',
+  'Blueprint':        'assets/_logos/pc_white.png',
+  'HLSL':             'assets/_logos/hlsl.png',
+  'Steam':            'assets/_logos/steam_white.png',
+  'PlayStore':        'assets/_logos/google_play.png',
+  'default':          'assets/_logos/pc_white.png'
 };
 
 function getTechIcon(name) {
