@@ -14,6 +14,7 @@ const TECH_ICONS = {
   'HLSL':             'assets/_logos/hlsl.png',
   'Steam':            'assets/_logos/steam_white.png',
   'PlayStore':        'assets/_logos/google_play.png',
+  'Jira':             'assets/_logos/jira.png',
   'default':          'assets/_logos/pc_white.png'
 };
 
