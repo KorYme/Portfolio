@@ -19,39 +19,39 @@
       "title": "Kintsugi",
       "tagline": "Embrace your curse in this sumptuous adventure.",
       "year": "2025",
-      "status": "Coming Soon",
+      "status": "Available on Steam",
       "engine": "Unity 2D",
       "genre": "Contemplative Game",
-      "duration": "10 Weeks (WIP)",
-      "teamSize": "13 Persons",
+      "duration": "17 Weeks",
+      "teamSize": "16 Persons",
       "category": "main",
       "thumbnail": "assets/kintsugi/kintsugi_logo.png",
       "thumbnailGif": "assets/kintsugi/kintsugi_tmp_preview.gif",
       "youtubeId": "TkcP0TLfAFA",
       "role": "Level and Rendering Tools, Sequencer & CI",
-      "team": "3 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Producer, 1 Sound Designer",
+      "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producer, 3 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",
-      "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions"],
+      "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
       "sections": [
         {
           "title": "Level Tools",
-          "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate git conflicts between artists and game designers, so I developed a scene composition system. We split the level in sub sections and the sub sections were also split with the game artists scenes (containing mostly sprites but also sequencers), the level designers scenes (with colliders), and the sound designers scenes (with gameobject triggering Wwise events).",
-          "images": ["assets/Beboum Fighters/BéboumeIce.mp4", "assets/Kintsugi/Kintsugi_TMP_Logo_Preview.gif"]
+          "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate git conflicts between artists and game designers, so I developed a scene composition system, so we split the level in sub sections and the sub sections were also split with the game artists scenes (containing mostly sprites but also sequencers), the level designers scenes (with colliders), and the sound designers scenes (with gameobject triggering Wwise events).",
+          "images": ["assets/kintsugi/mutliple_scene_buttons.gif"]
         },
         {
           "title": "Rendering Tools",
-          "body": "I developed the main tool used to ease the implementation of complex level art. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a good rendering order, I developed the first version of this tool which automatically changed the sorting layer value of all renderers in the scene based on their Z position and sorted them in the hierarchy to keep the scenes clean. Then, we used it to change the materials on objects based on their layer to create a depth feeling without changing the asset itself.",
-          "images": ["assets/kintsugi/rendering-tools.png"]
+          "body": "I developed the main tool used to ease the implementation of complex level arts. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a good rendering order, I developed the first version of this tool which automatically changed the sorting layer value of all renderers in the scene based on their Z position and sorting them in the hierarchy to keep the scenes clean. Then, we used it to change the materials on objects based on their layer to create a depth feeling without changing the asset itself.",
+          "images": ["assets/kintsugi/tool_layer_sorting_layer.gif"]
         },
         {
           "title": "Sequencer",
-          "body": "At one point during production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create emotional moments. I made this system as simple as possible to easily implement effects such as enabling abilities for the player, changing controller profile, playing animations, camera shakes, and so on.",
-          "images": ["assets/kintsugi/sequencer.png"]
+          "body": "Simultaneously, we used a CI system based on Github Actions which gave us a monitoring on the build state, so we regularly debugged the project. It helped us to version and QA the project. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel of the project.",
+          "images": ["assets/kintsugi/sequencers_possibilites.mp4"]
         },
         {
           "title": "Continuous Integration",
           "body": "Simultaneously, we used a CI system based on GitHub Actions which gave us monitoring on the build state, so we regularly debugged the project. It helped us to version and QA the project. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel with the project.",
-          "images": []
+          "images": ["assets/kintsugi/ci_discord_result.png"]
         }
       ],
       "related": ["champions-tactics", "demons-and-disco", "the-last-night-to-hunt"]
@@ -61,14 +61,14 @@
       "title": "Champions Tactics Grimoria Chronicles",
       "tagline": "Discover the legends of Grimoria and leave your name in the chronicles.",
       "year": "2024",
-      "status": "Available",
+      "status": "Available on steam",
       "engine": "Unity 3D",
       "genre": "Multiplayer Turn-Based RPG",
       "duration": "6 Months",
       "teamSize": "Internship",
       "category": "main",
       "thumbnail": "assets/championstactics/thumb.png",
-      "thumbnailGif": null,
+      "thumbnailGif": "assets/championstactics/gameplay_champions_tactics.gif",
       "youtubeId": "1g0S4QY6b_U",
       "role": "Gameplay & UI, Network & Database, Production's Process",
       "team": "40+ persons",
@@ -77,17 +77,17 @@
       "sections": [
         {
           "title": "Gameplay & UI",
-          "body": "My main job on this project was to polish the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also implemented secondary UI features to it, such as emotes or a news carousel, giving me the opportunity to improve my understanding of UIs in Unity.",
+          "body": "My main job on this project was to <b>polish</b> the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also <b>implemented secondary UI features</b> to it, such as emotes or a news carousel, giving me the opportunity to <b>improve my understanding of UIs</b> in Unity.",
           "images": ["assets/championstactics/gameplay_champions_tactics.gif"]
         },
         {
           "title": "Network & Database",
-          "body": "Champions Tactics Grimoria Chronicles being a multiplayer game, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered database management with MongoDB, which I used for features such as a stat history for all the figurines in-game.",
+          "body": "Champions Tactics Grimoria Chronicles being a <b>multiplayer game</b>, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered <b>database management with MongoDB</b>, which I used for features such as a stat history for all the figurines in-game.",
           "images": ["assets/championstactics/mongodb.png"]
         },
         {
           "title": "Production's Process",
-          "body": "This internship was my first experience in the gamedev industry. I learned all the production's processes, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been onboarded and followed up during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
+          "body": "This internship was my first experience in the gamedev industry. I learned all the <b>production's processes</b>, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been <b>onboarded and followed up</b> during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
           "images": ["assets/championstactics/team.jpg"]
         }
       ],
@@ -96,34 +96,39 @@
     {
       "id": "demons-and-disco",
       "title": "Demons and Disco",
-      "tagline": "Survive hell, feel the rhythm.",
+      "tagline": "Make them dance till their death.",
       "year": "2023",
-      "status": null,
+      "status": "Available on itch.io",
       "engine": "Unity 2D",
       "genre": "Rhythm Couch Game",
       "duration": "7 Weeks",
       "teamSize": "13 Persons",
       "category": "main",
-      "thumbnail": "assets/demons-and-disco/thumb.png",
-      "thumbnailGif": "assets/demons-and-disco/thumb.gif",
-      "youtubeId": "",
+      "thumbnail": "assets/demonsanddisco/banniere_carre.png",
+      "thumbnailGif": "assets/demonsanddisco/dnd_preview.gif",
+      "youtubeId": "03-hs52nU7g",
       "role": "Wwise Implementation, Game Feel and Lead GP",
-      "team": "4 Game Artists, 4 Game Designers, 4 Game Programmers, 1 Sound Designer",
+      "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers, 2 Producers, 2 Sound Designers",
       "context": "School project — vertical slice of a couch co-op rhythm game.",
-      "technologies": ["Unity", "C#", "Wwise"],
+      "technologies": ["Unity", "C#", "Wwise", "Jira"],
       "sections": [
         {
           "title": "Wwise Implementation",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/demons-and-disco/wwise.png", "assets/demons-and-disco/wwise-2.png"]
+          "body": "Developing a rhythm game is a real challenge, it requires to get the <b>beat of a music</b> with the more precision as possible. After some R&D, we thought about using an <b>external sound engine</b>, so we decided to give Wwise a try. I personally worked on it <b>with the sound designers</b> and integrated the entire <b>audio game loop</b> and every SFX in Unity.",
+          "images": ["assets/demonsanddisco/wwise.png"]
         },
         {
-          "title": "Game Feel & Lead GP",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-          "images": ["assets/demons-and-disco/gamefeel.png"]
+          "title": "Game Feel",
+          "body": "The idea behind this project, was <b>to develop a slice</b>. This objective could only be achieved by <b>polishing every feature</b> and implementing as much feedbacks as possible. We combine these stakes and the necessity to make the player <b>feel the rhythm</b> to synchronize all of our <b>juiciness aspects on the beat</b>.",
+          "images": ["assets/demonsanddisco/feedbacks.png"]
+        },
+        {
+          "title": "Lead Programmer",
+          "body": "During this whole project, I learned how to use <b>Jira</b> thanks to the producers we had. I managed the game programming part of the team, by <b>creating and dispatching tickets</b>. I also communicate with the rest of the team to keep track of the progress of everyone and <b>ensure the smooth development</b> of the game.",
+          "images": ["assets/demonsanddisco/jira.png"]
         }
       ],
-      "related": ["kintsugi", "iridescence", "the-last-night-to-hunt"]
+      "related": ["kintsugi", "champions-tactics", "iridescence"]
     },
     {
       "id": "dont-look-down",
