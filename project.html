@@ -52,12 +52,6 @@ function relatedCard(p, i) {
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
       <div class="card-thumb">
         ${thumb}
-        <div class="card-overlay">
-          <div class="card-overlay-title">${p.title}</div>
-          <div class="card-overlay-meta">${p.engine} · ${p.genre}</div>
-          <div class="card-overlay-role">My job : ${p.role}</div>
-          <div class="card-overlay-techs">${techChips}</div>
-        </div>
       </div>
       <div class="card-body">
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
