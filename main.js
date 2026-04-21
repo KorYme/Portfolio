@@ -15,6 +15,7 @@ const TECH_ICONS = {
   'Steam':            'assets/_logos/steam_white.png',
   'PlayStore':        'assets/_logos/google_play.png',
   'Jira':             'assets/_logos/jira.png',
+  'VR':               'assets/_logos/vr_white.png',
   'default':          'assets/_logos/pc_white.png'
 };
 

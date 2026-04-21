@@ -133,58 +133,68 @@
     {
       "id": "dont-look-down",
       "title": "Don't Look Down",
-      "tagline": "A visceral VR horror experience in the dark.",
+      "tagline": "Keep going down. There is no other outcome.",
       "year": "2024",
-      "status": null,
+      "status": "Available on itch.io",
       "engine": "Unreal Engine 5",
       "genre": "VR Horror Game",
       "duration": "2 Weeks",
       "teamSize": "11 Persons",
       "category": "main",
-      "thumbnail": "assets/dont-look-down/thumb.png",
-      "thumbnailGif": "assets/dont-look-down/thumb.gif",
-      "youtubeId": "",
+      "thumbnail": "assets/dontlookdown/keyart.png",
+      "thumbnailGif": "assets/dontlookdown/previewdld.gif",
+      "youtubeId": "dFm1Q-Eu-sc",
       "role": "Gameplay, VR Initiation & Support",
-      "team": "Mixed team — school jam",
-      "context": "2-week game jam, first experience with VR on Unreal Engine 5.",
-      "technologies": ["Unreal Engine 5", "Blueprint", "C++", "OpenXR"],
+      "team": "3 Game Artists, 3 Game Designers, 4 Game Programmers, 1 Producer",
+      "context": "2-week VR game jam.",
+      "technologies": ["Unreal Engine 5", "C++", "VR"],
       "sections": [
         {
+          "title": "Initiation to VR",
+          "body": "As my first project with Virtual Reality, I had to learn all the basics on how to make the headset work or how to link it to the engine. Once everything was setup, we used the VR template from Unreal Engine to start our only-2-weeks journey. We <b>tweaked the already implemented features</b> and iterated as much as possible using <b>Blueprint</b>.",
+          "images": ["assets/dontlookdown/vr_template_example.gif"]
+        },
+        {
           "title": "VR Gameplay",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-          "images": ["assets/dont-look-down/vr.png", "assets/dont-look-down/gameplay.png"]
+          "body": "During this project, I focused on <b>simple but clean toys</b> such as the doors of the electric boxes or the pliers interaction, and even the <b>glow sticks</b>, which have to be <b>cracked and then shaken</b> to emit light. I also made a <b>simple inventory</b> on the belt, using the slot feature, to ensure the player can keep its glowstick and pliers safe.",
+          "images": ["assets/dontlookdown/gameplaydld_02.png"]
         }
       ],
-      "related": ["kintsugi", "champions-tactics", "iridescence"]
+      "related": ["champions-tactics", "the-last-night-to-hunt", "cyber-exchange"]
     },
     {
       "id": "iridescence",
       "title": "Iridescence",
       "tagline": "A puzzle game that plays with light and perception.",
       "year": "2023",
-      "status": null,
+      "status": "Available on Google Play Store",
       "engine": "Unity 2D",
       "genre": "Puzzle Game",
       "duration": "4 Weeks",
       "teamSize": "10 Persons",
       "category": "main",
-      "thumbnail": "assets/iridescence/thumb.png",
-      "thumbnailGif": "assets/iridescence/thumb.gif",
-      "youtubeId": "",
+      "thumbnail": "assets/iridescence/wallpaper-1-v2.png",
+      "thumbnailGif": "assets/iridescence/overview_2.gif",
+      "youtubeId": "OVtsevekV_o",
       "role": "Level Design Tools, Shipping & Lead GP, Accessibility",
-      "team": "3 Artists, 3 Game Designers, 3 Programmers, 1 Sound Designer",
-      "context": "School project — puzzle game with a strong focus on accessibility.",
+      "team": "3 Game Artists, 4 Game Designers, 3 Game Programmers",
+      "context": "School project — puzzle mobile game.",
       "technologies": ["Unity", "C#", "PlayStore"],
       "sections": [
         {
           "title": "Level Design Tools",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/iridescence/tools.png"]
+          "body": "The ambition for this project was to create as much levels as possible to make a game as close as possible from a real-shipped game. To reach this objective, I quickly developped an easy--to-use tool, which gives the opportunity to games designers to generate more than 50 levels for our game.",
+          "images": ["assets/iridescence/soutenance-projet-mobile.png"]
+        },
+        {
+          "title": "Shipping & Lead GP",
+          "body": "The goal of this project was to upload it on Google Play Store as a real project, which I learned to do and did after that. This project also gave me the opportunity to enhance my leading skills. I managed my two colleagues, took care of the organization documents, communicated with the artists and designers.",
+          "images": ["assets/iridescence/googleplayconsole.png"]
         },
         {
           "title": "Accessibility",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-          "images": ["assets/iridescence/accessibility-1.png", "assets/iridescence/accessibility-2.png"]
+          "body": "For this game, we had the theme \"Colors\" which we decided to use as our main feature, but this means we also had to work on accessibility. I thought about many ways to work around colorblindness issues, but I finally chose to use the shapes that were first used by artists to create the three characters and display this shape in black and white on all the objects which are coloured as lasers and emitters.",
+          "images": ["assets/iridescence/colorblind_mode.png"]
         }
       ],
       "related": ["kintsugi", "demons-and-disco", "dont-look-down"]
@@ -192,31 +202,36 @@
     {
       "id": "the-last-night-to-hunt",
       "title": "The Last Night to Hunt",
-      "tagline": "A narrative adventure at the edge of darkness.",
+      "tagline": "Revenge and unleash the werewolf hiding inside",
       "year": "2023",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unreal Engine 5",
       "genre": "Adventure / Narrative",
       "duration": "4 Weeks",
       "teamSize": "7 Persons",
       "category": "main",
-      "thumbnail": "assets/the-last-night-to-hunt/thumb.png",
+      "thumbnail": "assets/thelastnighttohunt/thelastnighttohunt_newlogo.png",
       "thumbnailGif": null,
-      "youtubeId": "",
+      "youtubeId": "ukDkw-owUzY",
       "role": "Quests/Dialogs, AI and Shaders",
-      "team": "2 Artists, 2 Game Designers, 2 Programmers, 1 Sound Designer",
-      "context": "School project — narrative-focused adventure game.",
-      "technologies": ["Unreal Engine 5", "Blueprint", "HLSL"],
+      "team": "2 Game Artists, 3 Game Designers, 2 Game Programmers",
+      "context": "School project — first person game.",
+      "technologies": ["Unreal Engine 5", "Blueprint"],
       "sections": [
         {
           "title": "Quests & Dialogs",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/the-last-night-to-hunt/quests.png", "assets/the-last-night-to-hunt/dialogs.png"]
+          "body": "My main objective for this project was to create an easy-to-use tool to implement all the dialogs and quests and link them in-between. The main issue, I encountered was to give the least parameters as I can to the Game Designers, not to lose them, but also enough configurable not to hard code the quest by myself.",
+          "images": ["assets/thelastnighttohunt/quests.png"]
         },
         {
-          "title": "AI & Shaders",
-          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "images": ["assets/the-last-night-to-hunt/shaders.png"]
+          "title": "AI",
+          "body": "The game takes place in a village with more than 50 entities roaming with two types of behaviour, the villagers, which will only walk and talk to the player the day and the soldiers which attack at night or when the  player enters the military camp. And some of them also had to follow a pre-defined path.",
+          "images": ["assets/thelastnighttohunt/quests.png"]
+        },
+        {
+          "title": "Initiation to Shaders",
+          "body": "Creating a small open world as a first main project was a real constraint in terms of assets for our Game Artists. So we made the choice to focus on the artistic direction rather than the details of objects. I, personally, created a water shader which sadly couldn't be implemented in the last Level Design. I also keep an eye on the production of the toon and outline shaders made by associate.",
+          "images": ["assets/thelastnighttohunt/shaders.png"]
         }
       ],
       "related": ["kintsugi", "dont-look-down", "demons-and-disco"]
