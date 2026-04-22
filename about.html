@@ -28,67 +28,55 @@
 
 <script src="main.js"></script>
 <script>
-async function buildAbout() {
-  const data = await fetch('projects.json').then(r => r.json());
-  const a    = data.about;
-  const layout = document.getElementById('about-layout');
+  async function buildAbout() {
+    const data = await fetch('projects.json').then(r => r.json());
+    const a    = data.about;
+    const layout = document.getElementById('about-layout');
 
-  /* Portrait — toujours carré (aspect-ratio 1/1 dans CSS) */
-  const portraitHTML = a.photo
-    ? `<div class="portrait-wrap"><img src="${a.photo}" alt="${a.name}"></div>`
-    : `<div class="portrait-ph">[ Photo ]</div>`;
+    const portraitHTML = a.photo
+            ? `<div class="portrait-wrap"><img src="${a.photo}" alt="${a.name}"></div>`
+            : `<div class="portrait-ph">[ Photo ]</div>`;
 
-  /* Canva embed — optionnel */
-  let canvaHTML;
-  if (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') {
-    canvaHTML = `
+    const contactsHTML = (a.contacts || []).map(c =>
+            `<a href="${c.url}" target="_blank" rel="noopener">${c.label}${c.arrow ? ' ↗' : ''}</a>`
+    ).join('');
+
+    const sectionsHTML = (a.sections || []).map(s =>
+            `<h3>${s.title}</h3><p>${s.text}</p>`
+    ).join('');
+
+    const skillsHTML = techBadgeHTML(a.skills, 'tech-tag');
+
+    let canvaHTML = '';
+    if (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') {
+      canvaHTML = `
       <div class="canva-wrap reveal">
         <h3>Curriculum Vitae</h3>
         <div class="canva-frame">
           <iframe src="${a.canvaEmbedUrl}" allowfullscreen allow="fullscreen *;"></iframe>
         </div>
       </div>`;
-  } else {
-    /* Fallback : lien download CV si pas d'embed */
-    canvaHTML = '';
-  }
+    }
 
-  /* Bio paragraphs */
-  const bioHTML = (a.bio || []).map(p => `<p>${p}</p>`).join('');
-
-  /* Skills */
-  const skillsHTML = techBadgeHTML(a.skills, 'tech-tag');
-
-  layout.innerHTML = `
-    <!-- Left : portrait sticky -->
+    layout.innerHTML = `
     <aside class="about-left reveal">
       ${portraitHTML}
       <div>
         <p class="about-name">${a.name}</p>
         <p class="about-role">${a.role}</p>
-        <div class="about-contacts">
-          ${a.phone ? `<a href="tel:${a.phone.replace(/\s/g,'')}">${a.phone}</a>` : ''}
-          ${a.cvUrl ? `<a href="${a.cvUrl}" target="_blank" rel="noopener">Download CV ↗</a>` : ''}
-        </div>
+        <div class="about-contacts">${contactsHTML}</div>
       </div>
     </aside>
 
-    <!-- Right -->
     <div class="about-right reveal rd1">
-      <h3>Hello</h3>
-      ${bioHTML}
-
-      <h3>LeoIndieGames</h3>
-      <p>${a.associations}</p>
-
+      ${sectionsHTML}
       <h3>Skills</h3>
       <div class="tech-tags">${skillsHTML}</div>
-
       ${canvaHTML}
     </div>`;
 
-  revealAll(layout);
-}
+    revealAll(layout);
+  }
 buildAbout();
 </script>
 </body>
