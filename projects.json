@@ -32,6 +32,10 @@
       "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producer, 3 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",
       "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Level Tools",
@@ -74,6 +78,10 @@
       "team": "40+ persons",
       "context": "3rd Year internship at Ubisoft Paris Mobile.",
       "technologies": ["Unity", "C#", "Steam"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Gameplay & UI",
@@ -98,7 +106,7 @@
       "title": "Demons and Disco",
       "tagline": "Make them dance till their death.",
       "year": "2023",
-      "status": "Available on itch.io",
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Rhythm Couch Game",
       "duration": "7 Weeks",
@@ -111,6 +119,10 @@
       "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers, 2 Producers, 2 Sound Designers",
       "context": "School project — vertical slice of a couch co-op rhythm game.",
       "technologies": ["Unity", "C#", "Wwise", "Jira"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Wwise Implementation",
@@ -148,6 +160,10 @@
       "team": "3 Game Artists, 3 Game Designers, 4 Game Programmers, 1 Producer",
       "context": "2-week VR game jam.",
       "technologies": ["Unreal Engine 5", "C++", "VR"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Initiation to VR",
@@ -180,6 +196,10 @@
       "team": "3 Game Artists, 4 Game Designers, 3 Game Programmers",
       "context": "School project — puzzle mobile game.",
       "technologies": ["Unity", "C#", "PlayStore"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Level Design Tools",
@@ -217,6 +237,10 @@
       "team": "2 Game Artists, 3 Game Designers, 2 Game Programmers",
       "context": "School project — first person game.",
       "technologies": ["Unreal Engine 5", "Blueprint"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Quests & Dialogs",
@@ -254,6 +278,10 @@
       "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
       "context": "IIM Godfather Game Jam (Retro, PS1,\"Big Sword\")",
       "technologies": ["Unity", "C#"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -276,43 +304,83 @@
     {
       "id": "the-duty-of-the-knight",
       "title": "The Duty of the Knight",
-      "tagline": "A solo roguelike forged over three months.",
+      "tagline": "Kill them all and turn into a true warrior.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Roguelike",
       "duration": "3 Months",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/dotk/thumb.png",
-      "thumbnailGif": "assets/dotk/thumb.gif",
-      "youtubeId": "",
-      "role": "Programming and Design",
+      "thumbnail": "assets/dotk/dotk_logo_full_white_w_elements.png",
+      "thumbnailGif": "assets/dotk/dotk_gif_combo.gif",
+      "youtubeId": "6AE18hNOVAo",
+      "role": "Game Programming and Design",
       "team": "Solo project",
-      "context": "Solo personal project — first complete game from scratch.",
+      "context": "IIM first year project — first complete solo game.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Design & Programming", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/dotk/gameplay.png", "assets/dotk/design.png"]}],
+      "link": {
+        "label": "Available on Itch.io",
+        "url": "https://koryme-nakxay.itch.io/the-duty-of-the-knight"
+      },
+      "sections": [
+        {
+          "title": "Introduction to Unity",
+          "body": "I had always been interested in Unity since I knew it was the first independent game engine in the world, but never had the chance to get to such a result with any other game in the past. I learned how to implement assets, develop a core gameplay and create a game loop from the start menu to the victory screen.",
+          "images": ["assets/dotk/dotk_tutorial.png"]
+        },
+        {
+          "title": "Procedural Generation",
+          "body": "The roguelike idea came from my interest in procedural generation, which is mandatory when developing such a replayable game. I managed to program the first prototype in only a single day.",
+          "images": ["assets/dotk/dotk_procedural_generation.png"]
+        },
+        {
+          "title": "Combos with Elements",
+          "body": "When it comes to game design, one of the first thing to think is the USP. For this game, I chose the combination of elements. Each one has its specificity, like wind teleports the player or earth is a shield, but when you use both at the same time, you teleport and create an explosion on your arrival point, dealing a lot of damages to enemies. You can also improve your abilities with statues in the dungeon, allowing to specialized yourself on each run.",
+          "images": ["assets/dotk/dotk_gif_combo.gif"]
+        }
+      ],
       "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
     },
     {
       "id": "my-package-project",
       "title": "My Package Project",
-      "tagline": "A growing personal Unity toolbox.",
+      "tagline": "My game development backpack",
       "year": "2023",
-      "status": "On Going",
+      "status": "Available on Github.io",
       "engine": "Unity",
       "genre": "Package",
-      "duration": "WIP",
+      "duration": "On Going",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/master-project/thumb.png",
-      "thumbnailGif": "assets/master-project/thumb.gif",
+      "thumbnail": "assets/master-project/package_manager_masterproject.png",
+      "thumbnailGif": "assets/master-project/datasavesystem.gif",
       "youtubeId": "",
       "role": "Tools and More",
       "team": "Solo project",
-      "context": "Ongoing personal project — a Unity package collecting reusable tools.",
+      "context": "Ongoing personal project - a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Overview", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/master-project/overview.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Tools for Productivity",
+          "body": "This project is a sort of backpack for my studies/career, it will allow me to create powerful tools and implement them in a second on futures projects.",
+          "images": ["assets/master-project/package_manager_masterproject.png"]
+        },
+        {
+          "title": "Save System",
+          "body": "Keeping data between game restart is a key feature needed in a lot of type of game. This tool is able to create a new script with a given name in parameter by itself. It allows the user to generate a new class for the save and make it easier to implement in any project.",
+          "images": ["assets/master-project/datasavesystem.gif"]
+        },
+        {
+          "title": "More and more coming soon",
+          "body": "As I said before, I want to create more and more tools that can be used in as much project as possible. The next project I'll be working on, will be decided on the needs of future projects.",
+          "images": ["assets/master-project/github_page.png"]
+        }
+      ],
       "related": ["kintsugi", "iridescence", "the-duty-of-the-knight"]
     },
     {
@@ -333,7 +401,27 @@
       "team": "3 Persons",
       "context": "1-week school jam — card game inspired by Slay the Spire.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Card System", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/slay-the-lig/cards.png", "assets/slay-the-lig/ui.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/slay-the-lig/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/slay-the-lig/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/slay-the-lig/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["cyber-exchange", "beboum-fighters", "the-duty-of-the-knight"]
     },
     {
@@ -354,7 +442,27 @@
       "team": "3 Persons",
       "context": "Low-level engine initiation project built with SFML from scratch.",
       "technologies": ["C++", "SFML"],
-      "sections": [{"title": "Engine & UI", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/geimerophobia/engine.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["cyber-exchange", "tough-sadness", "beboum-fighters"]
     },
     {
@@ -375,7 +483,27 @@
       "team": "7 Persons",
       "context": "1-week game jam focused on physics-driven platformer mechanics.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Physics", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/a-contre-courant/physics.png", "assets/a-contre-courant/level.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
     },
     {
@@ -396,7 +524,27 @@
       "team": "Solo project",
       "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Remake & Tools", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/lueur/remake.png", "assets/lueur/tools.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
     },
     {
@@ -417,7 +565,27 @@
       "team": "3 Persons",
       "context": "1-week game jam — emotional survival game.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Gameplay & UI", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/tough-sadness/gameplay.png"]}],
+      "link": {
+        "label": "",
+        "url": ""
+      },
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["cyber-exchange", "geimerophobia", "lueur-remake"]
     },
     {
@@ -438,8 +606,27 @@
       "team": "9 Persons",
       "context": "3-day game jam — local multiplayer fighting game.",
       "technologies": ["Unity", "C#"],
+      "link": {
+        "label": "",
+        "url": ""
+      },
       "sections": [
-        {"title": "Local Multiplayer", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]}],
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]
     }
   ]

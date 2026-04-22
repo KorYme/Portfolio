@@ -123,6 +123,11 @@ async function render() {
   /* tech tags with icons */
   const techTagsHTML = techBadgeHTML(p.technologies, 'tech-tag');
 
+  const linkHTML = (p.link && p.link.url) ? `
+  <a href="${p.link.url}" target="_blank" rel="noopener" class="btn">
+    ${p.link.label || 'View project'} ↗
+  </a>` : '';
+
   page.innerHTML = `
     <!-- Header -->
     <header class="proj-header reveal">
@@ -153,6 +158,7 @@ async function render() {
       <div>
         <h3>Technologies</h3>
         <div class="tech-tags">${techTagsHTML}</div>
+        <div style="margin-top: 20px;">${linkHTML}</div>
       </div>
     </div>
 
