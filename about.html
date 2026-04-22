@@ -69,11 +69,13 @@ async function buildAbout() {
     <!-- Left : portrait sticky -->
     <aside class="about-left reveal">
       ${portraitHTML}
-      <p class="about-name">${a.name}</p>
-      <p class="about-role">${a.role}</p>
-      <div class="about-contacts">
-        ${a.phone ? `<a href="tel:${a.phone.replace(/\s/g,'')}">${a.phone}</a>` : ''}
-        ${a.cvUrl ? `<a href="${a.cvUrl}" target="_blank" rel="noopener">Download CV ↗</a>` : ''}
+      <div>
+        <p class="about-name">${a.name}</p>
+        <p class="about-role">${a.role}</p>
+        <div class="about-contacts">
+          ${a.phone ? `<a href="tel:${a.phone.replace(/\s/g,'')}">${a.phone}</a>` : ''}
+          ${a.cvUrl ? `<a href="${a.cvUrl}" target="_blank" rel="noopener">Download CV ↗</a>` : ''}
+        </div>
       </div>
     </aside>
 
