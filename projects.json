@@ -80,7 +80,8 @@
       "context": "3rd Year internship at Ubisoft Paris Mobile.",
       "technologies": ["Unity", "C#", "Steam"],
       "links": [
-        { "label": "TO DO", "url": "a" }
+        { "label": "Steam", "url": "https://store.steampowered.com/app/3546740/Champions_Tactics_Reforged/" },
+        { "label": "Site", "url": "https://championstactics.ubisoft.com" }
       ],
       "sections": [
         {
@@ -120,7 +121,7 @@
       "context": "School project — vertical slice of a couch co-op rhythm game.",
       "technologies": ["Unity", "C#", "Wwise", "Jira"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://luvik.itch.io/demons-et-disco" }
       ],
       "sections": [
         {
@@ -160,7 +161,7 @@
       "context": "2-week VR game jam.",
       "technologies": ["Unreal Engine 5", "C++", "VR"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://vrwellproject.itch.io/dont-look-down" }
       ],
       "sections": [
         {
@@ -195,7 +196,8 @@
       "context": "School project — puzzle mobile game.",
       "technologies": ["Unity", "C#", "PlayStore"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.Team501.Iridescence&gl=FR&pli=1" },
+        { "label": "Itch.io", "url": "https://zukkinioni.itch.io/iridescence" }
       ],
       "sections": [
         {
@@ -235,23 +237,23 @@
       "context": "School project — first person game.",
       "technologies": ["Unreal Engine 5", "Blueprint"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://d3nz0k.itch.io/the-last-night-to-hunt" }
       ],
       "sections": [
         {
           "title": "Quests & Dialogs",
           "body": "My main objective for this project was to create an easy-to-use tool to implement all the dialogs and quests and link them in-between. The main issue, I encountered was to give the least parameters as I can to the Game Designers, not to lose them, but also enough configurable not to hard code the quest by myself.",
-          "images": ["assets/the-last-night-to-hunt/quests.png"]
+          "images": ["assets/the-last-night-to-hunt/quests_dialogs_tool.png"]
         },
         {
           "title": "AI",
           "body": "The game takes place in a village with more than 50 entities roaming with two types of behaviour, the villagers, which will only walk and talk to the player the day and the soldiers which attack at night or when the  player enters the military camp. And some of them also had to follow a pre-defined path.",
-          "images": ["assets/the-last-night-to-hunt/quests.png"]
+          "images": ["assets/the-last-night-to-hunt/ai_pathing.png"]
         },
         {
           "title": "Initiation to Shaders",
           "body": "Creating a small open world as a first main project was a real constraint in terms of assets for our Game Artists. So we made the choice to focus on the artistic direction rather than the details of objects. I, personally, created a water shader which sadly couldn't be implemented in the last Level Design. I also keep an eye on the production of the toon and outline shaders made by associate.",
-          "images": ["assets/the-last-night-to-hunt/shaders.png"]
+          "images": ["assets/the-last-night-to-hunt/shaders_initiation.gif"]
         }
       ],
       "related": ["kintsugi", "dont-look-down", "demons-and-disco"]
@@ -275,7 +277,7 @@
       "context": "IIM Godfather Game Jam (Retro, PS1,\"Big Sword\")",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://pitiflan.itch.io/godfatherjam" }
       ],
       "sections": [
         {
@@ -315,7 +317,7 @@
       "context": "IIM first year project — first complete solo game.",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io/the-duty-of-the-knight" }
       ],
       "sections": [
         {
@@ -337,8 +339,8 @@
       "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
     },
     {
-      "id": "my-package-project",
-      "title": "My Package Project",
+      "id": "master-project",
+      "title": "Master Project",
       "tagline": "My game development backpack",
       "year": "2023",
       "status": "Available on Github.io",
@@ -355,7 +357,7 @@
       "context": "Ongoing personal project - a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "GitHub", "url": "https://github.com/KorYme/MasterProjectUnity" }
       ],
       "sections": [
         {
@@ -381,37 +383,32 @@
       "title": "Slay the LIG",
       "tagline": "Cards, chaos, and college life.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Card Game",
       "duration": "1 Week",
       "teamSize": "3 Persons",
       "category": "side",
-      "thumbnail": "assets/slay-the-lig/thumb.png",
-      "thumbnailGif": "assets/slay-the-lig/thumb.gif",
+      "thumbnail": "assets/slay-the-lig/slaythelig_logo.png",
+      "thumbnailGif": "assets/slay-the-lig/slaytheligif.gif",
       "youtubeId": "",
       "role": "Programming and Balancing Tools",
-      "team": "3 Persons",
-      "context": "1-week school jam — card game inspired by Slay the Spire.",
+      "team": "1 Game Artist, 1 Game Designer, 1 Game programmer",
+      "context": "LeoIndieGame's Christmas game jam",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io/slaythelig" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/slay-the-lig/ce_screenshots_1.png"]
+          "title": "GameFeel",
+          "body": "I used this project to train my gamefeel implementation in games, I spent hours working on the tweening of the card and the feedback on the characters. The result makes me proud of this game, even if it is simple, it is addictive in a way.",
+          "images": ["assets/slay-the-lig/slaytheligif.gif"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/slay-the-lig/switch_gif_cyber_exchange.gif"]
-        },
-        {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/slay-the-lig/cyber_exchange_screenshot_4.png"]
+          "title": "Balancing tools\n",
+          "body": "During this game jam, We had a first year student who wanted to learn game design, so I had to build a complete structure with a friendly interface not to lose him while using it. I already had used scriptable objects but this time I had to make it simple to use.",
+          "images": ["assets/slay-the-lig/so_manipulations.gif"]
         }
       ],
       "related": ["cyber-exchange", "beboum-fighters", "the-duty-of-the-knight"]
@@ -421,37 +418,32 @@
       "title": "Geimerophobia",
       "tagline": "C++, SFML and raw survival instinct.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "C++ SFML",
       "genre": "Survival",
-      "duration": "10 Days",
+      "duration": "1 Week",
       "teamSize": "3 Persons",
       "category": "side",
-      "thumbnail": "assets/geimerophobia/thumb.png",
-      "thumbnailGif": "assets/geimerophobia/thumb.gif",
+      "thumbnail": "assets/geimerophobia/geimerophobia_logo.png",
+      "thumbnailGif": "assets/geimerophobia/preview_geimerophobia.gif",
       "youtubeId": "",
       "role": "Game Engine Initiation, UI and Particles",
-      "team": "3 Persons",
-      "context": "Low-level engine initiation project built with SFML from scratch.",
+      "team": "3 Game Programmers",
+      "context": "C++ study project - introduction to SFML.",
       "technologies": ["C++", "SFML"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://kaito-owo.itch.io/geimerophobia" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "title": "Game Engine Initiation",
+          "body": "We were by our C++ teacher to create a game from scratch in half and a week with the SFML graphic library. I found this project so exciting and captivating, that it makes me want to create my own game engine in the future.",
+          "images": ["assets/geimerophobia/geimerophobia-gameplay.gif"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
-        },
-        {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "title": "UI, Gameloop and Particles",
+          "body": "I first created the gameloop skeleton, so my colleague and I could then link our own events in the game without any issues. I developped the UI and its behaviours and used the remaining time I had, creating particles for the damage and powerups animations.",
+          "images": ["assets/geimerophobia/ui.png"]
         }
       ],
       "related": ["cyber-exchange", "tough-sadness", "beboum-fighters"]
@@ -461,37 +453,37 @@
       "title": "A Contre-Courant",
       "tagline": "Swimming upstream in a world against you.",
       "year": "2023",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Platformer",
       "duration": "1 Week",
       "teamSize": "7 Persons",
       "category": "side",
-      "thumbnail": "assets/a-contre-courant/thumb.png",
-      "thumbnailGif": "assets/a-contre-courant/thumb.gif",
+      "thumbnail": "assets/a-contre-courant/acontrecourant_logo.png",
+      "thumbnailGif": "assets/a-contre-courant/preview_gif_acc.gif",
       "youtubeId": "",
       "role": "Physics and Assets Implementation",
-      "team": "7 Persons",
-      "context": "1-week game jam focused on physics-driven platformer mechanics.",
+      "team": "3 Game Artists, 1 Game Designer, 1 Tech Art, 2 Game Programmers",
+      "context": "Hauts-de-Seine's Digital Festival",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io/a-contre-courant" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "title": "Physics",
+          "body": "The objective for this project was to make a game with the similar physics to Ynglet, which was not the easiest one to implement,but I only had a week to get to a close enough result. Fortunately, I succeeded after many attempts.",
+          "images": ["assets/a-contre-courant/letter_creator.gif"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+          "title": "GD/LD Tools",
+          "body": "The lack of time, we had for this project forced us to decrease the number of features, we wanted to do but it gave me possibility to create some simple but useful tools for the only game designer in the team. It helped him a lot on the level design that he managed to do in a single day.",
+          "images": ["assets/a-contre-courant/physics_movement.gif"]
         },
         {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "title": "Winner of the Festival",
+          "body": "We presented this game to a jury at the Hauts-de-Seine's digital festival and won the first prize in the +18 y.o. category. It was a total surprise and it's a pride today to have been able to win a prize thanks to a game I made.",
+          "images": ["assets/a-contre-courant/winner.jpg"]
         }
       ],
       "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
@@ -501,37 +493,32 @@
       "title": "Lueur Remake",
       "tagline": "Rebuilding a beloved game from the ground up.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Platformer",
       "duration": "1 Month",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/lueur/thumb.png",
-      "thumbnailGif": "assets/lueur/thumb.gif",
+      "thumbnail": "assets/lueur/lueur_logo.png",
+      "thumbnailGif": "assets/lueur/lueur_gif_preview.gif",
       "youtubeId": "",
-      "role": "Remake and Tools Programming",
-      "team": "Solo project",
-      "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
+      "role": "GPP and Tools Programming",
+      "team": "1 Game Programmer + Assets from 1 Game Artist",
+      "context": "Devtober (Itch.io Jam)",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io/lueur-remake" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "title": "How to Remake a Game in a Week",
+          "body": "The objective for this project was to remake the game of one of my Game Artist colleague without any bugs in a week and then try to improve it for the rest of the Devtober. The idea was that she will be able after that to add other assets to the game more easily than before thanks to tools.",
+          "images": ["assets/lueur/lueur_gif_preview.gif"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
-        },
-        {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "title": "A Month to Discover Tools Basics",
+          "body": "One of the thing I find the more interesting in game development is the fact that most of the time that's a teamwork, and I want to make my work the more useful I can for others. So with this project, I had a month to learn how to build tools and how to make them the more user friendly as possible.",
+          "images": ["assets/lueur/tool_blackhole.png"]
         }
       ],
       "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
@@ -541,37 +528,32 @@
       "title": "Tough Sadness",
       "tagline": "Survive the weight of it all.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Survival",
       "duration": "1 Week",
       "teamSize": "3 Persons",
       "category": "side",
-      "thumbnail": "assets/tough-sadness/thumb.png",
-      "thumbnailGif": "assets/tough-sadness/thumb.gif",
+      "thumbnail": "assets/tough-sadness/toughsadness_logo.png",
+      "thumbnailGif": "assets/tough-sadness/toughsadness_gif_preview.gif",
       "youtubeId": "",
       "role": "GitHub, Gameplay and UI",
-      "team": "3 Persons",
-      "context": "1-week game jam — emotional survival game.",
+      "team": "1 Game Artist and 2 Game Programmers",
+      "context": "1 Week GitHub Introduction Class",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io/tough-sadness" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "title": "GitHub Comprehension",
+          "body": "As written above, the context of this project was to build a game in team with GitHub. I already had learned how to use it on my own but it still helps me theorize how it works behind the stage and better understand how to properly use it.",
+          "images": ["assets/tough-sadness/github_kraken.png"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
-        },
-        {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "title": "Adding Post-Process",
+          "body": "We also added some post-process on the project, I discovered basics of post-process with URP and managed to get a result I'm proud of.",
+          "images": ["assets/tough-sadness/toughsadness_gif_preview.gif"]
         }
       ],
       "related": ["cyber-exchange", "geimerophobia", "lueur-remake"]
@@ -581,37 +563,37 @@
       "title": "Beboum Fighters",
       "tagline": "Local multiplayer chaos for 9 devs in 3 days.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 2D",
       "genre": "Fight Game",
       "duration": "3 Days",
       "teamSize": "9 Persons",
       "category": "side",
-      "thumbnail": "assets/beboum-fighters/thumb.png",
-      "thumbnailGif": "assets/beboum-fighters/thumb.gif",
+      "thumbnail": "assets/beboum-fighters/beboumfighters_logo.png",
+      "thumbnailGif": "assets/beboum-fighters/beboum_fighter.gif",
       "youtubeId": "",
       "role": "Lead Programmer, GitHub and Local Multiplayer",
-      "team": "9 Persons",
-      "context": "3-day game jam — local multiplayer fighting game.",
+      "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers",
+      "context": "Ludum Dare N°51",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "TO DO", "url": "" }
+        { "label": "Itch.io", "url": "https://rapounet.itch.io/beboum-fighters" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "title": "Lead Programmer",
+          "body": "The fact that we were 3 Programmers on the team forced us to set up a rigorous organization and without even intending to take the lead, the team, implicitely, chose me as the Lead Programmer. I understood that when there were questions about the programming part, I was the first to be questioned. I threw myself into this role wholeheartedly, because I prefer the programming team to have someone to follow than no one.",
+          "images": ["assets/beboum-fighters/timontridimension_1_2_2.gif"]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+          "title": "Local Multiplayer",
+          "body": "I knew the first issue, we will encounter with this game was the multiplayer part, no one ever did something like that in the team and we had to make it work if we wanted the game to advance. So I used the \"New Imput System\" to create a local multiplayer prototype as fast as possible and it worked amazingly.",
+          "images": ["assets/beboum-fighters/beboum_selection_room.png"]
         },
         {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "title": "GitHub Firefighter",
+          "body": "he fact that I was chosen to be the Lead Programmer also gave me the role of GItHub's manager. I spent the three days resolving issues others and I had on GitHub. All these problems, slowed down the production and are the reason the game is not fully finished.",
+          "images": ["assets/beboum-fighters/béboumfire.gif"]
         }
       ],
       "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]

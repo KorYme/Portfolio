@@ -12,6 +12,7 @@ const TECH_ICONS = {
   'GitHub Actions':   'assets/_logos/github_white.png',
   'Blueprint':        'assets/_logos/pc_white.png',
   'HLSL':             'assets/_logos/hlsl.png',
+  'SFML':             'assets/_logos/sfml.png',
   'Steam':            'assets/_logos/steam_white.png',
   'PlayStore':        'assets/_logos/google_play.png',
   'Jira':             'assets/_logos/jira.png',
