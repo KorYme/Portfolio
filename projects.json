@@ -67,8 +67,8 @@
       "duration": "6 Months",
       "teamSize": "Internship",
       "category": "main",
-      "thumbnail": "assets/championstactics/thumb.png",
-      "thumbnailGif": "assets/championstactics/gameplay_champions_tactics.gif",
+      "thumbnail": "assets/champions-tactics/thumb.png",
+      "thumbnailGif": "assets/champions-tactics/gameplay_champions_tactics.gif",
       "youtubeId": "1g0S4QY6b_U",
       "role": "Gameplay & UI, Network & Database, Production's Process",
       "team": "40+ persons",
@@ -78,17 +78,17 @@
         {
           "title": "Gameplay & UI",
           "body": "My main job on this project was to <b>polish</b> the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also <b>implemented secondary UI features</b> to it, such as emotes or a news carousel, giving me the opportunity to <b>improve my understanding of UIs</b> in Unity.",
-          "images": ["assets/championstactics/gameplay_champions_tactics.gif"]
+          "images": ["assets/champions-tactics/gameplay_champions_tactics.gif"]
         },
         {
           "title": "Network & Database",
           "body": "Champions Tactics Grimoria Chronicles being a <b>multiplayer game</b>, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered <b>database management with MongoDB</b>, which I used for features such as a stat history for all the figurines in-game.",
-          "images": ["assets/championstactics/mongodb.png"]
+          "images": ["assets/champions-tactics/mongodb.png"]
         },
         {
           "title": "Production's Process",
           "body": "This internship was my first experience in the gamedev industry. I learned all the <b>production's processes</b>, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been <b>onboarded and followed up</b> during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
-          "images": ["assets/championstactics/team.jpg"]
+          "images": ["assets/champions-tactics/team.jpg"]
         }
       ],
       "related": ["kintsugi", "iridescence", "demons-and-disco"]
@@ -104,8 +104,8 @@
       "duration": "7 Weeks",
       "teamSize": "13 Persons",
       "category": "main",
-      "thumbnail": "assets/demonsanddisco/banniere_carre.png",
-      "thumbnailGif": "assets/demonsanddisco/dnd_preview.gif",
+      "thumbnail": "assets/demons-and-disco/banniere_carre.png",
+      "thumbnailGif": "assets/demons-and-disco/dnd_preview.gif",
       "youtubeId": "03-hs52nU7g",
       "role": "Wwise Implementation, Game Feel and Lead GP",
       "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers, 2 Producers, 2 Sound Designers",
@@ -115,17 +115,17 @@
         {
           "title": "Wwise Implementation",
           "body": "Developing a rhythm game is a real challenge, it requires to get the <b>beat of a music</b> with the more precision as possible. After some R&D, we thought about using an <b>external sound engine</b>, so we decided to give Wwise a try. I personally worked on it <b>with the sound designers</b> and integrated the entire <b>audio game loop</b> and every SFX in Unity.",
-          "images": ["assets/demonsanddisco/wwise.png"]
+          "images": ["assets/demons-and-disco/wwise.png"]
         },
         {
           "title": "Game Feel",
           "body": "The idea behind this project, was <b>to develop a slice</b>. This objective could only be achieved by <b>polishing every feature</b> and implementing as much feedbacks as possible. We combine these stakes and the necessity to make the player <b>feel the rhythm</b> to synchronize all of our <b>juiciness aspects on the beat</b>.",
-          "images": ["assets/demonsanddisco/feedbacks.png"]
+          "images": ["assets/demons-and-disco/feedbacks.png"]
         },
         {
           "title": "Lead Programmer",
           "body": "During this whole project, I learned how to use <b>Jira</b> thanks to the producers we had. I managed the game programming part of the team, by <b>creating and dispatching tickets</b>. I also communicate with the rest of the team to keep track of the progress of everyone and <b>ensure the smooth development</b> of the game.",
-          "images": ["assets/demonsanddisco/jira.png"]
+          "images": ["assets/demons-and-disco/jira.png"]
         }
       ],
       "related": ["kintsugi", "champions-tactics", "iridescence"]
@@ -141,8 +141,8 @@
       "duration": "2 Weeks",
       "teamSize": "11 Persons",
       "category": "main",
-      "thumbnail": "assets/dontlookdown/keyart.png",
-      "thumbnailGif": "assets/dontlookdown/previewdld.gif",
+      "thumbnail": "assets/dont-look-down/keyart.png",
+      "thumbnailGif": "assets/dont-look-down/previewdld.gif",
       "youtubeId": "dFm1Q-Eu-sc",
       "role": "Gameplay, VR Initiation & Support",
       "team": "3 Game Artists, 3 Game Designers, 4 Game Programmers, 1 Producer",
@@ -152,12 +152,12 @@
         {
           "title": "Initiation to VR",
           "body": "As my first project with Virtual Reality, I had to learn all the basics on how to make the headset work or how to link it to the engine. Once everything was setup, we used the VR template from Unreal Engine to start our only-2-weeks journey. We <b>tweaked the already implemented features</b> and iterated as much as possible using <b>Blueprint</b>.",
-          "images": ["assets/dontlookdown/vr_template_example.gif"]
+          "images": ["assets/dont-look-down/vr_template_example.gif"]
         },
         {
           "title": "VR Gameplay",
           "body": "During this project, I focused on <b>simple but clean toys</b> such as the doors of the electric boxes or the pliers interaction, and even the <b>glow sticks</b>, which have to be <b>cracked and then shaken</b> to emit light. I also made a <b>simple inventory</b> on the belt, using the slot feature, to ensure the player can keep its glowstick and pliers safe.",
-          "images": ["assets/dontlookdown/gameplaydld_02.png"]
+          "images": ["assets/dont-look-down/gameplaydld_02.png"]
         }
       ],
       "related": ["champions-tactics", "the-last-night-to-hunt", "cyber-exchange"]
@@ -210,7 +210,7 @@
       "duration": "4 Weeks",
       "teamSize": "7 Persons",
       "category": "main",
-      "thumbnail": "assets/thelastnighttohunt/thelastnighttohunt_newlogo.png",
+      "thumbnail": "assets/the-last-night-to-hunt/thelastnighttohunt_newlogo.png",
       "thumbnailGif": null,
       "youtubeId": "ukDkw-owUzY",
       "role": "Quests/Dialogs, AI and Shaders",
@@ -221,17 +221,17 @@
         {
           "title": "Quests & Dialogs",
           "body": "My main objective for this project was to create an easy-to-use tool to implement all the dialogs and quests and link them in-between. The main issue, I encountered was to give the least parameters as I can to the Game Designers, not to lose them, but also enough configurable not to hard code the quest by myself.",
-          "images": ["assets/thelastnighttohunt/quests.png"]
+          "images": ["assets/the-last-night-to-hunt/quests.png"]
         },
         {
           "title": "AI",
           "body": "The game takes place in a village with more than 50 entities roaming with two types of behaviour, the villagers, which will only walk and talk to the player the day and the soldiers which attack at night or when the  player enters the military camp. And some of them also had to follow a pre-defined path.",
-          "images": ["assets/thelastnighttohunt/quests.png"]
+          "images": ["assets/the-last-night-to-hunt/quests.png"]
         },
         {
           "title": "Initiation to Shaders",
           "body": "Creating a small open world as a first main project was a real constraint in terms of assets for our Game Artists. So we made the choice to focus on the artistic direction rather than the details of objects. I, personally, created a water shader which sadly couldn't be implemented in the last Level Design. I also keep an eye on the production of the toon and outline shaders made by associate.",
-          "images": ["assets/thelastnighttohunt/shaders.png"]
+          "images": ["assets/the-last-night-to-hunt/shaders.png"]
         }
       ],
       "related": ["kintsugi", "dont-look-down", "demons-and-disco"]
@@ -239,22 +239,38 @@
     {
       "id": "cyber-exchange",
       "title": "Cyber Exchange",
-      "tagline": "A 3-day survival jam in a cyberpunk world.",
+      "tagline": "Become one with the sword.",
       "year": "2022",
-      "status": null,
+      "status": "Available on Itch.io",
       "engine": "Unity 3D",
-      "genre": "Survival",
+      "genre": "Arcade survival",
       "duration": "3 Days",
       "teamSize": "8 Persons",
       "category": "side",
-      "thumbnail": "assets/cyber-exchange/thumb.png",
-      "thumbnailGif": "assets/cyber-exchange/thumb.gif",
+      "thumbnail": "assets/cyber-exchange/ce_logo.png",
+      "thumbnailGif": "assets/cyber-exchange/preview_gif_cyber_exchange.gif",
       "youtubeId": "",
       "role": "Gameplay and Assets Implementation",
-      "team": "Mixed team — game jam",
-      "context": "3-day game jam at IIM.",
+      "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
+      "context": "IIM Godfather Game Jam (Retro, PS1,\"Big Sword\")",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Gameplay", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "images": ["assets/cyber-exchange/gameplay.png"]}],
+      "sections": [
+        {
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+        },
+        {
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
+          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+        },
+        {
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
+          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+        }
+      ],
       "related": ["the-duty-of-the-knight", "beboum-fighters", "slay-the-lig"]
     },
     {
@@ -268,14 +284,14 @@
       "duration": "3 Months",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/the-duty-of-the-knight/thumb.png",
-      "thumbnailGif": "assets/the-duty-of-the-knight/thumb.gif",
+      "thumbnail": "assets/dotk/thumb.png",
+      "thumbnailGif": "assets/dotk/thumb.gif",
       "youtubeId": "",
       "role": "Programming and Design",
       "team": "Solo project",
       "context": "Solo personal project — first complete game from scratch.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Design & Programming", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/the-duty-of-the-knight/gameplay.png", "assets/the-duty-of-the-knight/design.png"]}],
+      "sections": [{"title": "Design & Programming", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/dotk/gameplay.png", "assets/dotk/design.png"]}],
       "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
     },
     {
@@ -283,20 +299,20 @@
       "title": "My Package Project",
       "tagline": "A growing personal Unity toolbox.",
       "year": "2023",
-      "status": "WIP",
+      "status": "On Going",
       "engine": "Unity",
       "genre": "Package",
       "duration": "WIP",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/my-package-project/thumb.png",
-      "thumbnailGif": "assets/my-package-project/thumb.gif",
+      "thumbnail": "assets/master-project/thumb.png",
+      "thumbnailGif": "assets/master-project/thumb.gif",
       "youtubeId": "",
       "role": "Tools and More",
       "team": "Solo project",
       "context": "Ongoing personal project — a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Overview", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/my-package-project/overview.png"]}],
+      "sections": [{"title": "Overview", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/master-project/overview.png"]}],
       "related": ["kintsugi", "iridescence", "the-duty-of-the-knight"]
     },
     {
@@ -363,7 +379,7 @@
       "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
     },
     {
-      "id": "lueur-remake",
+      "id": "lueur",
       "title": "Lueur Remake",
       "tagline": "Rebuilding a beloved game from the ground up.",
       "year": "2022",
@@ -373,14 +389,14 @@
       "duration": "1 Month",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/lueur-remake/thumb.png",
-      "thumbnailGif": "assets/lueur-remake/thumb.gif",
+      "thumbnail": "assets/lueur/thumb.png",
+      "thumbnailGif": "assets/lueur/thumb.gif",
       "youtubeId": "",
       "role": "Remake and Tools Programming",
       "team": "Solo project",
       "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Remake & Tools", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/lueur-remake/remake.png", "assets/lueur-remake/tools.png"]}],
+      "sections": [{"title": "Remake & Tools", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/lueur/remake.png", "assets/lueur/tools.png"]}],
       "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
     },
     {
@@ -422,7 +438,8 @@
       "team": "9 Persons",
       "context": "3-day game jam — local multiplayer fighting game.",
       "technologies": ["Unity", "C#"],
-      "sections": [{"title": "Local Multiplayer", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]}],
+      "sections": [
+        {"title": "Local Multiplayer", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "images": ["assets/beboum-fighters/multiplayer.png", "assets/beboum-fighters/gameplay.png"]}],
       "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]
     }
   ]
