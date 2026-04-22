@@ -100,7 +100,7 @@
           "images": ["assets/champions-tactics/team.jpg"]
         }
       ],
-      "related": ["kintsugi", "iridescence", "demons-and-disco"]
+      "related": ["demons-and-disco","kintsugi", "iridescence"]
     },
     {
       "id": "demons-and-disco",
@@ -140,7 +140,7 @@
           "images": ["assets/demons-and-disco/jira.png"]
         }
       ],
-      "related": ["kintsugi", "champions-tactics", "iridescence"]
+      "related": ["dont-look-down", "the-last-night-to-hunt", "kintsugi"]
     },
     {
       "id": "dont-look-down",
@@ -175,7 +175,7 @@
           "images": ["assets/dont-look-down/gameplaydld_02.png"]
         }
       ],
-      "related": ["champions-tactics", "the-last-night-to-hunt", "cyber-exchange"]
+      "related": ["iridescence", "the-last-night-to-hunt", "champions-tactics"]
     },
     {
       "id": "iridescence",
@@ -216,7 +216,7 @@
           "images": ["assets/iridescence/colorblind_mode.png"]
         }
       ],
-      "related": ["kintsugi", "demons-and-disco", "dont-look-down"]
+      "related": ["the-last-night-to-hunt","kintsugi", "dont-look-down"]
     },
     {
       "id": "the-last-night-to-hunt",
@@ -256,7 +256,7 @@
           "images": ["assets/the-last-night-to-hunt/shaders_initiation.gif"]
         }
       ],
-      "related": ["kintsugi", "dont-look-down", "demons-and-disco"]
+      "related": ["cyber-exchange", "dont-look-down", "kintsugi"]
     },
     {
       "id": "cyber-exchange",
@@ -296,10 +296,10 @@
           "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
         }
       ],
-      "related": ["the-duty-of-the-knight", "beboum-fighters", "slay-the-lig"]
+      "related": ["dotk", "lueur", "slay-the-lig"]
     },
     {
-      "id": "the-duty-of-the-knight",
+      "id": "dotk",
       "title": "The Duty of the Knight",
       "tagline": "Kill them all and turn into a true warrior.",
       "year": "2022",
@@ -336,7 +336,7 @@
           "images": ["assets/dotk/dotk_gif_combo.gif"]
         }
       ],
-      "related": ["cyber-exchange", "lueur-remake", "tough-sadness"]
+      "related": ["master-project", "champions-tactics", "kintsugi"]
     },
     {
       "id": "master-project",
@@ -376,7 +376,7 @@
           "images": ["assets/master-project/github_page.png"]
         }
       ],
-      "related": ["kintsugi", "iridescence", "the-duty-of-the-knight"]
+      "related": ["slay-the-lig", "kintsugi", "iridescence"]
     },
     {
       "id": "slay-the-lig",
@@ -411,7 +411,7 @@
           "images": ["assets/slay-the-lig/so_manipulations.gif"]
         }
       ],
-      "related": ["cyber-exchange", "beboum-fighters", "the-duty-of-the-knight"]
+      "related": ["geimerophobia", "beboum-fighters", "dotk"]
     },
     {
       "id": "geimerophobia",
@@ -446,7 +446,7 @@
           "images": ["assets/geimerophobia/ui.png"]
         }
       ],
-      "related": ["cyber-exchange", "tough-sadness", "beboum-fighters"]
+      "related": ["a-contre-courant", "master-project", "tough-sadness"]
     },
     {
       "id": "a-contre-courant",
@@ -486,7 +486,7 @@
           "images": ["assets/a-contre-courant/winner.jpg"]
         }
       ],
-      "related": ["lueur-remake", "tough-sadness", "slay-the-lig"]
+      "related": ["lueur", "tough-sadness", "slay-the-lig"]
     },
     {
       "id": "lueur",
@@ -521,7 +521,7 @@
           "images": ["assets/lueur/tool_blackhole.png"]
         }
       ],
-      "related": ["the-duty-of-the-knight", "a-contre-courant", "tough-sadness"]
+      "related": ["tough-sadness", "dotk", "a-contre-courant"]
     },
     {
       "id": "tough-sadness",
@@ -556,7 +556,7 @@
           "images": ["assets/tough-sadness/toughsadness_gif_preview.gif"]
         }
       ],
-      "related": ["cyber-exchange", "geimerophobia", "lueur-remake"]
+      "related": ["beboum-fighters", "dont-look-down", "master-project"]
     },
     {
       "id": "beboum-fighters",
@@ -596,7 +596,7 @@
           "images": ["assets/beboum-fighters/béboumfire.gif"]
         }
       ],
-      "related": ["slay-the-lig", "cyber-exchange", "tough-sadness"]
+      "related": ["demons-and-disco", "lueur", "iridescence"]
     }
   ]
 }
