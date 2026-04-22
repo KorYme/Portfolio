@@ -102,6 +102,16 @@ nav {
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #0e0e0e; }
 .btn.primary:hover { background: transparent; color: var(--accent); }
 
+.btn-link {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0e0e0e;
+}
+.btn-link:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
 /* ── SECTION TITLE ─────────────────────────────────── */
 .section-title {
   font-family: var(--fs); font-size: .85rem; font-weight: 700;
@@ -210,11 +220,11 @@ nav {
 }
 .card-tech-row .tech-badge {
   display: flex; align-items: center; gap: 5px;
-  padding: 3px 9px; border: 1px solid var(--border);
-  font-size: .58rem; letter-spacing: .07em; color: var(--muted);
+  padding: 5px 12px; border: 1px solid var(--border);
+  font-size: .75rem; letter-spacing: .07em; color: var(--muted);
   transition: border-color .2s, color .2s;
 }
-.card-tech-row .tech-badge svg { width: 11px; height: 11px; fill: currentColor; flex-shrink: 0; }
+.card-tech-row .tech-badge svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
 .card:hover .card-tech-row .tech-badge { border-color: rgba(200,169,110,.3); color: var(--accent); }
 
 /* ── PROJECT PAGE ──────────────────────────────────── */
@@ -265,11 +275,11 @@ nav {
 .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 4px; }
 .tech-tag {
   display: flex; align-items: center; gap: 6px;
-  font-size: .62rem; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--muted); border: 1px solid var(--border); padding: 4px 11px;
+  font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--border); padding: 7px 16px;
   transition: border-color .2s, color .2s;
 }
-.tech-tag svg { width: 12px; height: 12px; fill: currentColor; flex-shrink: 0; }
+.tech-tag svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
 .tech-tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Section */

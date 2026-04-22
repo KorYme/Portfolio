@@ -32,10 +32,11 @@
       "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producer, 3 Sound Designer",
       "context": "Final Year Project at IIM Digital School.",
       "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "Steam", "url": "https://store.steampowered.com/app/4395600/Kintsugi/" },
+        { "label": "Itch.io", "url": "https://studiohoho.itch.io/kintsugi" },
+        { "label": "Instagram", "url": "https://www.instagram.com/kintsugigame/" }
+      ],
       "sections": [
         {
           "title": "Level Tools",
@@ -78,10 +79,9 @@
       "team": "40+ persons",
       "context": "3rd Year internship at Ubisoft Paris Mobile.",
       "technologies": ["Unity", "C#", "Steam"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "a" }
+      ],
       "sections": [
         {
           "title": "Gameplay & UI",
@@ -119,10 +119,9 @@
       "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers, 2 Producers, 2 Sound Designers",
       "context": "School project — vertical slice of a couch co-op rhythm game.",
       "technologies": ["Unity", "C#", "Wwise", "Jira"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Wwise Implementation",
@@ -160,10 +159,9 @@
       "team": "3 Game Artists, 3 Game Designers, 4 Game Programmers, 1 Producer",
       "context": "2-week VR game jam.",
       "technologies": ["Unreal Engine 5", "C++", "VR"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to VR",
@@ -196,10 +194,9 @@
       "team": "3 Game Artists, 4 Game Designers, 3 Game Programmers",
       "context": "School project — puzzle mobile game.",
       "technologies": ["Unity", "C#", "PlayStore"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Level Design Tools",
@@ -237,10 +234,9 @@
       "team": "2 Game Artists, 3 Game Designers, 2 Game Programmers",
       "context": "School project — first person game.",
       "technologies": ["Unreal Engine 5", "Blueprint"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Quests & Dialogs",
@@ -278,10 +274,9 @@
       "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
       "context": "IIM Godfather Game Jam (Retro, PS1,\"Big Sword\")",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -319,10 +314,9 @@
       "team": "Solo project",
       "context": "IIM first year project — first complete solo game.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "Available on Itch.io",
-        "url": "https://koryme-nakxay.itch.io/the-duty-of-the-knight"
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Introduction to Unity",
@@ -360,10 +354,9 @@
       "team": "Solo project",
       "context": "Ongoing personal project - a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Tools for Productivity",
@@ -401,10 +394,9 @@
       "team": "3 Persons",
       "context": "1-week school jam — card game inspired by Slay the Spire.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -442,10 +434,9 @@
       "team": "3 Persons",
       "context": "Low-level engine initiation project built with SFML from scratch.",
       "technologies": ["C++", "SFML"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -483,10 +474,9 @@
       "team": "7 Persons",
       "context": "1-week game jam focused on physics-driven platformer mechanics.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -524,10 +514,9 @@
       "team": "Solo project",
       "context": "Solo remake project — rebuilding an older game with improved tools and architecture.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -565,10 +554,9 @@
       "team": "3 Persons",
       "context": "1-week game jam — emotional survival game.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
@@ -606,10 +594,9 @@
       "team": "9 Persons",
       "context": "3-day game jam — local multiplayer fighting game.",
       "technologies": ["Unity", "C#"],
-      "link": {
-        "label": "",
-        "url": ""
-      },
+      "links": [
+        { "label": "TO DO", "url": "" }
+      ],
       "sections": [
         {
           "title": "Initiation to 3D",
