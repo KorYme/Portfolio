@@ -32,21 +32,108 @@ function techBadgeHTML(techs, cls = 'tech-tag') {
   ).join('');
 }
 
-/* ── Image layout ────────────────────────────────── */
+/* ── buildMediaElement ───────────────────────────────
+   Generate HTML in a single asset (img/gif/mp4)
+   with the chosen display method.
+   ─────────────────────────────────────────────────── */
+function buildMediaElement(item) {
+  const src = typeof item === 'string' ? item : item.src;
+  const d   = (typeof item === 'object' && item.display) ? item.display : {};
+  const mode     = d.mode       || 'cover';
+  const ratio    = d.ratio      || '16/9';
+  const position = d.position   || 'center';
+  const bg       = d.background || 'var(--surface)';
+  const maxWidth = d.maxWidth   || '100%';
+  const height   = d.height     || '400px';
+  const overflow = d.overflow   || 'hidden';
+  const isVideo  = src.match(/\.mp4$/i);
+
+  const tag = isVideo
+      ? `<video src="${src}" autoplay muted loop playsinline style="display:block;width:100%;height:100%;"></video>`
+      : `<img src="${src}" alt="" loading="lazy" style="display:block;width:100%;height:100%;">`;
+
+  switch (mode) {
+
+    case 'cover':
+      return `
+        <div style="aspect-ratio:${ratio};overflow:hidden;background:var(--surface);position:relative;">
+          <div style="position:absolute;inset:0;overflow:hidden;">
+            ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:${position};display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:${position};display:block;">`}
+          </div>
+        </div>`;
+
+    case 'contain':
+      return `
+        <div style="aspect-ratio:${ratio};overflow:hidden;background:${bg};display:flex;align-items:center;justify-content:center;">
+          ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="max-width:100%;max-height:100%;object-fit:contain;display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="max-width:100%;max-height:100%;object-fit:contain;display:block;">`}
+        </div>`;
+
+    case 'stretch':
+      return `
+        <div style="aspect-ratio:${ratio};overflow:hidden;">
+          ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:fill;display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:fill;display:block;">`}
+        </div>`;
+
+    case 'native':
+      return `
+        <div style="max-width:${maxWidth};margin:0 auto;">
+          ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="width:100%;height:auto;display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="width:100%;height:auto;display:block;">`}
+        </div>`;
+
+    case 'fixed-height':
+      return `
+        <div style="height:${height};overflow:${overflow};background:var(--surface);">
+          ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">`}
+        </div>`;
+      
+    case 'fixed-width':
+      return `
+    <div style="width:${d.width || '100%'};margin:0 auto;overflow:${overflow};">
+      ${isVideo
+          ? `<video src="${src}" autoplay muted loop playsinline style="width:100%;height:auto;display:block;"></video>`
+          : `<img src="${src}" alt="" loading="lazy" style="width:100%;height:auto;display:block;">`}
+    </div>`;
+
+    default:
+      return `<img src="${src}" alt="" loading="lazy" style="width:100%;height:auto;display:block;">`;
+  }
+}
+
+/* ── renderImgs ──────────────────────────────────────
+   Handle 1, 2 or 3 assets with automatic layout.
+   Each item can be a simple string (simple path)
+   or an object { src, display } for advanced display modes.
+   ─────────────────────────────────────────────────── */
 function renderImgs(images) {
   const v = (images || []).filter(Boolean).slice(0, 3);
   if (!v.length) return '';
 
-  const cls = ['', 'imgs-1', 'imgs-2', 'imgs-3'][v.length];
+  if (v.length === 1) {
+    return `<div class="proj-imgs imgs-1">${buildMediaElement(v[0])}</div>`;
+  }
 
-  const items = v.map(src => {
-    if (src.match(/\.mp4$/i)) {
-      return `<video class="proj-img" src="${src}" autoplay muted loop playsinline></video>`;
-    }
-    return `<img class="proj-img" src="${src}" alt="" loading="lazy">`;
-  }).join('');
+  if (v.length === 2) {
+    return `
+      <div class="proj-imgs imgs-2">
+        ${v.map(item => `<div>${buildMediaElement(item)}</div>`).join('')}
+      </div>`;
+  }
 
-  return `<div class="proj-imgs ${cls}">${items}</div>`;
+  // 3 elements
+  return `
+    <div class="proj-imgs imgs-3">
+      ${v.map((item, i) => `<div style="${i===0 ? 'grid-column:1/-1' : ''}">${buildMediaElement(item)}</div>`).join('')}
+    </div>`;
 }
 
 /* ── Shared init ─────────────────────────────────── */
