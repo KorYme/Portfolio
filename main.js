@@ -48,10 +48,6 @@ function buildMediaElement(item) {
   const overflow = d.overflow   || 'hidden';
   const isVideo  = src.match(/\.mp4$/i);
 
-  const tag = isVideo
-      ? `<video src="${src}" autoplay muted loop playsinline style="display:block;width:100%;height:100%;"></video>`
-      : `<img src="${src}" alt="" loading="lazy" style="display:block;width:100%;height:100%;">`;
-
   switch (mode) {
 
     case 'cover':
