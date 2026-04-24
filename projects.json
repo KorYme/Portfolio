@@ -76,7 +76,7 @@
           ]
         }
       ],
-      "related": ["champions-tactics", "demons-and-disco", "the-last-night-to-hunt"]
+      "related": ["champions-tactics", "demons-and-disco", "master-project-unity"]
     },
     {
       "id": "champions-tactics",
@@ -393,11 +393,11 @@
           ]
         }
       ],
-      "related": ["master-project", "champions-tactics", "kintsugi"]
+      "related": ["master-project-unity", "champions-tactics", "kintsugi"]
     },
     {
-      "id": "master-project",
-      "title": "Master Project",
+      "id": "master-project-unity",
+      "title": "Master Project Unity",
       "tagline": "My game development backpack",
       "year": "2023",
       "status": "Available on Github.io",
@@ -406,8 +406,8 @@
       "duration": "On Going",
       "teamSize": "Solo",
       "category": "side",
-      "thumbnail": "assets/master-project/package_manager_masterproject.png",
-      "thumbnailGif": "assets/master-project/datasavesystem.gif",
+      "thumbnail": "assets/master-project-unity/package_manager_masterproject.png",
+      "thumbnailGif": "assets/master-project-unity/datasavesystem.gif",
       "youtubeId": "",
       "role": "Tools and More",
       "team": "Solo project",
@@ -421,21 +421,21 @@
           "title": "Tools for Productivity",
           "body": "This project is a sort of backpack for my studies/career, it will allow me to create powerful tools and implement them in a second on futures projects.",
           "images": [
-            { "src": "assets/master-project/package_manager_masterproject.png", "display": null }
+            { "src": "assets/master-project-unity/package_manager_masterproject.png", "display": null }
           ]
         },
         {
           "title": "Save System",
           "body": "Keeping data between game restart is a key feature needed in a lot of type of game. This tool is able to create a new script with a given name in parameter by itself. It allows the user to generate a new class for the save and make it easier to implement in any project.",
           "images": [
-            { "src": "assets/master-project/datasavesystem.gif", "display": null }
+            { "src": "assets/master-project-unity/datasavesystem.gif", "display": null }
           ]
         },
         {
           "title": "More and more coming soon",
           "body": "As I said before, I want to create more and more tools that can be used in as much project as possible. The next project I'll be working on, will be decided on the needs of future projects.",
           "images": [
-            { "src": "assets/master-project/github_page.png", "display": null }
+            { "src": "assets/master-project-unity/github_page.png", "display": null }
           ]
         }
       ],
@@ -517,7 +517,7 @@
           ]
         }
       ],
-      "related": ["a-contre-courant", "master-project", "tough-sadness"]
+      "related": ["a-contre-courant", "master-project-unity", "tough-sadness"]
     },
     {
       "id": "a-contre-courant",
@@ -641,7 +641,7 @@
           ]
         }
       ],
-      "related": ["beboum-fighters", "dont-look-down", "master-project"]
+      "related": ["beboum-fighters", "dont-look-down", "master-project-unity"]
     },
     {
       "id": "beboum-fighters",
