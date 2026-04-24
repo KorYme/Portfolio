@@ -10,6 +10,7 @@
   --surface:  #161616;
   --border:   #252525;
   --text:     #e8e8e8;
+  --mi-muted: #b6b6b6;
   --muted:    #888;
   --accent:   #c8a96e;
   --accent-d: #7a6540;
@@ -298,7 +299,7 @@ nav {
   font-family: var(--fs); font-size: 1.45rem; font-weight: 800; line-height: 1.15;
 }
 .proj-section-content p {
-  font-size: 1rem; color: var(--muted); line-height: 1.65;
+  font-size: 1rem; color: var(--mi-muted); line-height: 1.65;
   margin-bottom: 28px; max-width: 640px;
 }
 
@@ -370,7 +371,7 @@ video.proj-img { object-fit: cover; }
   margin-bottom: 12px; margin-top: 44px;
 }
 .about-right h3:first-child { margin-top: 0; }
-.about-right p { font-size: 1rem; color: var(--muted); line-height: 1.6; margin-bottom: 14px; max-width: 560px; }
+.about-right p { font-size: 1rem; color: var(--mi-muted); line-height: 1.6; margin-bottom: 14px; max-width: 560px; }
 
 /* Canva embed */
 .canva-wrap {
