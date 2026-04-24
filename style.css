@@ -436,6 +436,11 @@ footer {
   .about-left { position: static; display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; }
   .portrait-wrap, .portrait-ph { max-width: 200px; }
 }
+@media (max-width: 850px) {
+  .related .project-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media (max-width: 600px) {
   nav { padding: 0 20px; }
   .nav-links { gap: 18px; }
