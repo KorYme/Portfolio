@@ -13,11 +13,15 @@
     "sections": [
       {
         "title": "Hi !",
-        "text": "I'm Maxime, a student in Game Programming at IIM Digital School. My goal is to make the eyes of people sparkle while playing my games. I'm really interested in **developing tools** for myself or others to **ease the production process** and make them more pleasant."
+        "text": "I'm Maxime, a student in Game Programming at IIM Digital School. My goal is to make the eyes of people sparkle while playing my games. I'm really interested in **developing tools** for myself or others to **ease the production process** and make them more pleasant.",
+        "images": []
       },
       {
         "title": "LeoIndieGames",
-        "text": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of **Treasurer** for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also **gave lessons** to students who wanted to learn Unity."
+        "text": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of **Treasurer** for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also **gave lessons** to students who wanted to learn Unity.",
+        "images": [
+          { "src": "assets/about/lig_bureau.jpg", "display": { "mode" : "native" } }
+        ]
       }
     ],
     "skills": ["C#", "Unity", "Unreal Engine 5", "C++", "Blueprint", "Wwise", "GitHub Actions", "CI/CD"]
