@@ -59,7 +59,7 @@
         },
         {
           "title": "Sequencer",
-          "body": "Simultaneously, we used a CI system based on Github Actions which gave us a monitoring on the build state, so we regularly debugged the project. It helped us to version and QA the project. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel of the project.",
+          "body": "There was a moment in the production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create, from small to intense emotional moments. I made this system as simple as possible to easily implement effects such as enabling certain ability for the player, changing controller profile, play animations, camera shakes, and so on...",
           "images": ["assets/kintsugi/sequencers_possibilites.mp4"]
         },
         {
@@ -114,7 +114,7 @@
     {
       "id": "demons-and-disco",
       "title": "Demons and Disco",
-      "tagline": "Make them dance till their death.",
+      "tagline": "Make them dance till their death !",
       "year": "2023",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -189,7 +189,7 @@
     {
       "id": "iridescence",
       "title": "Iridescence",
-      "tagline": "A puzzle game that plays with light and perception.",
+      "tagline": "Move and reflect the light into the forest.",
       "year": "2023",
       "status": "Available on Google Play Store",
       "engine": "Unity 2D",
@@ -230,7 +230,7 @@
     {
       "id": "the-last-night-to-hunt",
       "title": "The Last Night to Hunt",
-      "tagline": "Revenge and unleash the werewolf hiding inside",
+      "tagline": "Revenge and unleash the werewolf hiding inside !",
       "year": "2023",
       "status": "Available on Itch.io",
       "engine": "Unreal Engine 5",
@@ -390,7 +390,7 @@
     {
       "id": "slay-the-lig",
       "title": "Slay the LIG",
-      "tagline": "Cards, chaos, and college life.",
+      "tagline": "When Christmas turns into Christ'Mess.",
       "year": "2022",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -425,7 +425,7 @@
     {
       "id": "geimerophobia",
       "title": "Geimerophobia",
-      "tagline": "C++, SFML and raw survival instinct.",
+      "tagline": "The phobia of shapes.",
       "year": "2022",
       "status": "Available on Itch.io",
       "engine": "C++ SFML",
@@ -460,7 +460,7 @@
     {
       "id": "a-contre-courant",
       "title": "A Contre-Courant",
-      "tagline": "Swimming upstream in a world against you.",
+      "tagline": "Acceptation is the key.",
       "year": "2023",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -500,7 +500,7 @@
     {
       "id": "lueur",
       "title": "Lueur Remake",
-      "tagline": "Rebuilding a beloved game from the ground up.",
+      "tagline": "Become the light that the world needs.",
       "year": "2022",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -535,7 +535,7 @@
     {
       "id": "tough-sadness",
       "title": "Tough Sadness",
-      "tagline": "Survive the weight of it all.",
+      "tagline": "Love was never an option.",
       "year": "2022",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -570,7 +570,7 @@
     {
       "id": "beboum-fighters",
       "title": "Beboum Fighters",
-      "tagline": "Local multiplayer chaos for 9 devs in 3 days.",
+      "tagline": "Get them ouf of the ring.",
       "year": "2022",
       "status": "Available on Itch.io",
       "engine": "Unity 2D",
@@ -583,7 +583,7 @@
       "youtubeId": "",
       "role": "Lead Programmer, GitHub and Local Multiplayer",
       "team": "3 Game Artists, 3 Game Designers, 3 Game Programmers",
-      "context": "Ludum Dare N°51",
+      "context": "Ludum Dare N°51 - Every 10 seconds",
       "technologies": ["Unity", "C#"],
       "links": [
         { "label": "Itch.io", "url": "https://rapounet.itch.io/beboum-fighters" }
