@@ -50,22 +50,30 @@
         {
           "title": "Level Tools",
           "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate git conflicts between artists and game designers, so I developed a scene composition system, so we split the level in sub sections and the sub sections were also split with the game artists scenes (containing mostly sprites but also sequencers), the level designers scenes (with colliders), and the sound designers scenes (with gameobject triggering Wwise events).",
-          "images": ["assets/kintsugi/mutliple_scene_buttons.gif"]
+          "images": [
+            { "src": "assets/kintsugi/mutliple_scene_buttons.gif", "display": null }
+          ]
         },
         {
           "title": "Rendering Tools",
           "body": "I developed the main tool used to ease the implementation of complex level arts. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a good rendering order, I developed the first version of this tool which automatically changed the sorting layer value of all renderers in the scene based on their Z position and sorting them in the hierarchy to keep the scenes clean. Then, we used it to change the materials on objects based on their layer to create a depth feeling without changing the asset itself.",
-          "images": ["assets/kintsugi/tool_layer_sorting_layer.gif"]
+          "images": [
+            { "src": "assets/kintsugi/tool_layer_sorting_layer.gif", "display": null }
+          ]
         },
         {
           "title": "Sequencer",
           "body": "There was a moment in the production, we made a huge shift and determined we had to focus on emotions. This is how we decided to work on a sequencer system, giving the ability for GDs and GAs to create, from small to intense emotional moments. I made this system as simple as possible to easily implement effects such as enabling certain ability for the player, changing controller profile, play animations, camera shakes, and so on...",
-          "images": ["assets/kintsugi/sequencers_possibilites.mp4"]
+          "images": [
+            { "src": "assets/kintsugi/sequencers_possibilites.mp4", "display": null }
+          ]
         },
         {
           "title": "Continuous Integration",
           "body": "Simultaneously, we used a CI system based on GitHub Actions which gave us monitoring on the build state, so we regularly debugged the project. It helped us to version and QA the project. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel with the project.",
-          "images": ["assets/kintsugi/ci_discord_result.png"]
+          "images": [
+            { "src": "assets/kintsugi/ci_discord_result.png", "display": null }
+          ]
         }
       ],
       "related": ["champions-tactics", "demons-and-disco", "the-last-night-to-hunt"]
@@ -95,21 +103,27 @@
       "sections": [
         {
           "title": "Gameplay & UI",
-          "body": "My main job on this project was to <b>polish</b> the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also <b>implemented secondary UI features</b> to it, such as emotes or a news carousel, giving me the opportunity to <b>improve my understanding of UIs</b> in Unity.",
-          "images": ["assets/champions-tactics/gameplay_champions_tactics.gif"]
+          "body": "My main job on this project was to **polish** the already working gameloop, by adding feedbacks like UI effects, VFX and shader, ... I also **implemented secondary UI features** to it, such as emotes or a news carousel, giving me the opportunity to **improve my understanding of UIs** in Unity.",
+          "images": [
+            { "src": "assets/champions-tactics/gameplay_champions_tactics.gif", "display": null }
+          ]
         },
         {
           "title": "Network & Database",
-          "body": "Champions Tactics Grimoria Chronicles being a <b>multiplayer game</b>, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered <b>database management with MongoDB</b>, which I used for features such as a stat history for all the figurines in-game.",
-          "images": ["assets/champions-tactics/mongodb.png"]
+          "body": "Champions Tactics Grimoria Chronicles being a **multiplayer game**, I learned all designs used to ensure the gameplay couldn't be disturbed by any kind of issues such as network jitters, disconnections, and even cheats. I also discovered **database management with MongoDB**, which I used for features such as a stat history for all the figurines in-game.",
+          "images": [
+            { "src": "assets/champions-tactics/mongodb.png", "display": null }
+          ]
         },
         {
           "title": "Production's Process",
-          "body": "This internship was my first experience in the gamedev industry. I learned all the <b>production's processes</b>, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been <b>onboarded and followed up</b> during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
-          "images": ["assets/champions-tactics/team.jpg"]
+          "body": "This internship was my first experience in the gamedev industry. I learned all the **production's processes**, such as Dailies, Kick Off & Review Meetings, GitLab Merge Request, and so on... I have also been **onboarded and followed up** during my whole internship, allowing me to feel completely at ease and improve my skills in the best condition.",
+          "images": [
+            { "src": "assets/champions-tactics/team.jpg", "display": null }
+          ]
         }
       ],
-      "related": ["demons-and-disco","kintsugi", "iridescence"]
+      "related": ["demons-and-disco", "kintsugi", "iridescence"]
     },
     {
       "id": "demons-and-disco",
@@ -135,18 +149,24 @@
       "sections": [
         {
           "title": "Wwise Implementation",
-          "body": "Developing a rhythm game is a real challenge, it requires to get the <b>beat of a music</b> with the more precision as possible. After some R&D, we thought about using an <b>external sound engine</b>, so we decided to give Wwise a try. I personally worked on it <b>with the sound designers</b> and integrated the entire <b>audio game loop</b> and every SFX in Unity.",
-          "images": ["assets/demons-and-disco/wwise.png"]
+          "body": "Developing a rhythm game is a real challenge, it requires to get the **beat of a music** with the more precision as possible. After some R&D, we thought about using an **external sound engine**, so we decided to give Wwise a try. I personally worked on it **with the sound designers** and integrated the entire **audio game loop** and every SFX in Unity.",
+          "images": [
+            { "src": "assets/demons-and-disco/wwise.png", "display": null }
+          ]
         },
         {
           "title": "Game Feel",
-          "body": "The idea behind this project, was <b>to develop a slice</b>. This objective could only be achieved by <b>polishing every feature</b> and implementing as much feedbacks as possible. We combine these stakes and the necessity to make the player <b>feel the rhythm</b> to synchronize all of our <b>juiciness aspects on the beat</b>.",
-          "images": ["assets/demons-and-disco/feedbacks.png"]
+          "body": "The idea behind this project, was **to develop a slice**. This objective could only be achieved by **polishing every feature** and implementing as much feedbacks as possible. We combine these stakes and the necessity to make the player **feel the rhythm** to synchronize all of our **juiciness aspects on the beat**.",
+          "images": [
+            { "src": "assets/demons-and-disco/feedbacks.png", "display": null }
+          ]
         },
         {
           "title": "Lead Programmer",
-          "body": "During this whole project, I learned how to use <b>Jira</b> thanks to the producers we had. I managed the game programming part of the team, by <b>creating and dispatching tickets</b>. I also communicate with the rest of the team to keep track of the progress of everyone and <b>ensure the smooth development</b> of the game.",
-          "images": ["assets/demons-and-disco/jira.png"]
+          "body": "During this whole project, I learned how to use **Jira** thanks to the producers we had. I managed the game programming part of the team, by **creating and dispatching tickets**. I also communicate with the rest of the team to keep track of the progress of everyone and **ensure the smooth development** of the game.",
+          "images": [
+            { "src": "assets/demons-and-disco/jira.png", "display": null }
+          ]
         }
       ],
       "related": ["dont-look-down", "the-last-night-to-hunt", "kintsugi"]
@@ -175,13 +195,17 @@
       "sections": [
         {
           "title": "Initiation to VR",
-          "body": "As my first project with Virtual Reality, I had to learn all the basics on how to make the headset work or how to link it to the engine. Once everything was setup, we used the VR template from Unreal Engine to start our only-2-weeks journey. We <b>tweaked the already implemented features</b> and iterated as much as possible using <b>Blueprint</b>.",
-          "images": ["assets/dont-look-down/vr_template_example.gif"]
+          "body": "As my first project with Virtual Reality, I had to learn all the basics on how to make the headset work or how to link it to the engine. Once everything was setup, we used the VR template from Unreal Engine to start our only-2-weeks journey. We **tweaked the already implemented features** and iterated as much as possible using **Blueprint**.",
+          "images": [
+            { "src": "assets/dont-look-down/vr_template_example.gif", "display": null }
+          ]
         },
         {
           "title": "VR Gameplay",
-          "body": "During this project, I focused on <b>simple but clean toys</b> such as the doors of the electric boxes or the pliers interaction, and even the <b>glow sticks</b>, which have to be <b>cracked and then shaken</b> to emit light. I also made a <b>simple inventory</b> on the belt, using the slot feature, to ensure the player can keep its glowstick and pliers safe.",
-          "images": ["assets/dont-look-down/gameplaydld_02.png"]
+          "body": "During this project, I focused on **simple but clean toys** such as the doors of the electric boxes or the pliers interaction, and even the **glow sticks**, which have to be **cracked and then shaken** to emit light. I also made a **simple inventory** on the belt, using the slot feature, to ensure the player can keep its glowstick and pliers safe.",
+          "images": [
+            { "src": "assets/dont-look-down/gameplaydld_02.png", "display": null }
+          ]
         }
       ],
       "related": ["iridescence", "the-last-night-to-hunt", "champions-tactics"]
@@ -212,20 +236,26 @@
         {
           "title": "Level Design Tools",
           "body": "The ambition for this project was to create as much levels as possible to make a game as close as possible from a real-shipped game. To reach this objective, I quickly developped an easy--to-use tool, which gives the opportunity to games designers to generate more than 50 levels for our game.",
-          "images": ["assets/iridescence/soutenance-projet-mobile.png"]
+          "images": [
+            { "src": "assets/iridescence/soutenance-projet-mobile.png", "display": null }
+          ]
         },
         {
           "title": "Shipping & Lead GP",
           "body": "The goal of this project was to upload it on Google Play Store as a real project, which I learned to do and did after that. This project also gave me the opportunity to enhance my leading skills. I managed my two colleagues, took care of the organization documents, communicated with the artists and designers.",
-          "images": ["assets/iridescence/googleplayconsole.png"]
+          "images": [
+            { "src": "assets/iridescence/googleplayconsole.png", "display": null }
+          ]
         },
         {
           "title": "Accessibility",
           "body": "For this game, we had the theme \"Colors\" which we decided to use as our main feature, but this means we also had to work on accessibility. I thought about many ways to work around colorblindness issues, but I finally chose to use the shapes that were first used by artists to create the three characters and display this shape in black and white on all the objects which are coloured as lasers and emitters.",
-          "images": ["assets/iridescence/colorblind_mode.png"]
+          "images": [
+            { "src": "assets/iridescence/colorblind_mode.png", "display": null }
+          ]
         }
       ],
-      "related": ["the-last-night-to-hunt","kintsugi", "dont-look-down"]
+      "related": ["the-last-night-to-hunt", "kintsugi", "dont-look-down"]
     },
     {
       "id": "the-last-night-to-hunt",
@@ -252,17 +282,23 @@
         {
           "title": "Quests & Dialogs",
           "body": "My main objective for this project was to create an easy-to-use tool to implement all the dialogs and quests and link them in-between. The main issue, I encountered was to give the least parameters as I can to the Game Designers, not to lose them, but also enough configurable not to hard code the quest by myself.",
-          "images": ["assets/the-last-night-to-hunt/quests_dialogs_tool.png"]
+          "images": [
+            { "src": "assets/the-last-night-to-hunt/quests_dialogs_tool.png", "display": null }
+          ]
         },
         {
           "title": "AI",
-          "body": "The game takes place in a village with more than 50 entities roaming with two types of behaviour, the villagers, which will only walk and talk to the player the day and the soldiers which attack at night or when the  player enters the military camp. And some of them also had to follow a pre-defined path.",
-          "images": ["assets/the-last-night-to-hunt/ai_pathing.png"]
+          "body": "The game takes place in a village with more than 50 entities roaming with two types of behaviour, the villagers, which will only walk and talk to the player the day and the soldiers which attack at night or when the player enters the military camp. And some of them also had to follow a pre-defined path.",
+          "images": [
+            { "src": "assets/the-last-night-to-hunt/ai_pathing.png", "display": null }
+          ]
         },
         {
           "title": "Initiation to Shaders",
           "body": "Creating a small open world as a first main project was a real constraint in terms of assets for our Game Artists. So we made the choice to focus on the artistic direction rather than the details of objects. I, personally, created a water shader which sadly couldn't be implemented in the last Level Design. I also keep an eye on the production of the toon and outline shaders made by associate.",
-          "images": ["assets/the-last-night-to-hunt/shaders_initiation.gif"]
+          "images": [
+            { "src": "assets/the-last-night-to-hunt/shaders_initiation.gif", "display": null }
+          ]
         }
       ],
       "related": ["cyber-exchange", "dont-look-down", "kintsugi"]
@@ -283,7 +319,7 @@
       "youtubeId": "",
       "role": "Gameplay and Assets Implementation",
       "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
-      "context": "IIM Godfather Game Jam (Retro, PS1,\"Big Sword\")",
+      "context": "IIM Godfather Game Jam (Retro, PS1, \"Big Sword\")",
       "technologies": ["Unity", "C#"],
       "links": [
         { "label": "Itch.io", "url": "https://pitiflan.itch.io/godfatherjam" }
@@ -292,17 +328,23 @@
         {
           "title": "Initiation to 3D",
           "body": "For this game jam, we were asked to create a game in the PS1 style, so 3D was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
-          "images": ["assets/cyber-exchange/ce_screenshots_1.png"]
+          "images": [
+            { "src": "assets/cyber-exchange/ce_screenshots_1.png", "display": null }
+          ]
         },
         {
           "title": "Changing Player",
           "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a volatile controller.",
-          "images": ["assets/cyber-exchange/switch_gif_cyber_exchange.gif"]
+          "images": [
+            { "src": "assets/cyber-exchange/switch_gif_cyber_exchange.gif", "display": null }
+          ]
         },
         {
           "title": "First Experience as a Team",
           "body": "I discovered the pros and cons of being a team to develop a video game, like the necessity to communicate, the use of GitHub, the feeling of being useful to others and many others thrilling things.",
-          "images": ["assets/cyber-exchange/cyber_exchange_screenshot_4.png"]
+          "images": [
+            { "src": "assets/cyber-exchange/cyber_exchange_screenshot_4.png", "display": null }
+          ]
         }
       ],
       "related": ["dotk", "lueur", "slay-the-lig"]
@@ -332,17 +374,23 @@
         {
           "title": "Introduction to Unity",
           "body": "I had always been interested in Unity since I knew it was the first independent game engine in the world, but never had the chance to get to such a result with any other game in the past. I learned how to implement assets, develop a core gameplay and create a game loop from the start menu to the victory screen.",
-          "images": ["assets/dotk/dotk_tutorial.png"]
+          "images": [
+            { "src": "assets/dotk/dotk_tutorial.png", "display": null }
+          ]
         },
         {
           "title": "Procedural Generation",
           "body": "The roguelike idea came from my interest in procedural generation, which is mandatory when developing such a replayable game. I managed to program the first prototype in only a single day.",
-          "images": ["assets/dotk/dotk_procedural_generation.png"]
+          "images": [
+            { "src": "assets/dotk/dotk_procedural_generation.png", "display": null }
+          ]
         },
         {
           "title": "Combos with Elements",
           "body": "When it comes to game design, one of the first thing to think is the USP. For this game, I chose the combination of elements. Each one has its specificity, like wind teleports the player or earth is a shield, but when you use both at the same time, you teleport and create an explosion on your arrival point, dealing a lot of damages to enemies. You can also improve your abilities with statues in the dungeon, allowing to specialized yourself on each run.",
-          "images": ["assets/dotk/dotk_gif_combo.gif"]
+          "images": [
+            { "src": "assets/dotk/dotk_gif_combo.gif", "display": null }
+          ]
         }
       ],
       "related": ["master-project", "champions-tactics", "kintsugi"]
@@ -372,17 +420,23 @@
         {
           "title": "Tools for Productivity",
           "body": "This project is a sort of backpack for my studies/career, it will allow me to create powerful tools and implement them in a second on futures projects.",
-          "images": ["assets/master-project/package_manager_masterproject.png"]
+          "images": [
+            { "src": "assets/master-project/package_manager_masterproject.png", "display": null }
+          ]
         },
         {
           "title": "Save System",
           "body": "Keeping data between game restart is a key feature needed in a lot of type of game. This tool is able to create a new script with a given name in parameter by itself. It allows the user to generate a new class for the save and make it easier to implement in any project.",
-          "images": ["assets/master-project/datasavesystem.gif"]
+          "images": [
+            { "src": "assets/master-project/datasavesystem.gif", "display": null }
+          ]
         },
         {
           "title": "More and more coming soon",
           "body": "As I said before, I want to create more and more tools that can be used in as much project as possible. The next project I'll be working on, will be decided on the needs of future projects.",
-          "images": ["assets/master-project/github_page.png"]
+          "images": [
+            { "src": "assets/master-project/github_page.png", "display": null }
+          ]
         }
       ],
       "related": ["slay-the-lig", "kintsugi", "iridescence"]
@@ -412,12 +466,16 @@
         {
           "title": "GameFeel",
           "body": "I used this project to train my gamefeel implementation in games, I spent hours working on the tweening of the card and the feedback on the characters. The result makes me proud of this game, even if it is simple, it is addictive in a way.",
-          "images": ["assets/slay-the-lig/slaytheligif.gif"]
+          "images": [
+            { "src": "assets/slay-the-lig/slaytheligif.gif", "display": null }
+          ]
         },
         {
-          "title": "Balancing tools\n",
+          "title": "Balancing tools",
           "body": "During this game jam, We had a first year student who wanted to learn game design, so I had to build a complete structure with a friendly interface not to lose him while using it. I already had used scriptable objects but this time I had to make it simple to use.",
-          "images": ["assets/slay-the-lig/so_manipulations.gif"]
+          "images": [
+            { "src": "assets/slay-the-lig/so_manipulations.gif", "display": null }
+          ]
         }
       ],
       "related": ["geimerophobia", "beboum-fighters", "dotk"]
@@ -447,12 +505,16 @@
         {
           "title": "Game Engine Initiation",
           "body": "We were by our C++ teacher to create a game from scratch in half and a week with the SFML graphic library. I found this project so exciting and captivating, that it makes me want to create my own game engine in the future.",
-          "images": ["assets/geimerophobia/geimerophobia-gameplay.gif"]
+          "images": [
+            { "src": "assets/geimerophobia/geimerophobia-gameplay.gif", "display": null }
+          ]
         },
         {
           "title": "UI, Gameloop and Particles",
           "body": "I first created the gameloop skeleton, so my colleague and I could then link our own events in the game without any issues. I developped the UI and its behaviours and used the remaining time I had, creating particles for the damage and powerups animations.",
-          "images": ["assets/geimerophobia/ui.png"]
+          "images": [
+            { "src": "assets/geimerophobia/ui.png", "display": null }
+          ]
         }
       ],
       "related": ["a-contre-courant", "master-project", "tough-sadness"]
@@ -481,18 +543,24 @@
       "sections": [
         {
           "title": "Physics",
-          "body": "The objective for this project was to make a game with the similar physics to Ynglet, which was not the easiest one to implement,but I only had a week to get to a close enough result. Fortunately, I succeeded after many attempts.",
-          "images": ["assets/a-contre-courant/letter_creator.gif"]
+          "body": "The objective for this project was to make a game with the similar physics to Ynglet, which was not the easiest one to implement, but I only had a week to get to a close enough result. Fortunately, I succeeded after many attempts.",
+          "images": [
+            { "src": "assets/a-contre-courant/letter_creator.gif", "display": null }
+          ]
         },
         {
           "title": "GD/LD Tools",
           "body": "The lack of time, we had for this project forced us to decrease the number of features, we wanted to do but it gave me possibility to create some simple but useful tools for the only game designer in the team. It helped him a lot on the level design that he managed to do in a single day.",
-          "images": ["assets/a-contre-courant/physics_movement.gif"]
+          "images": [
+            { "src": "assets/a-contre-courant/physics_movement.gif", "display": null }
+          ]
         },
         {
           "title": "Winner of the Festival",
           "body": "We presented this game to a jury at the Hauts-de-Seine's digital festival and won the first prize in the +18 y.o. category. It was a total surprise and it's a pride today to have been able to win a prize thanks to a game I made.",
-          "images": ["assets/a-contre-courant/winner.jpg"]
+          "images": [
+            { "src": "assets/a-contre-courant/winner.jpg", "display": null }
+          ]
         }
       ],
       "related": ["lueur", "tough-sadness", "slay-the-lig"]
@@ -522,12 +590,16 @@
         {
           "title": "How to Remake a Game in a Week",
           "body": "The objective for this project was to remake the game of one of my Game Artist colleague without any bugs in a week and then try to improve it for the rest of the Devtober. The idea was that she will be able after that to add other assets to the game more easily than before thanks to tools.",
-          "images": ["assets/lueur/lueur_gif_preview.gif"]
+          "images": [
+            { "src": "assets/lueur/lueur_gif_preview.gif", "display": null }
+          ]
         },
         {
           "title": "A Month to Discover Tools Basics",
           "body": "One of the thing I find the more interesting in game development is the fact that most of the time that's a teamwork, and I want to make my work the more useful I can for others. So with this project, I had a month to learn how to build tools and how to make them the more user friendly as possible.",
-          "images": ["assets/lueur/tool_blackhole.png"]
+          "images": [
+            { "src": "assets/lueur/tool_blackhole.png", "display": null }
+          ]
         }
       ],
       "related": ["tough-sadness", "dotk", "a-contre-courant"]
@@ -557,12 +629,16 @@
         {
           "title": "GitHub Comprehension",
           "body": "As written above, the context of this project was to build a game in team with GitHub. I already had learned how to use it on my own but it still helps me theorize how it works behind the stage and better understand how to properly use it.",
-          "images": ["assets/tough-sadness/github_kraken.png"]
+          "images": [
+            { "src": "assets/tough-sadness/github_kraken.png", "display": null }
+          ]
         },
         {
           "title": "Adding Post-Process",
           "body": "We also added some post-process on the project, I discovered basics of post-process with URP and managed to get a result I'm proud of.",
-          "images": ["assets/tough-sadness/toughsadness_gif_preview.gif"]
+          "images": [
+            { "src": "assets/tough-sadness/toughsadness_gif_preview.gif", "display": null }
+          ]
         }
       ],
       "related": ["beboum-fighters", "dont-look-down", "master-project"]
@@ -592,17 +668,23 @@
         {
           "title": "Lead Programmer",
           "body": "The fact that we were 3 Programmers on the team forced us to set up a rigorous organization and without even intending to take the lead, the team, implicitely, chose me as the Lead Programmer. I understood that when there were questions about the programming part, I was the first to be questioned. I threw myself into this role wholeheartedly, because I prefer the programming team to have someone to follow than no one.",
-          "images": ["assets/beboum-fighters/timontridimension_1_2_2.gif"]
+          "images": [
+            { "src": "assets/beboum-fighters/timontridimension_1_2_2.gif", "display": null }
+          ]
         },
         {
           "title": "Local Multiplayer",
           "body": "I knew the first issue, we will encounter with this game was the multiplayer part, no one ever did something like that in the team and we had to make it work if we wanted the game to advance. So I used the \"New Imput System\" to create a local multiplayer prototype as fast as possible and it worked amazingly.",
-          "images": ["assets/beboum-fighters/beboum_selection_room.png"]
+          "images": [
+            { "src": "assets/beboum-fighters/beboum_selection_room.png", "display": null }
+          ]
         },
         {
           "title": "GitHub Firefighter",
-          "body": "he fact that I was chosen to be the Lead Programmer also gave me the role of GItHub's manager. I spent the three days resolving issues others and I had on GitHub. All these problems, slowed down the production and are the reason the game is not fully finished.",
-          "images": ["assets/beboum-fighters/béboumfire.gif"]
+          "body": "The fact that I was chosen to be the Lead Programmer also gave me the role of GitHub's manager. I spent the three days resolving issues others and I had on GitHub. All these problems, slowed down the production and are the reason the game is not fully finished.",
+          "images": [
+            { "src": "assets/beboum-fighters/béboumfire.gif", "display": null }
+          ]
         }
       ],
       "related": ["demons-and-disco", "lueur", "iridescence"]

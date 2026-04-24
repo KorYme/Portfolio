@@ -42,7 +42,7 @@
     ).join('');
 
     const sectionsHTML = (a.sections || []).map(s =>
-            `<h3>${s.title}</h3><p>${s.text}</p>`
+            `<h3>${s.title}</h3><p>${parseMarkdown(s.text)}</p>`
     ).join('');
 
     const skillsHTML = techBadgeHTML(a.skills, 'tech-tag');

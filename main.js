@@ -132,6 +132,24 @@ function renderImgs(images) {
     </div>`;
 }
 
+/* ── parseMarkdown ──────────────────────────────────────
+   Handle markdown for some texts such as Discord.
+   ─────────────────────────────────────────────────── */
+function parseMarkdown(text) {
+  return text
+      // Italic bold : ***text***
+      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+      // Bold : **text**
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      // Italic : *text* ou _text_
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/_(.*?)_/g, '<em>$1</em>')
+      // Underlined : __text__
+      .replace(/__(.*?)__/g, '<u>$1</u>')
+      // Strikethrough  : ~~text~~
+      .replace(/~~(.*?)~~/g, '<s>$1</s>');
+}
+
 /* ── Shared init ─────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   /* Active nav */
