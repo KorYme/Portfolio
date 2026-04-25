@@ -105,6 +105,38 @@ function buildMediaElement(item) {
   }
 }
 
+function buildThumb(p) {
+    const thumb    = p.thumbnail;
+    const thumbGif = p.thumbnailGif;
+
+    // Compatibilité string simple (ancien format)
+    const stillSrc = typeof thumb === 'string' ? thumb : (thumb ? thumb.src : null);
+    const gifSrc   = typeof thumbGif === 'string' ? thumbGif : (thumbGif ? thumbGif.src : null);
+    const display  = (thumb && typeof thumb === 'object') ? thumb.display : null;
+
+    if (!stillSrc) return `<div class="thumb-ph">[ ${p.title} ]</div>`;
+
+    if (gifSrc) {
+        // Hover gif — on garde le mécanisme img-still/img-gif
+        const d = display || {};
+        const ratio    = (d.ratio    || '4/3');
+        const position = (d.position || 'center');
+        return `
+      <div style="position:absolute;inset:0;">
+        <img class="img-still" src="${stillSrc}" alt="${p.title}" loading="lazy"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${position};">
+        <img class="img-gif"   src="${gifSrc}"   alt="${p.title}" loading="lazy"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${position};">
+      </div>`;
+    }
+
+    // Pas de gif — on passe par buildMediaElement pour les modes avancés
+    const item = typeof thumb === 'object' ? thumb : { src: stillSrc, display: null };
+    // buildMediaElement retourne un div avec son propre sizing, on l'adapte pour la card-thumb
+    const inner = buildMediaElement(item);
+    return `<div style="position:absolute;inset:0;overflow:hidden;">${inner}</div>`;
+}
+
 /* ── renderImgs ──────────────────────────────────────
    Handle 1, 2 or 3 assets with automatic layout.
    Each item can be a simple string (simple path)

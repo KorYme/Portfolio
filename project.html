@@ -43,7 +43,7 @@ function relatedCard(p, i) {
   return `
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
       <div class="card-thumb">
-        ${thumb}
+        ${buildThumb(p)}
       </div>
       <div class="card-body">
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
