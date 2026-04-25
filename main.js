@@ -109,32 +109,60 @@ function buildThumb(p) {
     const thumb    = p.thumbnail;
     const thumbGif = p.thumbnailGif;
 
-    // Compatibilité string simple (ancien format)
-    const stillSrc = typeof thumb === 'string' ? thumb : (thumb ? thumb.src : null);
-    const gifSrc   = typeof thumbGif === 'string' ? thumbGif : (thumbGif ? thumbGif.src : null);
-    const display  = (thumb && typeof thumb === 'object') ? thumb.display : null;
+    const stillSrc = thumb ? thumb.src : null;
+    const gifSrc   = thumbGif ? thumbGif.src : null;
+    const display  = (thumb && thumb.display && Object.keys(thumb.display).length > 0)
+        ? thumb.display : null;
 
     if (!stillSrc) return `<div class="thumb-ph">[ ${p.title} ]</div>`;
 
+    // Paramètres display
+    const mode     = display ? (display.mode || 'cover') : 'cover';
+    const position = display ? (display.position || 'center') : 'center';
+    const bg       = display ? (display.background || 'var(--surface)') : 'var(--surface)';
+    const maxWidth = display ? (display.maxWidth || '100%') : '100%';
+
+    // Styles selon le mode, appliqués à l'image elle-même
+    let imgStyle = '';
+    let wrapStyle = 'position:absolute;inset:0;overflow:hidden;';
+
+    switch (mode) {
+        case 'cover':
+            imgStyle = `width:100%;height:100%;object-fit:cover;object-position:${position};display:block;`;
+            break;
+        case 'contain':
+            wrapStyle += `background:${bg};display:flex;align-items:center;justify-content:center;`;
+            imgStyle = `max-width:100%;max-height:100%;object-fit:contain;display:block;`;
+            break;
+        case 'stretch':
+            imgStyle = `width:100%;height:100%;object-fit:fill;display:block;`;
+            break;
+        case 'native':
+            wrapStyle += `display:flex;align-items:center;justify-content:center;`;
+            imgStyle = `max-width:${maxWidth};width:auto;height:auto;max-height:100%;display:block;`;
+            break;
+        case 'fixed-height':
+            wrapStyle = `position:absolute;inset:0;overflow:hidden;`;
+            imgStyle = `width:100%;height:100%;object-fit:cover;display:block;`;
+            break;
+        default:
+            imgStyle = `width:100%;height:100%;object-fit:cover;display:block;`;
+    }
+
     if (gifSrc) {
-        // Hover gif — on garde le mécanisme img-still/img-gif
-        const d = display || {};
-        const ratio    = (d.ratio    || '4/3');
-        const position = (d.position || 'center');
         return `
-      <div style="position:absolute;inset:0;">
-        <img class="img-still" src="${stillSrc}" alt="${p.title}" loading="lazy"
-          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${position};">
-        <img class="img-gif"   src="${gifSrc}"   alt="${p.title}" loading="lazy"
-          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${position};">
+      <div style="${wrapStyle}">
+        <img class="img-still" src="${stillSrc}" alt="${p.title}" loading="lazy" style="${imgStyle}">
+        <img class="img-gif"   src="${gifSrc}"   alt="${p.title}" loading="lazy" style="${imgStyle}">
       </div>`;
     }
 
-    // Pas de gif — on passe par buildMediaElement pour les modes avancés
-    const item = typeof thumb === 'object' ? thumb : { src: stillSrc, display: null };
-    // buildMediaElement retourne un div avec son propre sizing, on l'adapte pour la card-thumb
-    const inner = buildMediaElement(item);
-    return `<div style="position:absolute;inset:0;overflow:hidden;">${inner}</div>`;
+    const isVideo = stillSrc.match(/\.mp4$/i);
+    const media = isVideo
+        ? `<video src="${stillSrc}" autoplay muted loop playsinline style="${imgStyle}"></video>`
+        : `<img src="${stillSrc}" alt="${p.title}" loading="lazy" style="${imgStyle}">`;
+
+    return `<div style="${wrapStyle}">${media}</div>`;
 }
 
 /* ── renderImgs ──────────────────────────────────────
