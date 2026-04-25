@@ -43,15 +43,6 @@ async function buildGrid() {
   const data = await fetch('projects.json').then(r => r.json());
   const grid = document.getElementById('main-grid');
   data.projects.filter(p => p.category === 'main').forEach((p, i) => {
-    let thumb = `<div class="thumb-ph">[ ${p.title} ]</div>`;
-    if (p.thumbnail) {
-      if (p.thumbnailGif) {
-        thumb = `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">
-             <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`;
-      } else {
-        thumb = `<img src="${p.thumbnail}" alt="${p.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`;
-      }
-    }
     const techBadges = techBadgeHTML(p.technologies, 'tech-badge');
 
     const a = document.createElement('a');

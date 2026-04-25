@@ -30,16 +30,6 @@
 <script>
 /* ── helpers ─────────────────────────────────────── */
 function relatedCard(p, i) {
-  let thumb = `<div class="thumb-ph">[ ${p.title} ]</div>`;
-  if (p.thumbnail) {
-    if (p.thumbnailGif) {
-      thumb = `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">
-             <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`;
-    } else {
-      thumb = `<img src="${p.thumbnail}" alt="${p.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`;
-    }
-  }
-
   return `
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
       <div class="card-thumb">
