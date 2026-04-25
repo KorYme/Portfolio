@@ -52,6 +52,15 @@
       ],
       "sections": [
         {
+          "title": "Sequencer",
+          "body": "There was a moment in the production, we made a huge shift and determined we **had to focus on emotions**. This is how we decided to work on a **sequencer system**, giving the ability **for GDs and GAs** to create, from small to intense emotional moments. I made this system as simple as possible to **easily implement effects** such as enabling certain ability for the player, changing controller profile, play animations, camera shakes, and so on...",
+          "images": [
+            { "src": "assets/kintsugi/kintsugi_sequencer_1.mp4", "display": null },
+            { "src": "assets/kintsugi/kintsugi_sequencer_2.mp4", "display": null },
+            { "src": "assets/kintsugi/kintsugi_sequencer_3.mp4", "display": null }
+          ]
+        },
+        {
           "title": "Level Tools",
           "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate **git conflicts** between artists and game designers, so I developed a **scene composition system**, so we **split the level in sub sections** and the sub sections were also split with the **game artists** scenes (containing mostly sprites but also sequencers), the **level designers** scenes (with colliders), and the **sound designers** scenes (with gameobject triggering Wwise events).",
           "images": [
@@ -66,17 +75,10 @@
           ]
         },
         {
-          "title": "Sequencer",
-          "body": "There was a moment in the production, we made a huge shift and determined we **had to focus on emotions**. This is how we decided to work on a **sequencer system**, giving the ability **for GDs and GAs** to create, from small to intense emotional moments. I made this system as simple as possible to **easily implement effects** such as enabling certain ability for the player, changing controller profile, play animations, camera shakes, and so on...",
-          "images": [
-            { "src": "assets/kintsugi/sequencers_possibilites.mp4", "display": null }
-          ]
-        },
-        {
           "title": "Continuous Integration",
           "body": "Simultaneously, we used a CI system based on **GitHub Actions** which gave us monitoring on the build state, so we regularly debugged the project. It helped us **to version and QA the project**. I made this CI job mainly before the pre-production even began, but I still keep working on it and maintain it in parallel with the project.",
           "images": [
-            { "src": "assets/kintsugi/ci_discord_result.png", "display": null }
+            { "src": "assets/kintsugi/ci_discord_result.png", "display": { "mode" : "native" } }
           ]
         }
       ],
