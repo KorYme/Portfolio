@@ -40,8 +40,6 @@ async function buildGrid() {
            <img class="img-gif"   src="${p.thumbnailGif}" alt="${p.title}" loading="lazy">`
         : `<img class="img-still" src="${p.thumbnail}" alt="${p.title}" loading="lazy">`;
     }
-    const techChips = (p.technologies||[]).map(t =>
-      `<span class="chip">${getTechIcon(t)}<span>${t}</span></span>`).join('');
     const techBadges = techBadgeHTML(p.technologies, 'tech-badge');
 
     const a = document.createElement('a');

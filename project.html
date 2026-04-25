@@ -39,8 +39,6 @@ function relatedCard(p, i) {
       thumb = `<img src="${p.thumbnail}" alt="${p.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`;
     }
   }
-  const techChips = (p.technologies||[]).map(t =>
-    `<span class="chip">${getTechIcon(t)}<span>${t}</span></span>`).join('');
 
   return `
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
