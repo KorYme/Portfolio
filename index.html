@@ -44,6 +44,9 @@ async function buildGrid() {
   const grid = document.getElementById('main-grid');
   data.projects.filter(p => p.category === 'main').forEach((p, i) => {
     const techBadges = techBadgeHTML(p.technologies, 'tech-badge');
+    const computedRole = (p.role && p.role.trim() !== '')
+            ? p.role
+            : (p.sections || []).map(s => s.title).join(', ');
 
     const a = document.createElement('a');
     a.href = `project.html?id=${p.id}`;
@@ -56,7 +59,7 @@ async function buildGrid() {
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
         <div class="card-title">${p.title}</div>
         <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
-        <div class="card-role">${p.role}</div>
+        <div class="card-role">${computedRole}</div>
         <div class="card-tech-row">${techBadges}</div>
       </div>`;
     grid.appendChild(a);

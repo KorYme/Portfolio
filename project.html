@@ -30,6 +30,9 @@
 <script>
 /* ── helpers ─────────────────────────────────────── */
 function relatedCard(p, i) {
+  const computedRole = (p.role && p.role.trim() !== '')
+          ? p.role
+          : (p.sections || []).map(s => s.title).join(', ');
   return `
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
       <div class="card-thumb">
@@ -39,7 +42,7 @@ function relatedCard(p, i) {
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
         <div class="card-title">${p.title}</div>
         <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
-        <div class="card-role">${p.role}</div>
+        <div class="card-role">${computedRole}</div>
         <div class="card-tech-row">${techBadgeHTML(p.technologies, 'tech-badge')}</div>
       </div>
     </a>`;
@@ -105,6 +108,9 @@ async function render() {
 
   /* tech tags with icons */
   const techTagsHTML = techBadgeHTML(p.technologies, 'tech-tag');
+  const computedRole = (p.role && p.role.trim() !== '')
+          ? p.role
+          : (p.sections || []).map(s => s.title).join(', ');
 
   const validLinks = (p.links || []).filter(l => l.url && l.url.trim() !== '');
   const linkHTML = validLinks.length ? `
@@ -141,7 +147,7 @@ async function render() {
         <h3>Context</h3>
         <p>${p.context}<br><br>
           <strong style="color:var(--text)">Team :</strong> ${p.team}<br>
-          <strong style="color:var(--text)">My role :</strong> ${p.role}
+          <strong style="color:var(--text)">My role :</strong> ${computedRole}
         </p>
       </div>
       <div>
