@@ -269,8 +269,13 @@ nav {
   border-bottom: 1px solid var(--border); margin-bottom: 72px;
 }
 .proj-ctx h3 {
-  font-family: var(--fs); font-size: .58rem; font-weight: 700;
-  letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  font-family: var(--fs);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 12px;
 }
 .proj-ctx p { font-size: .9rem; color: var(--muted); line-height: 1.9; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 4px; }
@@ -327,9 +332,15 @@ video.proj-img { object-fit: cover; }
   padding-bottom: 72px;
   border-bottom: 1px solid var(--border);
 }
+
 .yt-wrap h3 {
-  font-family: var(--fs); font-size: .62rem; font-weight: 700;
-  letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;
+  font-family: var(--fs);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 16px;
 }
 .yt-frame {
   position: relative; width: 100%; aspect-ratio: 16/9; background: #000;

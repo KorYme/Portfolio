@@ -115,7 +115,7 @@ async function render() {
   const validLinks = (p.links || []).filter(l => l.url && l.url.trim() !== '');
   const linkHTML = validLinks.length ? `
   <div style="margin-top: 20px;">
-    <h3 style="font-family:var(--fs);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Links</h3>
+    <h3>Links</h3>
     <div style="display:flex;flex-wrap:wrap;gap:8px;">
       ${validLinks.map(l => `
         <a href="${l.url}" target="_blank" rel="noopener" class="btn btn-link">${l.label} ↗</a>
