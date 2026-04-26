@@ -39,7 +39,7 @@
       "teamSize": "16 Persons",
       "category": "main",
       "thumbnail": { "src": "assets/kintsugi/kintsugi_logo.png", "display": { "mode": "cover", "position": "68% 50%" } },
-      "thumbnailGif": { "src": "assets/kintsugi/kintsugi_sequencer_1.mp4", "display": {} },
+      "thumbnailGif": { "src": "assets/kintsugi/kintsugi_cool_moments.mp4", "display": {} },
       "youtubeId": "TkcP0TLfAFA",
       "role": "Level and Rendering Tools, Sequencer & CI",
       "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producers, 2 Sound Designers, 1 ",

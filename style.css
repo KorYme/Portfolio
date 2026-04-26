@@ -151,12 +151,12 @@ nav {
 .card:hover .card-thumb .img-gif   { opacity: 1; }
 .card:hover .card-thumb .img-still { opacity: 0; }
 .card:hover .card-thumb .img-still,
-.card:hover .card-thumb .img-gif   { transform: scale(1.04); }
+.card:hover .card-thumb .img-gif   { transform: scale(1.02); }
 
 /* Dark overlay on hover */
 .card-thumb::after {
   content: ''; position: absolute; inset: 0;
-  background: rgba(14,14,14,.55); opacity: 0; transition: opacity .3s;
+  background: rgba(14,14,14,.0); opacity: 0; transition: opacity .3s;
   z-index: 1;
 }
 .card:hover .card-thumb::after { opacity: 1; }
