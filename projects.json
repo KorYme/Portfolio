@@ -42,7 +42,7 @@
       "thumbnailGif": { "src": "assets/kintsugi/kintsugi_sequencer_1.mp4", "display": {} },
       "youtubeId": "TkcP0TLfAFA",
       "role": "Level and Rendering Tools, Sequencer & CI",
-      "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producer, 3 Sound Designer",
+      "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producers, 2 Sound Designers, 1 ",
       "context": "Final Year Project at IIM Digital School.",
       "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
       "links": [
@@ -58,6 +58,13 @@
             { "src": "assets/kintsugi/kintsugi_sequencer_1.mp4", "display": {} },
             { "src": "assets/kintsugi/kintsugi_sequencer_2.mp4", "display": {} },
             { "src": "assets/kintsugi/kintsugi_sequencer_3.mp4", "display": {} }
+          ]
+        },
+        {
+          "title": "Architecture",
+          "body": "On this project, I designed the entire ",
+          "images": [
+            { "src": "assets/kintsugi/kintsugi_architecture.png", "display": {} }
           ]
         },
         {
