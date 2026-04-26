@@ -23,7 +23,7 @@
     <h1>Maxime "KorYme" CORBY</h1>
     <p class="hero-sub">Gameplay &amp; Tools Programmer</p>
     <div class="hero-cta">
-      <a href="side-projects.html" class="btn">Side Projects</a>
+      <a href="side-projects.html" class="btn primary">Side Projects</a>
       <a href="about.html" class="btn primary">About Me</a>
     </div>
   </section>
@@ -56,7 +56,7 @@ async function buildGrid() {
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
         <div class="card-title">${p.title}</div>
         <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
-        <div class="card-role">My job : ${p.role}</div>
+        <div class="card-role">${p.role}</div>
         <div class="card-tech-row">${techBadges}</div>
       </div>`;
     grid.appendChild(a);

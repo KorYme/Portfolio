@@ -46,7 +46,7 @@ async function buildGrid() {
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
         <div class="card-title">${p.title}</div>
         <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
-        <div class="card-role">My job : ${p.role}</div>
+        <div class="card-role">${p.role}</div>
         <div class="card-tech-row">${techBadges}</div>
       </div>`;
     grid.appendChild(a);
