@@ -109,60 +109,62 @@ function buildThumb(p) {
     const thumb    = p.thumbnail;
     const thumbGif = p.thumbnailGif;
 
-    const stillSrc = thumb ? thumb.src : null;
-    const gifSrc   = thumbGif ? thumbGif.src : null;
-    const display  = (thumb && thumb.display && Object.keys(thumb.display).length > 0)
-        ? thumb.display : null;
+    const stillSrc    = thumb    ? thumb.src    : null;
+    const stillDisplay = (thumb    && thumb.display    && Object.keys(thumb.display).length    > 0) ? thumb.display    : null;
+    const gifSrc      = thumbGif ? thumbGif.src : null;
+    const gifDisplay   = (thumbGif && thumbGif.display && Object.keys(thumbGif.display).length > 0) ? thumbGif.display : null;
 
     if (!stillSrc) return `<div class="thumb-ph">[ ${p.title} ]</div>`;
 
-    // Paramètres display
-    const mode     = display ? (display.mode || 'cover') : 'cover';
-    const position = display ? (display.position || 'center') : 'center';
-    const bg       = display ? (display.background || 'var(--surface)') : 'var(--surface)';
-    const maxWidth = display ? (display.maxWidth || '100%') : '100%';
+    function resolveStyles(display) {
+        const mode     = display ? (display.mode     || 'cover')           : 'cover';
+        const position = display ? (display.position || 'center')          : 'center';
+        const bg       = display ? (display.background || 'var(--surface)'): 'var(--surface)';
+        const maxWidth = display ? (display.maxWidth || '100%')            : '100%';
 
-    // Styles selon le mode, appliqués à l'image elle-même
-    let imgStyle = '';
-    let wrapStyle = 'position:absolute;inset:0;overflow:hidden;';
+        let imgStyle  = '';
+        let wrapStyle = 'position:absolute;inset:0;overflow:hidden;';
 
-    switch (mode) {
-        case 'cover':
-            imgStyle = `width:100%;height:100%;object-fit:cover;object-position:${position};display:block;`;
-            break;
-        case 'contain':
-            wrapStyle += `background:${bg};display:flex;align-items:center;justify-content:center;`;
-            imgStyle = `max-width:100%;max-height:100%;object-fit:contain;display:block;`;
-            break;
-        case 'stretch':
-            imgStyle = `width:100%;height:100%;object-fit:fill;display:block;`;
-            break;
-        case 'native':
-            wrapStyle += `display:flex;align-items:center;justify-content:center;`;
-            imgStyle = `max-width:${maxWidth};width:auto;height:auto;max-height:100%;display:block;`;
-            break;
-        case 'fixed-height':
-            wrapStyle = `position:absolute;inset:0;overflow:hidden;`;
-            imgStyle = `width:100%;height:100%;object-fit:cover;display:block;`;
-            break;
-        default:
-            imgStyle = `width:100%;height:100%;object-fit:cover;display:block;`;
+        switch (mode) {
+            case 'cover':
+                imgStyle = `width:100%;height:100%;object-fit:cover;object-position:${position};display:block;`;
+                break;
+            case 'contain':
+                wrapStyle += `background:${bg};display:flex;align-items:center;justify-content:center;`;
+                imgStyle   = `max-width:100%;max-height:100%;object-fit:contain;display:block;`;
+                break;
+            case 'stretch':
+                imgStyle = `width:100%;height:100%;object-fit:fill;display:block;`;
+                break;
+            case 'native':
+                wrapStyle += `display:flex;align-items:center;justify-content:center;`;
+                imgStyle   = `max-width:${maxWidth};width:auto;height:auto;max-height:100%;display:block;`;
+                break;
+            default:
+                imgStyle = `width:100%;height:100%;object-fit:cover;display:block;`;
+        }
+
+        return { imgStyle, wrapStyle };
     }
 
+    const { imgStyle: stillImgStyle, wrapStyle } = resolveStyles(stillDisplay);
+
     if (gifSrc) {
+        const { imgStyle: gifImgStyle } = resolveStyles(gifDisplay);
         return `
       <div style="${wrapStyle}">
-        <img class="img-still" src="${stillSrc}" alt="${p.title}" loading="lazy" style="${imgStyle}">
-        <img class="img-gif"   src="${gifSrc}"   alt="${p.title}" loading="lazy" style="${imgStyle}">
+        ${mediaTag(stillSrc, 'img-still', p.title, stillImgStyle)}
+        ${mediaTag(gifSrc,   'img-gif',   p.title, gifImgStyle)}
       </div>`;
     }
 
-    const isVideo = stillSrc.match(/\.mp4$/i);
-    const media = isVideo
-        ? `<video src="${stillSrc}" autoplay muted loop playsinline style="${imgStyle}"></video>`
-        : `<img src="${stillSrc}" alt="${p.title}" loading="lazy" style="${imgStyle}">`;
+    return `<div style="${wrapStyle}">${mediaTag(stillSrc, '', p.title, stillImgStyle)}</div>`;
+}
 
-    return `<div style="${wrapStyle}">${media}</div>`;
+function mediaTag(src, cls, alt, style) {
+    return src.match(/\.mp4$/i)
+        ? `<video ${cls ? `class="${cls}"` : ''} src="${src}" autoplay muted loop playsinline style="${style}"></video>`
+        : `<img ${cls ? `class="${cls}"` : ''} src="${src}" alt="${alt}" loading="lazy" style="${style}">`;
 }
 
 /* ── renderImgs ──────────────────────────────────────
