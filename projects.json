@@ -61,13 +61,6 @@
           ]
         },
         {
-          "title": "Architecture",
-          "body": "On this project, I designed the entire ",
-          "images": [
-            { "src": "assets/kintsugi/kintsugi_architecture.png", "display": {} }
-          ]
-        },
-        {
           "title": "Level Tools",
           "body": "The scope we aimed required a huge work in terms of level design and we were afraid it would generate **git conflicts** between artists and game designers, so I developed a **scene composition system**, so we **split the level in sub sections** and the sub sections were also split with the **game artists** scenes (containing mostly sprites but also sequencers), the **level designers** scenes (with colliders), and the **sound designers** scenes (with gameObject triggering Wwise events).",
           "images": [
@@ -314,53 +307,53 @@
           ]
         }
       ],
-      "related": ["cyber-exchange", "dont-look-down", "kintsugi"]
+      "related": ["master-project-unity", "dont-look-down", "kintsugi"]
     },
     {
-      "id": "cyber-exchange",
-      "title": "Cyber Exchange",
-      "tagline": "Become one with the sword.",
-      "year": "2022",
-      "status": "Available on Itch.io",
-      "engine": "Unity 3D",
-      "genre": "Arcade survival",
-      "duration": "3 Days",
-      "teamSize": "8 Persons",
+      "id": "master-project-unity",
+      "title": "Master Project Unity",
+      "tagline": "My game development backpack",
+      "year": "2023",
+      "status": "Available on Github.io",
+      "engine": "Unity",
+      "genre": "Package",
+      "duration": "On Going",
+      "teamSize": "Solo",
       "category": "side",
-      "thumbnail": { "src": "assets/cyber-exchange/ce_logo.png", "display": {} },
-      "thumbnailGif": { "src": "assets/cyber-exchange/preview_gif_cyber_exchange.gif", "display": {} },
+      "thumbnail": { "src": "assets/master-project-unity/package_manager_masterproject.png", "display": {} },
+      "thumbnailGif": { "src": "assets/master-project-unity/datasavesystem.gif", "display": {} },
       "youtubeId": "",
-      "role": "Gameplay and Assets Implementation",
-      "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
-      "context": "IIM Godfather Game Jam (Retro, PS1, \"Big Sword\")",
+      "role": "Tools and More",
+      "team": "Solo project with small collaborations",
+      "context": "Ongoing personal project - a Unity package collecting reusable tools.",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "Itch.io", "url": "https://pitiflan.itch.io/godfatherjam" }
+        { "label": "GitHub", "url": "https://github.com/KorYme/MasterProjectUnity" }
       ],
       "sections": [
         {
-          "title": "Initiation to 3D",
-          "body": "For this game jam, we were asked to create a game in the **PS1 style, so 3D** was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
+          "title": "Tools for Productivity",
+          "body": "This project is a sort of **backpack for my studies/career**, it will allow me to create powerful tools and implement them in a second on futures projects.",
           "images": [
-            { "src": "assets/cyber-exchange/ce_screenshots_1.png", "display": {} }
+            { "src": "assets/master-project-unity/package_manager_masterproject.png", "display": {} }
           ]
         },
         {
-          "title": "Changing Player",
-          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a **volatile controller**.",
+          "title": "Save System",
+          "body": "Keeping data between game restart is a key feature needed in a lot of type of game. This tool is able to **create a new script** with a given name in parameter **by itself**. It allows the user to generate a new class for the save and make it easier to implement in any project.",
           "images": [
-            { "src": "assets/cyber-exchange/switch_gif_cyber_exchange.gif", "display": {} }
+            { "src": "assets/master-project-unity/datasavesystem.gif", "display": {} }
           ]
         },
         {
-          "title": "First Experience as a Team",
-          "body": "I discovered the pros and cons of being a team to develop a video game, like the **necessity to communicate**, the use of GitHub, the feeling of **being useful to others** and many others thrilling things.",
+          "title": "More and more coming soon",
+          "body": "As I said before, I want to create more and more tools that can be used in **as much project as possible**. The next project I'll be working on, will be decided on the needs of future projects.",
           "images": [
-            { "src": "assets/cyber-exchange/cyber_exchange_screenshot_4.png", "display": {} }
+            { "src": "assets/master-project-unity/github_page.png", "display": {} }
           ]
         }
       ],
-      "related": ["dotk", "lueur", "slay-the-lig"]
+      "related": ["dotk", "kintsugi", "iridescence"]
     },
     {
       "id": "dotk",
@@ -406,53 +399,53 @@
           ]
         }
       ],
-      "related": ["master-project-unity", "champions-tactics", "kintsugi"]
+      "related": ["cyber-exchange", "champions-tactics", "kintsugi"]
     },
     {
-      "id": "master-project-unity",
-      "title": "Master Project Unity",
-      "tagline": "My game development backpack",
-      "year": "2023",
-      "status": "Available on Github.io",
-      "engine": "Unity",
-      "genre": "Package",
-      "duration": "On Going",
-      "teamSize": "Solo",
+      "id": "cyber-exchange",
+      "title": "Cyber Exchange",
+      "tagline": "Become one with the sword.",
+      "year": "2022",
+      "status": "Available on Itch.io",
+      "engine": "Unity 3D",
+      "genre": "Arcade survival",
+      "duration": "3 Days",
+      "teamSize": "8 Persons",
       "category": "side",
-      "thumbnail": { "src": "assets/master-project-unity/package_manager_masterproject.png", "display": {} },
-      "thumbnailGif": { "src": "assets/master-project-unity/datasavesystem.gif", "display": {} },
+      "thumbnail": { "src": "assets/cyber-exchange/ce_logo.png", "display": {} },
+      "thumbnailGif": { "src": "assets/cyber-exchange/preview_gif_cyber_exchange.gif", "display": {} },
       "youtubeId": "",
-      "role": "Tools and More",
-      "team": "Solo project",
-      "context": "Ongoing personal project - a Unity package collecting reusable tools.",
+      "role": "Gameplay and Assets Implementation",
+      "team": "2 Game Artists, 3 Game Designers, 3 Game Programmers",
+      "context": "IIM Godfather Game Jam (Retro, PS1, \"Big Sword\")",
       "technologies": ["Unity", "C#"],
       "links": [
-        { "label": "GitHub", "url": "https://github.com/KorYme/MasterProjectUnity" }
+        { "label": "Itch.io", "url": "https://pitiflan.itch.io/godfatherjam" }
       ],
       "sections": [
         {
-          "title": "Tools for Productivity",
-          "body": "This project is a sort of **backpack for my studies/career**, it will allow me to create powerful tools and implement them in a second on futures projects.",
+          "title": "Initiation to 3D",
+          "body": "For this game jam, we were asked to create a game in the **PS1 style, so 3D** was required to get the true feeling of the console. I managed to learn the basic movements in 3D and even create a sword throw while the rest of my team, who had more experience focused on harder features.",
           "images": [
-            { "src": "assets/master-project-unity/package_manager_masterproject.png", "display": {} }
+            { "src": "assets/cyber-exchange/ce_screenshots_1.png", "display": {} }
           ]
         },
         {
-          "title": "Save System",
-          "body": "Keeping data between game restart is a key feature needed in a lot of type of game. This tool is able to **create a new script** with a given name in parameter **by itself**. It allows the user to generate a new class for the save and make it easier to implement in any project.",
+          "title": "Changing Player",
+          "body": "Our game concept was to resist to as much enemies as possible. I did the player switch, when the sword touches a character, with a **volatile controller**.",
           "images": [
-            { "src": "assets/master-project-unity/datasavesystem.gif", "display": {} }
+            { "src": "assets/cyber-exchange/switch_gif_cyber_exchange.gif", "display": {} }
           ]
         },
         {
-          "title": "More and more coming soon",
-          "body": "As I said before, I want to create more and more tools that can be used in **as much project as possible**. The next project I'll be working on, will be decided on the needs of future projects.",
+          "title": "First Experience as a Team",
+          "body": "I discovered the pros and cons of being a team to develop a video game, like the **necessity to communicate**, the use of GitHub, the feeling of **being useful to others** and many others thrilling things.",
           "images": [
-            { "src": "assets/master-project-unity/github_page.png", "display": {} }
+            { "src": "assets/cyber-exchange/cyber_exchange_screenshot_4.png", "display": {} }
           ]
         }
       ],
-      "related": ["slay-the-lig", "kintsugi", "iridescence"]
+      "related": ["slay-the-lig", "lueur", "a-contre-courant"]
     },
     {
       "id": "slay-the-lig",
