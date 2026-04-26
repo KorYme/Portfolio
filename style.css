@@ -290,7 +290,7 @@ nav {
 
 /* Section */
 .proj-section { margin-bottom: 72px; padding-bottom: 72px; border-bottom: 1px solid var(--border); }
-.proj-section:last-of-type { border-bottom: none; }
+.proj-section.last-section { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .proj-section-inner {
   display: grid; grid-template-columns: 200px 1fr;
   gap: 56px; align-items: start;

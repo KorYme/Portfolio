@@ -167,6 +167,9 @@ async function render() {
     ${relatedHTML}
   `;
 
+  const sections = page.querySelectorAll('.proj-section');
+  if (sections.length) sections[sections.length - 1].classList.add('last-section');
+
   revealAll(page);
 }
 
