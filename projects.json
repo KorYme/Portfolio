@@ -41,8 +41,8 @@
       "thumbnail": { "src": "assets/kintsugi/kintsugi_logo.png", "display": { "mode": "cover", "position": "68% 50%" } },
       "thumbnailGif": { "src": "assets/kintsugi/kintsugi_cool_moments.mp4", "display": {} },
       "youtubeId": "TkcP0TLfAFA",
-      "role": "Level and Rendering Tools, Sequencer & CI",
-      "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producers, 2 Sound Designers, 1 ",
+      "role": "Sequencer, Level and Rendering Tools, Architecture, CI",
+      "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producers, 2 Sound Designers, 1 Composer",
       "context": "Final Year Project at IIM Digital School.",
       "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
       "links": [
@@ -72,6 +72,13 @@
           "body": "I developed the main tool used to ease the implementation of **complex level arts**. We chose to use a perspective camera with sprite renderers to recreate the parallax effect. To ensure a **good rendering order**, I developed the first version of this tool which automatically **changed the sorting layer** value of all renderers in the scene based on their **Z position** and sorting them in the hierarchy to **keep the scenes clean**. Then, we used it to **change the materials** on objects based on their layer to create a **depth feeling** without changing the asset itself.",
           "images": [
             { "src": "assets/kintsugi/tool_layer_sorting_layer.gif", "display": {} }
+          ]
+        },
+        {
+          "title": "Architecture",
+          "body": "Before the project even started, I worked on a **clean and easy-to-use** code architecture, that I made sure **everyone understood and was willing to use**. The idea was to make sure we stayed **consistent** between all programmers and could easily create **communication between features**. The architecture is based a game loop with **managers injected** to each other through **interfaces**, that **could also be mocked**. To also make it easier to use in the level, we had references to this manager interfaces in **ScriptableObjects**.",
+          "images": [
+            { "src": "assets/kintsugi/managers_injection_architecture.png", "display": {} }
           ]
         },
         {
