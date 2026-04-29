@@ -28,6 +28,56 @@
   },
   "projects": [
     {
+      "id": "fates",
+      "title": "Might & Magic Fates Heroes TCG",
+      "company": "Ubisoft Paris Mobile",
+      "tagline": "Forge your legend in the next generation card game.",
+      "year": "2026",
+      "status": "Available on PC and mobile",
+      "engine": "Unity 3D",
+      "genre": "Multiplayer Trading Card Game",
+      "duration": "6 Months",
+      "teamSize": "Internship",
+      "category": "main",
+      "thumbnail": { "src": "assets/fates/fates_keyart.png", "display": {} },
+      "thumbnailGif": { "src": "assets/fates/fate_simulation.mp4", "display": {} },
+      "youtubeId": "9Rhzd4aAbXM",
+      "role": "",
+      "team": "40+ persons",
+      "context": "Final Year internship at Ubisoft Paris Mobile.",
+      "technologies": ["Unity", "C#", "Steam", "Jira", "PlayStore", "AppStore"],
+      "links": [
+        { "label": "Steam", "url": "https://store.steampowered.com/app/3918850/Might__Magic_Fates__Heroes_TCG/" },
+        { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.ubisoft.mightmagic.fates.tcg&pcampaignid=web_share" },
+        { "label": "App Store", "url": "https://apps.apple.com/fr/app/might-magic-fates-tcg/id6747573541" },
+        { "label": "Site", "url": "https://www.mightandmagicfates.com" }
+      ],
+      "sections": [
+        {
+          "title": "ECS Architecture",
+          "body": "In this game, we used a **home-made ECS architecture for the game simulation**. When I arrived on the project, the main game loop was already working and it took me some time to understand the way this ECS works and how did they implement the whole game. I, then, had the chance to work from **mall bugs**, to completely **new features**, such as effects, **reaching a certain level of mastery** on this simulation and the ECS. And then, once the simulation was ready to run, I was able to **send events to the view** in order to play animations and feedbacks.",
+          "images": [
+            { "src": "assets/fates/fate_simulation.mp4", "display": {} }
+          ]
+        },
+        {
+          "title": "MCTS AI",
+          "body": "The Monte Carlo Tree search is an **heuristic search algorithm** which we used on this project. It **worked perfectly with the ECS**, because of the simplicity to just copy a state from the simulation, make it run and check its efficiency. The core of this algorithm was implemented by another developer, but soon after, we had to improve it. It's how I implemented **difficulty settings** for the game designers, **improved the already existing AI archetypes** or make it **simulate the player's turns** too.",
+          "images": [
+            { "src": "assets/fates/fate_bot.mp4", "display": {} }
+          ]
+        },
+        {
+          "title": "UI & Meta Features",
+          "body": "As a GAAS, Fates is full of retention features, such as seasonal leaderboard, battle pass and many more. I worked on many of these features, **implementing data** from game designers, **getting scenes ready for artists** and **linking UI behaviours to the server**. I also worked a lot on UI panel, such as the Matchmaking screen, that **I completely reworked thanks to UI artists mockups**, always making sure to ease their implementation and giving the right value to tweak these panels.",
+          "images": [
+            { "src": "assets/fates/fate_meta_ui.mp4", "display": {} }
+          ]
+        }
+      ],
+      "related": ["kintsugi", "champions-tactics", "demons-and-disco"]
+    },
+    {
       "id": "kintsugi",
       "title": "Kintsugi",
       "company": "",
@@ -83,57 +133,7 @@
           ]
         }
       ],
-      "related": ["fates", "demons-and-disco", "master-project-unity"]
-    },
-    {
-      "id": "fates",
-      "title": "Might & Magic Fates Heroes TCG",
-      "company": "Ubisoft Paris Mobile",
-      "tagline": "Forge your legend in the next generation card game.",
-      "year": "2026",
-      "status": "Available on PC and mobile",
-      "engine": "Unity 3D",
-      "genre": "Multiplayer Trading Card Game",
-      "duration": "6 Months",
-      "teamSize": "Internship",
-      "category": "main",
-      "thumbnail": { "src": "assets/fates/fates_keyart.png", "display": {} },
-      "thumbnailGif": { "src": "assets/fates/fate_simulation.mp4", "display": {} },
-      "youtubeId": "9Rhzd4aAbXM",
-      "role": "",
-      "team": "40+ persons",
-      "context": "Final Year internship at Ubisoft Paris Mobile.",
-      "technologies": ["Unity", "C#", "Steam", "Jira", "PlayStore", "AppStore"],
-      "links": [
-        { "label": "Steam", "url": "https://store.steampowered.com/app/3918850/Might__Magic_Fates__Heroes_TCG/" },
-        { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.ubisoft.mightmagic.fates.tcg&pcampaignid=web_share" },
-        { "label": "App Store", "url": "https://apps.apple.com/fr/app/might-magic-fates-tcg/id6747573541" },
-        { "label": "Site", "url": "https://www.mightandmagicfates.com" }
-      ],
-      "sections": [
-        {
-          "title": "ECS Architecture",
-          "body": "In this game, we used a **home-made ECS architecture for the game simulation**. When I arrived on the project, the main game loop was already working and it took me some time to understand the way this ECS works and how did they implement the whole game. I, then, had the chance to work from **mall bugs**, to completely **new features**, such as effects, **reaching a certain level of mastery** on this simulation and the ECS. And then, once the simulation was ready to run, I was able to **send events to the view** in order to play animations and feedbacks.",
-          "images": [
-            { "src": "assets/fates/fate_simulation.mp4", "display": {} }
-          ]
-        },
-        {
-          "title": "MCTS AI",
-          "body": "The Monte Carlo Tree search is an **heuristic search algorithm** which we used on this project. It **worked perfectly with the ECS**, because of the simplicity to just copy a state from the simulation, make it run and check its efficiency. The core of this algorithm was implemented by another developer, but soon after, we had to improve it. It's how I implemented **difficulty settings** for the game designers, **improved the already existing AI archetypes** or make it **simulate the player's turns** too.",
-          "images": [
-            { "src": "assets/fates/fate_bot.mp4", "display": {} }
-          ]
-        },
-        {
-          "title": "UI & Meta Features",
-          "body": "As a GAAS, Fates is full of retention features, such as seasonal leaderboard, battle pass and many more. I worked on many of these features, **implementing data** from game designers, **getting scenes ready for artists** and **linking UI behaviours to the server**. I also worked a lot on UI panel, such as the Matchmaking screen, that **I completely reworked thanks to UI artists mockups**, always making sure to ease their implementation and giving the right value to tweak these panels.",
-          "images": [
-            { "src": "assets/fates/fate_meta_ui.mp4", "display": {} }
-          ]
-        }
-      ],
-      "related": ["champions-tactics", "kintsugi", "demons-and-disco"]
+      "related": ["champions-tactics", "demons-and-disco", "master-project-unity"]
     },
     {
       "id": "champions-tactics",
