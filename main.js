@@ -15,6 +15,7 @@ const TECH_ICONS = {
   'SFML':             'assets/_logos/sfml.png',
   'Steam':            'assets/_logos/steam_white.png',
   'PlayStore':        'assets/_logos/google_play.png',
+  'AppStore':         'assets/_logos/apple_store.png',
   'Jira':             'assets/_logos/jira.png',
   'VR':               'assets/_logos/vr_white.png',
   'default':          'assets/_logos/pc_white.png'
