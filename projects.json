@@ -30,6 +30,7 @@
     {
       "id": "kintsugi",
       "title": "Kintsugi",
+      "company": "",
       "tagline": "Embrace your curse in this sumptuous adventure.",
       "year": "2025",
       "status": "Available on Steam",
@@ -87,6 +88,7 @@
     {
       "id": "fates",
       "title": "Might & Magic Fates Heroes TCG",
+      "company": "Ubisoft Paris Mobile",
       "tagline": "Forge your legend in the next generation card game.",
       "year": "2026",
       "status": "Available on PC and mobile",
@@ -136,6 +138,7 @@
     {
       "id": "champions-tactics",
       "title": "Champions Tactics Grimoria Chronicles",
+      "company": "Ubisoft Paris Mobile",
       "tagline": "Discover the legends of Grimoria and leave your name in the chronicles.",
       "year": "2024",
       "status": "Available on Steam",
@@ -178,11 +181,12 @@
           ]
         }
       ],
-      "related": ["demons-and-disco", "kintsugi", "iridescence"]
+      "related": ["demons-and-disco", "kintsugi", "fates"]
     },
     {
       "id": "demons-and-disco",
       "title": "Demons and Disco",
+      "company": "",
       "tagline": "Make them dance till their death !",
       "year": "2023",
       "status": "Available on Itch.io",
@@ -229,6 +233,7 @@
     {
       "id": "dont-look-down",
       "title": "Don't Look Down",
+      "company": "",
       "tagline": "Keep going down. There is no other outcome.",
       "year": "2024",
       "status": "Available on itch.io",
@@ -268,6 +273,7 @@
     {
       "id": "iridescence",
       "title": "Iridescence",
+      "company": "",
       "tagline": "Move and reflect the light into the forest.",
       "year": "2023",
       "status": "Available on Google Play Store",
@@ -315,6 +321,7 @@
     {
       "id": "the-last-night-to-hunt",
       "title": "The Last Night to Hunt",
+      "company": "",
       "tagline": "Revenge and unleash the werewolf hiding inside !",
       "year": "2023",
       "status": "Available on Itch.io",
@@ -361,6 +368,7 @@
     {
       "id": "master-project-unity",
       "title": "Master Project Unity",
+      "company": "",
       "tagline": "My game development backpack",
       "year": "2023",
       "status": "Available on Github.io",
@@ -414,6 +422,7 @@
     {
       "id": "dotk",
       "title": "The Duty of the Knight",
+      "company": "",
       "tagline": "Kill them all and turn into a true warrior.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -460,6 +469,7 @@
     {
       "id": "cyber-exchange",
       "title": "Cyber Exchange",
+      "company": "",
       "tagline": "Become one with the sword.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -506,6 +516,7 @@
     {
       "id": "slay-the-lig",
       "title": "Slay the LIG",
+      "company": "",
       "tagline": "When Christmas turns into Christ'Mess.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -545,6 +556,7 @@
     {
       "id": "geimerophobia",
       "title": "Geimerophobia",
+      "company": "",
       "tagline": "The phobia of shapes.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -584,6 +596,7 @@
     {
       "id": "a-contre-courant",
       "title": "A Contre-Courant",
+      "company": "",
       "tagline": "Acceptation is the key.",
       "year": "2023",
       "status": "Available on Itch.io",
@@ -630,6 +643,7 @@
     {
       "id": "lueur",
       "title": "Lueur Remake",
+      "company": "",
       "tagline": "Become the light that the world needs.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -669,6 +683,7 @@
     {
       "id": "tough-sadness",
       "title": "Tough Sadness",
+      "company": "",
       "tagline": "Love was never an option.",
       "year": "2022",
       "status": "Available on Itch.io",
@@ -708,6 +723,7 @@
     {
       "id": "beboum-fighters",
       "title": "Beboum Fighters",
+      "company": "",
       "tagline": "Get them ouf of the ring.",
       "year": "2022",
       "status": "Available on Itch.io",

@@ -33,6 +33,7 @@ function relatedCard(p, i) {
   const computedRole = (p.role && p.role.trim() !== '')
           ? p.role
           : (p.sections || []).map(s => s.title).join(', ');
+  
   return `
     <a href="project.html?id=${p.id}" class="card reveal rd${i+1}">
       <div class="card-thumb">
@@ -40,6 +41,7 @@ function relatedCard(p, i) {
       </div>
       <div class="card-body">
         <div class="card-idx">${String(i+1).padStart(2,'0')}</div>
+        ${p.company ? `<div style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">${p.company}</div>` : ''}
         <div class="card-title">${p.title}</div>
         <div class="card-meta">${p.engine} · ${p.genre} · ${p.duration} · ${p.teamSize}</div>
         <div class="card-role">${computedRole}</div>
@@ -111,6 +113,7 @@ async function render() {
   const computedRole = (p.role && p.role.trim() !== '')
           ? p.role
           : (p.sections || []).map(s => s.title).join(', ');
+  const companyHTML = p.company ? `<div class="company-badge">${p.company}</div>` : '';
 
   const validLinks = (p.links || []).filter(l => l.url && l.url.trim() !== '');
   const linkHTML = validLinks.length ? `
@@ -132,6 +135,7 @@ async function render() {
         ${p.status ? `<span class="proj-badge">${p.status}</span>` : ''}
       </div>
       <h1>${p.title}</h1>
+      ${companyHTML}
       <p class="proj-tagline">${p.tagline}</p>
       <div class="proj-specs">
         <span><strong>${p.engine}</strong></span>
