@@ -620,14 +620,14 @@
           "title": "Physics",
           "body": "The objective for this project was to make a game with the **similar physics to Ynglet**, which was not the easiest one to implement, but I only had a week to get to a close enough result. Fortunately, I succeeded after many attempts.",
           "images": [
-            { "src": "assets/a-contre-courant/letter_creator.gif", "display": {} }
+            { "src": "assets/a-contre-courant/physics_movement.gif", "display": {} }
           ]
         },
         {
           "title": "GD/LD Tools",
           "body": "The lack of time, we had for this project forced us to decrease the number of features, we wanted to do but it gave me possibility to create some simple but **useful tools** for the only game designer in the team. It helped him a lot on the **level design** that he managed to do in a single day.",
           "images": [
-            { "src": "assets/a-contre-courant/physics_movement.gif", "display": {} }
+            { "src": "assets/a-contre-courant/letter_creator.gif", "display": {} }
           ]
         },
         {
