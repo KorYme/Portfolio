@@ -8,6 +8,8 @@
       { "label": "Download CV", "url": "https://drive.google.com/drive/folders/1CFxoI2vYg9N9ISzoM_C2Lmq7rdtgTY9v?usp=sharing", "arrow": true },
       { "label": "GitHub", "url": "https://github.com/KorYme", "arrow": true },
       { "label": "LinkedIn", "url": "https://www.linkedin.com/in/maxime-corby-gp/", "arrow": true },
+      { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io", "arrow": true },
+      { "label": "corby.maxime.pro@gmail.com", "url": "mailto:corby.maxime.pro@gmail.com", "arrow": false },
       { "label": "+33 7 81 86 80 87", "url": "tel:+33781868087", "arrow": false }
     ],
     "sections": [
