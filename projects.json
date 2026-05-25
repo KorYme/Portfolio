@@ -333,7 +333,7 @@
       "teamSize": "7 Persons",
       "category": "main",
       "thumbnail": { "src": "assets/the-last-night-to-hunt/thelastnighttohunt_newlogo.png", "display": {} },
-      "thumbnailGif": null,
+      "thumbnailGif": { "src": "assets/the-last-night-to-hunt/shaders_initiation.gif", "display": {} },
       "youtubeId": "ukDkw-owUzY",
       "role": "Quests/Dialogs, AI and Shaders",
       "team": "2 Game Artists, 3 Game Designers, 2 Game Programmers",
