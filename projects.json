@@ -94,7 +94,7 @@
       "thumbnail": { "src": "assets/kintsugi/kintsugi_logo.png", "display": { "mode": "cover", "position": "68% 50%" } },
       "thumbnailGif": { "src": "assets/kintsugi/kintsugi_cool_moments.mp4", "display": {} },
       "youtubeId": "TkcP0TLfAFA",
-      "role": "Sequencer, Level and Rendering Tools, Architecture",
+      "role": "Sequencer, Camera System, Level and Rendering Tools, Architecture",
       "team": "3 Game Artists, 3 Game Designers, 5 Game Programmers, 2 Producers, 2 Sound Designers, 1 Composer",
       "context": "Final Year Project at IIM Digital School.",
       "technologies": ["Unity", "C#", "Steam", "Wwise", "GitHub Actions", "Jira"],
@@ -111,6 +111,13 @@
             { "src": "assets/kintsugi/kintsugi_sequencer_1.mp4", "display": {} },
             { "src": "assets/kintsugi/kintsugi_sequencer_2.mp4", "display": {} },
             { "src": "assets/kintsugi/kintsugi_sequencer_3.mp4", "display": {} }
+          ]
+        },
+        {
+          "title": "Camera system",
+          "body": "The camera system was one of the most iterative features of the project, redesigned multiple times throughout production to keep up with the **ever-changing needs** of the Game Designers and their level layouts. The result is a system built around simple but powerful tools : designers can define camera volumes directly in the scene using handles, giving them **control over transitions**, **zoom levels** and **framing without writing a single line of code**.",
+          "images": [
+            { "src": "assets/kintsugi/camera_volumes.png", "display": {} }
           ]
         },
         {
