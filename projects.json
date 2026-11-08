@@ -9,7 +9,7 @@
       { "label": "GitHub", "url": "https://github.com/KorYme", "arrow": true },
       { "label": "LinkedIn", "url": "https://www.linkedin.com/in/maxime-corby-gp/", "arrow": true },
       { "label": "Itch.io", "url": "https://koryme-nakxay.itch.io", "arrow": true },
-      { "label": "corby.maxime.pro@gmail.com", "url": "mailto:corby.maxime.pro@gmail.com", "arrow": false },
+      { "label": "maxime.corby.pro@gmail.com", "url": "mailto:maxime.corby.pro@gmail.com", "arrow": false },
       { "label": "+33 7 81 86 80 87", "url": "tel:+33781868087", "arrow": false }
     ],
     "sections": [
