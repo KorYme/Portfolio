@@ -319,3 +319,34 @@ document.addEventListener('click', e => {
     const group = [...z.closest('.proj-imgs').querySelectorAll('.zoomable')];
     Lightbox.open(group.map(g => g.dataset.src), group.indexOf(z));
 });
+
+/* ── smoothScrollTo ──────────────────────────────────
+   Animated scroll, independent from browser/OS settings.
+   Respects the target's scroll-margin-top.
+   ─────────────────────────────────────────────────── */
+function smoothScrollTo(target, duration = 900) {
+    const start  = window.scrollY;
+    const offset = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+    const max    = document.documentElement.scrollHeight - window.innerHeight;
+    const dest   = Math.min(target.getBoundingClientRect().top + start - offset, max);
+    const dist   = dest - start;
+    const ease   = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+    let t0 = null;
+
+    function step(ts) {
+        if (t0 === null) t0 = ts;
+        const p = Math.min((ts - t0) / duration, 1);
+        window.scrollTo({ top: start + dist * ease(p), behavior: 'instant' });
+        if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
+document.addEventListener('click', e => {
+    const link = e.target.closest('a.go-cv');
+    if (!link) return;
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    smoothScrollTo(target);
+});
