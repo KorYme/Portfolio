@@ -24,6 +24,22 @@
         "images": []
       },
       {
+        "title": "Events",
+        "text": "I took part in many video game events as an exhibitor or as a volunteer, such as the Busan Indie Connect, where I showcased Kintsugi, my final year project to many players and professionals, or at the Paris Game Week, where I volunteered two years to help indie developers present their game to the visitors.",
+        "images": [
+          { "src": "assets/about/bic.jpg", "display": { "mode": "native" } },
+          { "src": "assets/about/jeux_made_in_france.jpg", "display": { "mode": "native" } },
+          { "src": "assets/about/utopiales.jpg", "display": { "mode": "native" } }
+        ]
+      },
+      {
+        "title": "GameCamp",
+        "text": "I also had the chance to go on many events such as Game Camp, with my class of 2026. It was a really chance to discover so many persons from the game industry and follow the conferences on very diverse subjects.",
+        "images": [
+          { "src": "assets/about/game_camp.jpg", "display": { "mode": "native" } }
+        ]
+      },
+      {
         "title": "LeoIndieGames",
         "text": "I was also part of the video game development association in my university group, LeoIndieGames. I occupied the role of **Treasurer** for two years. This position asked me to be rigorous in my work, which I apply to all of my projects. I also **gave lessons** to students who wanted to learn Unity.",
         "images": [

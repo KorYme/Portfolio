@@ -105,7 +105,7 @@ Minimal example :
 
 ## AI Assistance
 
-This portfolio was designed and built with the help of **[Claude](https://claude.ai)**, the AI assistant made by [Anthropic](https://www.anthropic.com). From the initial HTML/CSS architecture to the JSON-driven content system, the image display modes, the responsive layout and the iterative design refinements — Claude was a collaborator throughout the entire process.
+This portfolio was designed and built with the help of **[Claude](https://claude.ai)**, the AI assistant made by [Anthropic](https://www.anthropic.com). From the initial HTML/CSS architecture to the JSON-driven content system, the image display modes, the responsive layout and the iterative design refinements.
 
 ---
 
