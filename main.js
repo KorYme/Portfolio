@@ -168,31 +168,31 @@ function mediaTag(src, cls, alt, style) {
         : `<img ${cls ? `class="${cls}"` : ''} src="${src}" alt="${alt}" loading="lazy" style="${style}">`;
 }
 
+/* ── zoomWrap ────────────────────────────────────────
+   Wraps a media item so it can open in the lightbox.
+   Disable per image with  "display": { "zoom": false }
+   ─────────────────────────────────────────────────── */
+function zoomWrap(item, style = '') {
+    const src     = typeof item === 'string' ? item : item.src;
+    const zoomOff = typeof item === 'object' && item.display && item.display.zoom === false;
+    const media   = buildMediaElement(item);
+    return zoomOff
+        ? `<div style="${style}">${media}</div>`
+        : `<div class="zoomable" data-src="${src}" style="${style}">${media}</div>`;
+}
+
 /* ── renderImgs ──────────────────────────────────────
    Handle 1, 2 or 3 assets with automatic layout.
    Each item can be a simple string (simple path)
    or an object { src, display } for advanced display modes.
    ─────────────────────────────────────────────────── */
 function renderImgs(images) {
-  const v = (images || []).filter(Boolean).slice(0, 3);
-  if (!v.length) return '';
-
-  if (v.length === 1) {
-    return `<div class="proj-imgs imgs-1">${buildMediaElement(v[0])}</div>`;
-  }
-
-  if (v.length === 2) {
-    return `
-      <div class="proj-imgs imgs-2">
-        ${v.map(item => `<div>${buildMediaElement(item)}</div>`).join('')}
-      </div>`;
-  }
-
-  // 3 elements
-  return `
-    <div class="proj-imgs imgs-3">
-      ${v.map((item, i) => `<div style="${i===0 ? 'grid-column:1/-1' : ''}">${buildMediaElement(item)}</div>`).join('')}
-    </div>`;
+    const v = (images || []).filter(Boolean).slice(0, 3);
+    if (!v.length) return '';
+    const cls = ['', 'imgs-1', 'imgs-2', 'imgs-3'][v.length];
+    return `<div class="proj-imgs ${cls}">
+    ${v.map((item, i) => zoomWrap(item, (v.length === 3 && i === 0) ? 'grid-column:1/-1' : '')).join('')}
+  </div>`;
 }
 
 /* ── parseMarkdown ──────────────────────────────────────
@@ -238,3 +238,84 @@ function revealAll(root) {
   }, { threshold: 0.07 });
   root.querySelectorAll('.reveal').forEach(el => io.observe(el));
 }
+
+/* ── Lightbox ────────────────────────────────────────
+   Click on a .zoomable → fullscreen viewer, navigation
+   (buttons, arrow keys, swipe) within the same .proj-imgs group.
+   ─────────────────────────────────────────────────── */
+const Lightbox = (() => {
+    let el, stage, counter, prevBtn, nextBtn;
+    let items = [], index = 0, touchX = null;
+
+    const chevron = d => `<svg viewBox="0 0 24 24"><path d="${d}"/></svg>`;
+
+    function build() {
+        el = document.createElement('div');
+        el.className = 'lightbox';
+        el.innerHTML = `
+      <button class="lb-btn lb-close" aria-label="Close">${chevron('M6 6l12 12M18 6L6 18')}</button>
+      <button class="lb-btn lb-prev" aria-label="Previous">${chevron('M15 5l-7 7 7 7')}</button>
+      <div class="lb-stage"></div>
+      <button class="lb-btn lb-next" aria-label="Next">${chevron('M9 5l7 7-7 7')}</button>
+      <div class="lb-counter"></div>`;
+        document.body.appendChild(el);
+
+        stage   = el.querySelector('.lb-stage');
+        counter = el.querySelector('.lb-counter');
+        prevBtn = el.querySelector('.lb-prev');
+        nextBtn = el.querySelector('.lb-next');
+
+        el.querySelector('.lb-close').addEventListener('click', close);
+        prevBtn.addEventListener('click', () => show(index - 1));
+        nextBtn.addEventListener('click', () => show(index + 1));
+        el.addEventListener('click', e => { if (e.target === el || e.target === stage) close(); });
+
+        el.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+        el.addEventListener('touchend', e => {
+            if (touchX === null) return;
+            const dx = e.changedTouches[0].clientX - touchX;
+            if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+            touchX = null;
+        });
+
+        document.addEventListener('keydown', e => {
+            if (!el.classList.contains('open')) return;
+            if (e.key === 'Escape')     close();
+            if (e.key === 'ArrowLeft')  show(index - 1);
+            if (e.key === 'ArrowRight') show(index + 1);
+        });
+    }
+
+    function show(i) {
+        index = (i + items.length) % items.length;
+        const src = items[index];
+        stage.innerHTML = src.match(/\.mp4$/i)
+            ? `<video src="${src}" controls autoplay loop muted playsinline></video>`
+            : `<img src="${src}" alt="">`;
+        counter.textContent = items.length > 1 ? `${index + 1} / ${items.length}` : '';
+        prevBtn.style.display = nextBtn.style.display = items.length > 1 ? '' : 'none';
+    }
+
+    function open(srcList, startIndex) {
+        if (!el) build();
+        items = srcList;
+        show(startIndex);
+        el.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+        el.classList.remove('open');
+        stage.innerHTML = '';          // stops any playing video
+        document.body.style.overflow = '';
+    }
+
+    return { open };
+})();
+
+document.addEventListener('click', e => {
+    const z = e.target.closest('.zoomable');
+    if (!z) return;
+    const group = [...z.closest('.proj-imgs').querySelectorAll('.zoomable')];
+    Lightbox.open(group.map(g => g.dataset.src), group.indexOf(z));
+});
