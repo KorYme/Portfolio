@@ -50,7 +50,7 @@
     let canvaHTML = '';
     if (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') {
       canvaHTML = `
-      <div class="canva-wrap reveal">
+      <div class="canva-wrap reveal" id="cv">
         <h3>Curriculum Vitae</h3>
         <div class="canva-frame">
           <iframe src="${a.canvaEmbedUrl}" allowfullscreen allow="fullscreen *;"></iframe>
@@ -58,13 +58,18 @@
       </div>`;
     }
 
+    const goCvHTML = (a.canvaEmbedUrl && a.canvaEmbedUrl.trim() !== '') ? `
+      <a href="#cv" class="go-cv">Go to CV
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>` : '';
+    
     layout.innerHTML = `
     <aside class="about-left reveal">
       ${portraitHTML}
       <div>
         <p class="about-name">${a.name}</p>
         <p class="about-role">${a.role}</p>
-        <div class="about-contacts">${contactsHTML}</div>
+        <div class="about-contacts">${goCvHTML}${contactsHTML}</div>
       </div>
     </aside>
 

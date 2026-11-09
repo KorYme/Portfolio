@@ -422,6 +422,20 @@ video.proj-img { object-fit: cover; }
 .canva-fallback a { color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: 2px; transition: opacity .2s; }
 .canva-fallback a:hover { opacity: .7; }
 
+/* GO TO CV */
+.about-contacts .go-cv {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 8px; color: var(--accent);
+  font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.go-cv svg {
+  width: 16px; height: 16px; fill: none;
+  stroke: currentColor; stroke-width: 2;
+  animation: bounce-down 1.6s ease-in-out infinite;
+}
+@keyframes bounce-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+.canva-wrap { scroll-margin-top: calc(var(--nav-h) + 20px); }
+
 /* ── FOOTER ────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border); padding: 26px 40px;
