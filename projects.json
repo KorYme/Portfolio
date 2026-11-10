@@ -320,7 +320,6 @@
       "context": "School project — puzzle mobile game.",
       "technologies": ["Unity", "C#", "PlayStore"],
       "links": [
-        { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.Team501.Iridescence&gl=FR&pli=1" },
         { "label": "Itch.io", "url": "https://zukkinioni.itch.io/iridescence" }
       ],
       "sections": [
